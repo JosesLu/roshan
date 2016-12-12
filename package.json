@@ -26,8 +26,11 @@
     "express": "^4.14.0",
     "mocha": "^3.2.0",
     "selenium-standalone": "^5.9.0",
+    "split": "^1.0.0",
     "text-2-json": "^1.0.0",
-    "webdriverio": "^4.4.0"
+    "underscore": "^1.8.3",
+    "webdriverio": "^4.4.0",
+    "yargs": "^6.5.0"
   },
   "devDependencies": {
     "wdio-mocha-framework": "^0.5.4"
