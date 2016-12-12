@@ -1,0 +1,115 @@
+header {
+text-align:center;
+width:100%;
+display:block;
+height:auto
+}
+.description {
+	text-align: left;
+
+}
+.description-cards {
+	width:90%;
+
+border-style:solid;
+border-width:0;
+border-radius:9px;
+border-color:gray;
+vertical-align:middle;
+-webkit-transform:translateZ(0);
+transform:translateZ(0);
+box-shadow:0 0 1px rgba(0,0,0,0);
+-webkit-backface-visibility:hidden;
+backface-visibility:hidden;
+-moz-osx-font-smoothing:grayscale;
+-webkit-transition-duration:.3s;
+transition-duration:.3s;
+-webkit-transition-property:box-shadow;
+transition-property:box-shadow;
+
+}
+.result-container {
+width:75%;
+margin:0 auto;
+padding:10px;
+background:rgba(255,255,255,0.8)
+
+}
+.round-trip-container {
+width:75%;
+margin:0 auto;
+padding-top: 1px;
+padding-left: 10px;
+padding-bottom: 1px;
+background:rgba(255,255,255,0.8)
+}
+
+.top-round {
+border-top-left-radius:1em;
+border-top-right-radius:1em
+}
+
+.bottom-round {
+border-bottom-left-radius:1em;
+border-bottom-right-radius:1em
+}
+
+.flight-cards {
+width:100%;
+padding-bottom:9px;
+border-style:solid;
+border-width:0;
+border-radius:9px;
+border-color:gray;
+vertical-align:middle;
+-webkit-transform:translateZ(0);
+transform:translateZ(0);
+box-shadow:0 0 1px rgba(0,0,0,0);
+-webkit-backface-visibility:hidden;
+backface-visibility:hidden;
+-moz-osx-font-smoothing:grayscale;
+-webkit-transition-duration:.3s;
+transition-duration:.3s;
+-webkit-transition-property:box-shadow;
+transition-property:box-shadow;
+background:rgba(255,255,255,0.6);
+}
+
+.flight-cards:hover,.flight-cards:focus,.flight-cards:active {
+box-shadow:0 0 8px rgba(0,0,0,0.6)
+}
+
+.airline-logos {
+height:59px;
+width:200px;
+float:left;
+margin:auto
+}
+
+.airline-name {
+opacity:0
+}
+
+.from {
+width:100%
+}
+
+@font-face {
+font-family:damnSon;
+src:url(../fonts/sdf.otf)
+
+}
+
+.font1 {
+font-family:damnSon
+}
+
+@media only screen and (max-width: 659px) {
+.airline-logos {
+display:none
+}
+
+.airline-name {
+opacity:100
+}
+}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Flights </title>
+		<!--Date Picker -->
+		<link rel="stylesheet" href="css/jquery-ui.css">
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery-ui.min.js"></script>
+
+		<!--/Date Picker -->
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
+		<!-- Custom Fonts -->
+
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+		<!-- Custom Css -->
+		<link rel="stylesheet" type="text/css" href="css/roshan.css">
+		<link rel="stylesheet" type="text/css" href="css/login-form.css">
+		<link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+		<link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet"
+		type="text/css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+		<script type="text/javascript" src="js/login-register.js"></script> 
+
+	</head>
+	<body>
+		<!-- HEADER -->
+		<div class="navbar-header page-scroll navbar-fixed-top navbar-custom">
+			<div class="container">
+				<div class="navbar-header page-scroll">
+					<a class="navbar-brand" href="index.html">Roshan</a>
+				</div>
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<a class="header-login" href="login-register.html">Login</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--MAIN-->
+		<header>
+		<div class="container">
+		<form id="login" class="login-form">	
+			<div class="form-center">
+				<label class="header-login"> Email </label>
+				<input type="text" class="form-control" id="logEmail"> </input>
+				<label class="header-login"> Password </label>
+				<input type="password" class="form-control" id="logPass"> </input>
+				<div class="checkbox">
+					<label class="header-login"><input type="checkbox" value="remember-me" id="remember_me" >Remember me</label>
+				</div>
+				<button type="button" class="btn btn-default header-login" onclick="login()"> Login </button>
+				<button type="button" class="btn btn-default header-login"  onclick="show()"> Register </button>		
+			</div>	
+		</form>
+		
+		<form id="register" class="login-form">	
+		<div class="form-center">
+			<label class="header-login"> Email </label>
+			<input type="text" class="form-control" id="regEmail"> </input>
+			
+			<label class="header-login"> Password </label>
+			<input type="password" class="form-control" id="regPass"> </input>
+			<label class="header-login"> Password Confirmation </label>
+			<input type="password" class="form-control" id="regConfPass"> </input>
+			<button type="button" class="btn btn-default btn-space header-login" id="kek" onclick="register()"> Register </button>
+			
+		</div>
+		</form>
+	</div>
+		</header>
+		<!--REGISTER MODAL -->
+		<div id="modal" class="modal fade" role="dialog">
+			<div class="modal-dialog">	
+				<div class="modal-content">
+				  <div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title " id="modal-title"></h4>
+				  </div>
+				  <div class="modal-body">
+					<p id="modal-text">	</p>
+				  </div>
+				  <div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				  </div>
+				</div>
+			</div>
+		</div>
+		<!--FOOTER -->
+		<footer class="text-center">
+			<div class="footer-above">
+				<div class="container">
+					<div class="row">
+						<div class="footer-col col-md-4">
+          				<h3>Designed by</h3>
+                        <h6>@heyimjoses</h6>
+						</div>
+						<div class="footer-col col-md-4">
+							<h3>Around the Web</h3>
+							<ul class="list-inline">
+								<li>
+									<a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+								</li>
+								<li>
+									<a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
+								</li>
+								<li>
+									<a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+								</li>
+								<li>
+									<a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+								</li>
+								<li>
+									<a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-dribbble"></i></a>
+								</li>
+							</ul>
+						</div>
+						<div class="footer-col col-md-4">
+							<h3>About Roshan</h3>
+							<h6>Roshan is a flight and Hotel search-engine designed to help Travelers acquire the best possible deals on their vacation.</h6>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-below">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12">
+							Copyright &copy; Roshan 2016
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

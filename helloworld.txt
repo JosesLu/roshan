@@ -1,0 +1,227 @@
+DVO 23:20 Davao Mati 01h45 Direct MNL 01:05 (+1) Manila Ninoy Aquino 3233.69
+Nusatrip 3233.69 eDreams 3724
+DVO
+16:35
+Davao
+Mati
+01h55
+Direct
+MNL
+18:30
+Manila
+Ninoy Aquino
+3682
+DVO
+08:45
+Davao
+Mati
+01h45
+Direct
+MNL
+10:30
+Manila
+Ninoy Aquino
+3865.87
+Nusatrip 3865.87 eDreams 4363
+DVO
+18:25
+Davao
+Mati
+01h55
+Direct
+MNL
+20:20
+Manila
+Ninoy Aquino
+3865.87
+Nusatrip 3865.87 eDreams 4363
+DVO
+20:20
+Davao
+Mati
+01h10
+Direct
+MNL
+21:30
+Manila
+Ninoy Aquino
+3882.32
+Nusatrip 3882.32 FlightNetwork 4719 eDreams 5777
+DVO
+22:15
+Davao
+Mati
+01h50
+Direct
+MNL
+00:05
+(+1)
+Manila
+Ninoy Aquino
+3882.32
+Nusatrip 3882.32 FlightNetwork 4719 eDreams 5079
+DVO
+12:35
+Davao
+Mati
+01h55
+Direct
+MNL
+14:30
+Manila
+Ninoy Aquino
+4074
+DVO
+17:50
+Davao
+Mati
+01h55
+Direct
+MNL
+19:45
+Manila
+Ninoy Aquino
+4074
+DVO
+19:15
+Davao
+Mati
+01h55
+Direct
+MNL
+21:10
+Manila
+Ninoy Aquino
+4074
+DVO
+21:15
+Davao
+Mati
+01h45
+Direct
+MNL
+23:00
+Manila
+Ninoy Aquino
+4074
+DVO
+21:35
+Davao
+Mati
+01h50
+Direct
+MNL
+23:25
+Manila
+Ninoy Aquino
+4074
+DVO
+23:30
+Davao
+Mati
+01h50
+Direct
+MNL
+01:20
+(+1)
+Manila
+Ninoy Aquino
+4074
+DVO
+10:10
+Davao
+Mati
+01h50
+Direct
+MNL
+12:00
+Manila
+Ninoy Aquino
+4467
+DVO
+14:25
+Davao
+Mati
+01h55
+Direct
+MNL
+16:20
+Manila
+Ninoy Aquino
+4991
+DVO
+17:45
+Davao
+Mati
+01h35
+Direct
+MNL
+19:20
+Manila
+Ninoy Aquino
+5013.07
+Nusatrip 5013.07 eDreams 5777 FlightNetwork 5889
+DVO
+17:05
+Davao
+Mati
+01h50
+Direct
+MNL
+18:55
+Manila
+Ninoy Aquino
+5307.72
+Nusatrip 5307.72 eDreams 6068 FlightNetwork 6191
+DVO
+11:40
+Davao
+Mati
+01h50
+Direct
+MNL
+13:30
+Manila
+Ninoy Aquino
+5650.23
+Nusatrip 5650.23 eDreams 6476 FlightNetwork 6531
+DVO
+05:30
+Davao
+Mati
+17h45
+1 stop
+MNL
+23:15
+Manila
+Ninoy Aquino
+6831.83
+Nusatrip 6831.83 FlightNetwork 7739 eDreams 16931
+DVO
+10:30
+Davao
+Mati
+12h45
+1 stop
+MNL
+23:15
+Manila
+Ninoy Aquino
+6831.83
+Nusatrip 6831.83 eDreams 16931
+DVO
+16:15
+Davao
+Mati
+07h00
+1 stop
+MNL
+23:15
+Manila
+Ninoy Aquino
+6831.83
+Nusatrip 6831.83 eDreams 16931
+1
+2
+3
+4

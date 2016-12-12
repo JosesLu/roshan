@@ -1,0 +1,8 @@
+.hotel-name {
+	color:gray;
+	text-transform:uppercase;
+	border:none;
+	text-decoration:none;
+	font:700 15px "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+	text-align: left;
+}

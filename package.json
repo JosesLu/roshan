@@ -1,0 +1,35 @@
+{
+  "name": "roshan",
+  "version": "1.0.0",
+  "description": "Flights and Hotels thesis",
+  "main": "index.js",
+  "scripts": {
+    "test": "wdio",
+    "start": "node app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JosesLu/Roshan.git"
+  },
+  "keywords": [
+    "fucking",
+    "awesome"
+  ],
+  "author": "Joses Lu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JosesLu/Roshan/issues"
+  },
+  "homepage": "https://github.com/JosesLu/Roshan#readme",
+  "dependencies": {
+    "chai": "^3.5.0",
+    "express": "^4.14.0",
+    "mocha": "^3.2.0",
+    "selenium-standalone": "^5.9.0",
+    "text-2-json": "^1.0.0",
+    "webdriverio": "^4.4.0"
+  },
+  "devDependencies": {
+    "wdio-mocha-framework": "^0.5.4"
+  }
+}

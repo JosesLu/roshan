@@ -1,0 +1,40 @@
+DVO 08:45 Davao Mati 01h45 Direct MNL 10:30 Manila Ninoy Aquino MNL 15:45 Manila Ninoy Aquino 02h00 Direct 
+DVO 17:45 Davao Mati 8704.01 Select Nusatrip 8704.01 Bravofly 9333 eDreams 9405 
+DVO 08:45 Davao Mati 01h45 Direct MNL 10:30 Manila Ninoy Aquino MNL 20:45 Manila Ninoy Aquino 01h55 Direct 
+DVO 22:40 Davao Mati 8704.01 Select Nusatrip 8704.01 Bravofly 9333 eDreams 9405 
+DVO 18:25 Davao Mati 01h55 Direct MNL 20:20 Manila Ninoy Aquino MNL 15:45 Manila Ninoy Aquino 02h00 Direct 
+DVO 17:45 Davao Mati 8704.01 Select Nusatrip 8704.01 Bravofly 9333 eDreams 9405 
+DVO 18:25 Davao Mati 01h55 Direct MNL 20:20 Manila Ninoy Aquino MNL 20:45 Manila Ninoy Aquino 01h55 Direct 
+DVO 22:40 Davao Mati 8704.01 Select Nusatrip 8704.01 Bravofly 9333 eDreams 9405 
+DVO 23:20 Davao Mati 01h45 Direct MNL 01:05  Manila Ninoy Aquino MNL 15:45 Manila Ninoy Aquino 02h00 Direct 
+DVO 17:45 Davao Mati 8704.01 Select Nusatrip 8704.01 Bravofly 9333 eDreams 9405 
+DVO 23:20 Davao Mati 01h45 Direct MNL 01:05  Manila Ninoy Aquino MNL 20:45 Manila Ninoy Aquino 01h55 Direct 
+DVO 22:40 Davao Mati 8704.01 Select Nusatrip 8704.01 Bravofly 9333 eDreams 9405 
+DVO 14:40 Davao Mati 01h50 Direct MNL 16:30 Manila Ninoy Aquino MNL 15:45 Manila Ninoy Aquino 02h00 Direct 
+DVO 17:45 Davao Mati 8726.95 Select Nusatrip 8726.95 eDreams 11074 
+DVO 14:40 Davao Mati 01h50 Direct MNL 16:30 Manila Ninoy Aquino MNL 20:45 Manila Ninoy Aquino 01h55 Direct 
+DVO 22:40 Davao Mati 8726.95 Select Nusatrip 8726.95 eDreams 11074 
+DVO 20:20 Davao Mati 01h10 Direct MNL 21:30 Manila Ninoy Aquino MNL 15:45 Manila Ninoy Aquino 02h00 Direct 
+DVO 17:45 Davao Mati 8726.95 Select Nusatrip 8726.95 eDreams 10783 
+DVO 20:20 Davao Mati 01h10 Direct MNL 21:30 Manila Ninoy Aquino MNL 20:45 Manila Ninoy Aquino 01h55 Direct 
+DVO 22:40 Davao Mati 8726.95 Select Nusatrip 8726.95 eDreams 10783 
+DVO 22:15 Davao Mati 01h50 Direct MNL 00:05  Manila Ninoy Aquino MNL 15:45 Manila Ninoy Aquino 02h00 Direct 
+DVO 17:45 Davao Mati 8726.95 Select 
+DVO 22:15 Davao Mati 01h50 Direct MNL 00:05  Manila Ninoy Aquino MNL 20:45 Manila Ninoy Aquino 01h55 Direct 
+DVO 22:40 Davao Mati 8726.95 Select 
+DVO 10:10 Davao Mati 01h50 Direct MNL 12:00 Manila Ninoy Aquino MNL 18:00 Manila Ninoy Aquino 02h00 Direct 
+DVO 20:00 Davao Mati 8920 Select Bravofly 8920 eDreams 9097 
+DVO 10:10 Davao Mati 01h50 Direct MNL 12:00 Manila Ninoy Aquino MNL 19:15 Manila Ninoy Aquino 01h50 Direct 
+DVO 21:05 Davao Mati 8920 Select Bravofly 8920 eDreams 9097 
+DVO 12:35 Davao Mati 01h55 Direct MNL 14:30 Manila Ninoy Aquino MNL 18:00 Manila Ninoy Aquino 02h00 Direct 
+DVO 20:00 Davao Mati 8920 Select Bravofly 8920 eDreams 9097 
+DVO 12:35 Davao Mati 01h55 Direct MNL 14:30 Manila Ninoy Aquino MNL 19:15 Manila Ninoy Aquino 01h50 Direct 
+DVO 21:05 Davao Mati 8920 Select Bravofly 8920 eDreams 9097 
+DVO 16:25 Davao Mati 02h00 Direct MNL 18:25 Manila Ninoy Aquino MNL 18:00 Manila Ninoy Aquino 02h00 Direct 
+DVO 20:00 Davao Mati 8920 Select Bravofly 8920 eDreams 9097 
+DVO 16:25 Davao Mati 02h00 Direct MNL 18:25 Manila Ninoy Aquino MNL 19:15 Manila Ninoy Aquino 01h50 Direct 
+DVO 21:05 Davao Mati 8920 Select Bravofly 8920 eDreams 9097 
+DVO 21:05 Davao Mati 02h00 Direct MNL 23:05 Manila Ninoy Aquino MNL 18:00 Manila Ninoy Aquino 02h00 Direct 
+DVO 20:00 Davao Mati 8920 Select Bravofly 8920 eDreams 9097 
+DVO 21:05 Davao Mati 02h00 Direct MNL 23:05 Manila Ninoy Aquino MNL 19:15 Manila Ninoy Aquino 01h50 Direct 
+DVO 21:05 Davao Mati 8920 Select Bravofly 8920 eDreams 9097

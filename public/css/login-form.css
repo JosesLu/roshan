@@ -1,0 +1,24 @@
+.login-form {
+width:25%;
+margin:0 auto;
+margin-top:50px;
+padding:10px;
+border-radius:10px;
+background:white
+}
+
+#register {
+display:none
+}
+
+.btn-space {
+margin-top:10px
+}
+
+.header-login {
+color:gray;
+text-transform:uppercase;
+border:none;
+text-decoration:none;
+font:700 15px "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif
+}
