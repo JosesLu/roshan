@@ -13,6 +13,18 @@
 	           $(".datepicker").datepicker();
 	           });
 	</script><!--/Date Picker -->
+	<script type="text/javascript">
+	$(document).ready(function() {
+		var fromD = sessionStorage.getItem('Current Location');
+		var toA = sessionStorage.getItem('Destination');
+		
+		document.getElementById('from1').value = fromD;	
+		document.getElementById('to1').value = toA;
+		document.getElementById('from2').value = fromD;
+		document.getElementById('to2').value = toA;
+
+	});
+	</script>
 	<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
 	<!-- Scripts -->
 
@@ -32,6 +44,10 @@
 
 <body onload="javascript:populate()">
 	<!-- HEADER -->
+<input type="text" id="from1"></input>
+<input type="text" id="to1"></input>
+<div id="from2"></div>
+<div id="to2"></div>
 
 
 	<div class="navbar-header page-scroll navbar-fixed-top navbar-custom">
@@ -39,6 +55,7 @@
 			<div class="navbar-header page-scroll">
 				<a class="navbar-brand" href="index.html">Roshan</a>
 			</div>
+
 
 
 			<ul class="nav navbar-nav navbar-right">
@@ -58,6 +75,7 @@
 					<h3 class="description" style="text-decoration: underline;">Choose your flight</h3>
 					<h5 class="description">The trip prices shown below does not include additional fees such as additional baggage.</h5>
 				</div>
+				
 			</div>
 
 			<div class="result-container">

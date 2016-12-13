@@ -3,9 +3,8 @@
 <head>
 	<title>Roshan</title>
 </head>
-
 <body>
-	 <!--Date Picker -->
+	<!--Date Picker -->
 	<link href="css/jquery-ui.css" rel="stylesheet">
 	<script src="js/jquery.min.js">
 	</script> 
@@ -14,181 +13,115 @@
 	<script src="js/index.js">
 	</script> 
 	<script>
-	       $(document).ready(function() {
-	       $(".datepicker").datepicker();
-	       });
+	          $(document).ready(function() {
+	          $(".datepicker").datepicker();
+	          });
 	</script>
-	<link href="img/favicon.png" rel="shortcut icon" type="image/png">
-	<!--/Date Picker -->
-	<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-	 <!-- Custom Fonts -->
-	 <!-- Custom Css -->
+	<link href="img/favicon.png" rel="shortcut icon" type="image/png"><!--/Date Picker -->
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css"><!-- Custom Fonts -->
+	<!-- Custom Css -->
 	<link href="css/roshan.css" rel="stylesheet" type="text/css">
-	<link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet"
-	type="text/css">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel=
-	"stylesheet" type="text/css">
-	<link href=
-	"https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic"
-	rel="stylesheet" type="text/css"><!-- HEADER -->
-
-
+	<link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css"><!-- HEADER -->
 	<div class="navbar-header page-scroll navbar-fixed-top navbar-custom">
 		<div class="container">
 			<div class="navbar-header page-scroll">
 				<a class="navbar-brand" href="index.html">Roshan</a>
 			</div>
-
-
 			<ul class="nav navbar-nav navbar-right">
 				<li>
 					<a class="header-login" href="login-register.html">Login</a>
 				</li>
 			</ul>
 		</div>
-	</div>
-	<!-- MAIN -->
-
-
+	</div><!-- MAIN -->
 	<header>
 		<div class="container">
-			<form id="main-container" name="main-container">
+			<form action="save" id="main-container" method="post" name="main-container">
 				<div class="form-group">
 					<div class="row">
 						<div class="col-md-2" style="float: left;">
-							<label class="radio-inline header-login"><input name="trip-type" type=
-							"radio" id="direct" checked="checked" onclick="indexRadio()">Direct Trip</label>
+							<label class="radio-inline header-login"><input checked="checked" id="direct" name="trip-type" onclick="indexRadio()" type="radio">Direct Trip</label>
 						</div>
-
 						<div class="col-md-2" style="float: left;">
-							<label class="radio-inline header-login"><input name="trip-type" type=
-							"radio" id="round-trip" onclick="indexRadio()">Round Trip</label>
-						</div>
-						<!--
-						<div class="col-md-2" style="float: left;">
-							<label class="radio-inline header-login"><input name="trip-type" type=
-							"radio" value="">Alternative Routes</label>
-						</div> 
-						 -->
-							
+							<label class="radio-inline header-login"><input id="round-trip" name="trip-type" onclick="indexRadio()" type="radio">Round Trip</label>
+						</div><!--
+                        <div class="col-md-2" style="float: left;">
+                            <label class="radio-inline header-login"><input name="trip-type" type=
+                            "radio" value="">Alternative Routes</label>
+                        </div> 
+                         -->
 					</div>
 				</div>
-
-
 				<div class="form-group">
 					<div class="row">
 						<div class="col-md-6">
-					<input name="fromTXB" id="fromTXB" class="form-control" placeholder="From" type="text">
+							<input class="form-control" id="fromTXB" name="fromTXB" placeholder="From" type="text">
 						</div>
-
-
 						<div class="col-md-6">
-							<input name="toTXB" id="toTXB" class="form-control" placeholder="To" type="text">
+							<input class="form-control" id="toTXB" name="toTXB" placeholder="To" type="text">
 						</div>
 					</div>
 				</div>
-
-
 				<div class="form-group">
 					<div class="row">
 						<div class="col-md-3">
-							<input class="form-control datepicker" placeholder="Depart date" type=
-							"text">
+							<input class="form-control datepicker" placeholder="Depart date" type="text">
 						</div>
-
-
 						<div class="col-md-3">
-							<input class="form-control datepicker" placeholder="Arrival date" type=
-							"text">
+							<input class="form-control datepicker" placeholder="Arrival date" type="text">
 						</div>
-
-
 						<div class="col-md-6">
-							<input class="form-control" placeholder="No. of Travellers" type=
-							"password">
+							<input class="form-control" placeholder="No. of Travellers" type="password">
 						</div>
 					</div>
 				</div>
-
-
 				<div class="form-group">
 					<div class="row">
-						
-							<div class="col-md-3" style="float: right;">
-								<a onclick="login()">
-								<input type = "button" class="btn btn-default" value="Search Flights and Hotels" id="login-button">
-								</a>
-							</div>
-						
+						<div class="col-md-3" style="float: right;">
+							<input class="btn btn-default" id="search-button" onclick="dothemagic()" type="submit" value="Search Flights and Hotels">
+						</div>
 					</div>
 				</div>
 			</form>
 		</div>
-	</header>
-	<!--FOOTER -->
-
-
+	</header><!--FOOTER -->
 	<footer class="text-center">
 		<div class="footer-above">
 			<div class="container">
 				<div class="row">
 					<div class="footer-col col-md-4">
 						<h3>Designed by</h3>
-
-
 						<h6>@heyimjoses</h6>
 					</div>
-
-
 					<div class="footer-col col-md-4">
 						<h3>Around the Web</h3>
-
-
 						<ul class="list-inline">
 							<li>
-								<a class="btn-social btn-outline" href="#"><i class=
-								"fa fa-fw fa-facebook"></i></a>
+								<a class="btn-social btn-outline" href="#"><i class="fa fa-fw fa-facebook"></i></a>
 							</li>
-
-
 							<li>
-								<a class="btn-social btn-outline" href="#"><i class=
-								"fa fa-fw fa-google-plus"></i></a>
+								<a class="btn-social btn-outline" href="#"><i class="fa fa-fw fa-google-plus"></i></a>
 							</li>
-
-
 							<li>
-								<a class="btn-social btn-outline" href="#"><i class=
-								"fa fa-fw fa-twitter"></i></a>
+								<a class="btn-social btn-outline" href="#"><i class="fa fa-fw fa-twitter"></i></a>
 							</li>
-
-
 							<li>
-								<a class="btn-social btn-outline" href="#"><i class=
-								"fa fa-fw fa-linkedin"></i></a>
+								<a class="btn-social btn-outline" href="#"><i class="fa fa-fw fa-linkedin"></i></a>
 							</li>
-
-
 							<li>
-								<a class="btn-social btn-outline" href="#"><i class=
-								"fa fa-fw fa-dribbble"></i></a>
+								<a class="btn-social btn-outline" href="#"><i class="fa fa-fw fa-dribbble"></i></a>
 							</li>
 						</ul>
 					</div>
-
-
 					<div class="footer-col col-md-4">
 						<h3>About Roshan</h3>
-
-
-						<h6>Roshan is a flight and Hotel search-engine designed to help
-						Travelers acquire the best possible deals on their vacation.</h6>
+						<h6>Roshan is a flight and Hotel search-engine designed to help Travelers acquire the best possible deals on their vacation.</h6>
 					</div>
 				</div>
 			</div>
 		</div>
-
-
 		<div class="footer-below">
 			<div class="container">
 				<div class="row">
