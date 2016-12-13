@@ -1,10 +1,11 @@
 var assert = require('assert');
 describe('Index page', function() {
 	it('Verify page title', function() {
+
 		browser.url('http://www.jetcost.com.ph/en/results_v2.php?sid=FPH4_584e1509a03f0');
 		//CBT TO MNL - http://www.jetcost.com.ph/en/results_v2.php?sid=FPH4_584e54ae32c2a
 		//DVO TO MNL - http://www.jetcost.com.ph/en/results_v2.php?sid=FPH4_584e1509a03f0
-		browser.newWindow('http://localhost:8008/options.html', '', 'width=40,height=20,resizable,scrollbars=yes,status=1');
+		browser.newWindow('http://localhost:8008/options.html', '', 'width=50,height=50,resizable,scrollbars=yes,status=1');
 		var from1 = $('div#from2');
 		var to1 = $('div#to2');
 		var from = from1.getText();
@@ -15,7 +16,6 @@ describe('Index page', function() {
 		loc = from.split('');
 		var des = [];
 		des = to.split('');
-		console.log("startshere" + loc);
 
 		var inputUser = $('ul.result__list.list-group');
 		var value = [];

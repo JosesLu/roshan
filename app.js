@@ -1,4 +1,5 @@
 var express = require('express');
+var exphbs  = require('express-handlebars');
 var path = require('path');
 var bodyParser = require('body-parser');
 var app = express();
@@ -9,29 +10,30 @@ app.use(bodyParser.urlencoded({
 
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static('public'));
-
+app.engine('handlebars', exphbs({defaultLayout: 'main'}));
+app.set('view engine', 'handlebars');
 
 
 app.get('/', function(req, res) {
-	res.render('index.html');
+	res.render('index');
 });
 app.get('/fly', function(req, res) {
 	res.render('flights.json');
 });
 app.get('/login-register', function(req, res) {
-	res.render('login-register.html');
+	res.render('login-register');
 });
 app.get('/flight-results', function(req, res) {
-	res.render('flight-results.html');
+	res.render('flight-results');
 });
 app.get('/hotel-results', function(req, res) {
-	res.render('hotel-results.html');
+	res.render('hotel-results');
 });
 app.get('/final-results', function(req, res) {
-	res.render('final-results.html');
+	res.render('final-results');
 });
 app.get('/round-trip-results', function(req, res) {
-	res.render('round-trip-results.html');
+	res.render('round-trip-results');
 });
 app.get('/save', function(req, res) {
 	res.render('save');
@@ -49,7 +51,7 @@ app.post('/save', function(req, res) {
 		console.log('Write successful!');
 
 	});
-	res.render('/flight-results.html');
+	res.render('flight-results');
 
 });
 
