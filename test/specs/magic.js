@@ -2,7 +2,7 @@ var assert = require('assert');
 describe('Index page', function() {
 	it('Verify page title', function() {
 
-		browser.url('http://www.jetcost.com.ph/en/results_v2.php?sid=FPH4_584e1509a03f0');
+		browser.url('http://www.jetcost.com.ph/en/results_v2.php?sid=FPH3_5850b4ae0d36b');
 		//CBT TO MNL - http://www.jetcost.com.ph/en/results_v2.php?sid=FPH4_584e54ae32c2a
 		//DVO TO MNL - http://www.jetcost.com.ph/en/results_v2.php?sid=FPH4_584e1509a03f0
 		browser.newWindow('http://localhost:8008/options.html', '', 'width=50,height=50,resizable,scrollbars=yes,status=1');

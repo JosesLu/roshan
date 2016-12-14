@@ -88,19 +88,19 @@ function populate() {
 		var price = "price";
 		for (var i = 1; i < 6; i++) {
 			dtime = dtime + i;
-			document.getElementById(dtime).innerHTML = data[i - 1].timeDepart;
+			document.getElementById(dtime).innerHTML = data[i - 1].timeDepart + "/" + data[i - 1].returnDepartTime;
 			dtime = "dTime";
 
 		}
 		for (var i = 1; i < 6; i++) {
 			atime = atime + i;
-			document.getElementById(atime).innerHTML = data[i - 1].timeArrive;
+			document.getElementById(atime).innerHTML = data[i - 1].timeArrive + "/" + data[i - 1].returnArriveTime;
 			atime = "aTime";
 
 		}
 		for (var i = 1; i < 6; i++) {
 			price = i + price;
-			document.getElementById(price).innerHTML = "P " + data[i - 1].price1 / 2;
+			document.getElementById(price).innerHTML = "P " + data[i - 1].price1;
 			price = "price";
 
 		}
