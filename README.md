@@ -5,13 +5,13 @@ Best thezuz
 ##Quick-Start
 1. Open 4 Gitbash windows
 2. Run these 4 commands in the following order:
-	1. ```$ selenium-standalone start ```
-	2. ```$ npm start ```
-	3. ```$ node_modules/.bin/nodemon --watch public/options.html node_modules/webdriverio/bin/wdio ```
-	4. ```$ node_modules/.bin/nodemon --watch public/flights.txt converter.js --i=public/flights.txt --o=public/flights.json --h ```
+	*```$ selenium-standalone start ```
+	*```$ npm start ```
+	*```$ node_modules/.bin/nodemon --watch public/options.html node_modules/webdriverio/bin/wdio ```
+	*```$ node_modules/.bin/nodemon --watch public/flights.txt converter.js --i=public/flights.txt --o=public/flights.json --h ```
 3. Manually input API site to crawl in 'test/magic.js'
 4. Open browser and navigate to ```localhost:8008```
-5. Input ** 3-LETTER CITY CODE **
+5. Input **3-LETTER CITY CODE**
 6. Click Search button.
 7. Refresh page after API browser closes.
 
