@@ -1,25 +1,52 @@
 var assert = require('assert');
-describe('Index page', function() {
-	it('Verify page title', function() {
+var URL;
+var fr1;
+var t1;
+var frm;
+var to;
 
-		browser.url('http://www.jetcost.com.ph/en/results_v2.php?sid=FPH3_5850b4ae0d36b');
-		//CBT TO MNL - http://www.jetcost.com.ph/en/results_v2.php?sid=FPH4_584e54ae32c2a
+describe('Should Have Page Title', function() {
+    it('Go To HomePage', function() {
+        browser.url('http://www.jetcost.com.ph/en/');
+        browser.newWindow('http://localhost:8008/options.html', '', 'width=50,height=50,resizable,scrollbars=yes,status=1');
+           fr1 = $('div#from2');
+           t1 = $('div#to2');
+           fro = fr1.getText();
+			 to = t1.getText();
+    	browser.close();
+
+            browser.pause(3000);
+            browser.setValue('[name="_from"]',fro); 
+            browser.pause(3000);
+			browser.keys('\uE004');
+            browser.setValue('[name="To"]', to); 
+             browser.pause(3000);
+			browser.keys('\uE004');
+           browser.pause(5000);        
+           browser.click('.form-search-btn--submit');
+          browser.pause(15000)
+         URL=browser.getUrl();
+console.log("RUN1ST");
+
+
+
+	//CBT TO MNL - http://www.jetcost.com.ph/en/results_v2.php?sid=FPH4_584e54ae32c2a
 		//DVO TO MNL - http://www.jetcost.com.ph/en/results_v2.php?sid=FPH4_584e1509a03f0
-		browser.newWindow('http://localhost:8008/options.html', '', 'width=50,height=50,resizable,scrollbars=yes,status=1');
-		var from1 = $('div#from2');
-		var to1 = $('div#to2');
-		var from = from1.getText();
-		var to = to1.getText();
-
-		browser.close();
 		var loc = [];
-		loc = from.split('');
+		loc = fro.split('');
 		var des = [];
 		des = to.split('');
 
 		var inputUser = $('ul.result__list.list-group');
-		var value = [];
+		var value;
+
 		value = inputUser.getText();
+
+
+
+			console.log(value);
+
+
 		for (x = 0; x < value.length; x++) {
 			value = value.replace("(+1)", "");
 		}
@@ -36,9 +63,11 @@ describe('Index page', function() {
 
 			if (value[x] == loc[0] && value[x + 1] == loc[1] && value[x + 2] == loc[2] && (value[x - 2] * 1 == value[x - 2] || value[x - 5] == 'l')) {
 				z[x] = "\n" + counter + " ";
+
 				counter++;
 			} else {
 				z[x] = value[x];
+				console.log('NEW LINE IN');
 			}
 
 
@@ -69,6 +98,24 @@ describe('Index page', function() {
 			console.log('Write successful!');
 
 		});
+console.log("RUN2ND");
 
+});
+});
+
+
+
+
+
+
+
+
+
+
+describe('Index page', function() {
+	it('Verify page title', function() {
+
+	
+	
 	});
 });
