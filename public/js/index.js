@@ -114,8 +114,9 @@ function dothemagic() {
 
 	var fromTXB = $("#fromTXB").val();
 	var toTXB = $("#toTXB").val();
-
-
+	fromTXB = fromTXB.substr(fromTXB.length - 3); 
+	toTXB = toTXB.substr(toTXB.length - 3); 
 	sessionStorage.setItem('Current Location', fromTXB);
 	sessionStorage.setItem('Destination', toTXB);
 }
+

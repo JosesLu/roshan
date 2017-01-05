@@ -257,6 +257,23 @@ footer .footer-below {
 padding:25px 0;
 background:#233140
 }
+.indexbtn {
+  -webkit-border-radius: 7;
+  -moz-border-radius: 7;
+  border-radius: 7px;
+  text-shadow: 0px 6px 8px #080708;
+  font-family: Georgia;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 11px;
+  background: #405aa6;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #B7BCC2;
+  text-decoration: none;
+}
 
 .btn-social {
 display:inline-block;

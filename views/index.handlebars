@@ -1,14 +1,132 @@
+ <script>
+  $( function() {
+    var availableTags = [
+		"Bacolod - BCD",
+		"Basco - BSO",
+		"Butuan - BXU",
+		"Cagayan de oro - CGY",
+		"Calbayog - CYP",
+		"Camiguin - CGM",
+		"Catarman - CRM",
+		"Cauayan - CYZ",
+		"Cebu - CEB",
+		"Coron - USU",
+		"Cotabato - CBO",
+		"Davao - DVO",
+		"Del Carmen - IAO",
+		"Dipolog - DPL",
+		"Dumaguete - DGT",
+		"Gen san - GES",
+		"Iloilo - ILO",
+		"Kalibo - KLO",
+		"Laoag - LAO",
+		"Legaspi - LGP",
+		"Luzon island - CRK",
+		"Malay - MPH",
+		"Manila - MNL",
+		"Masbate - MBT",
+		"Naga - WNP",
+		"Ozamis city - OZC",
+		"Pagadian - PAG",
+		"Puerto princesa - PPS",
+		"Roxas - RXS",
+		"San jose - SJI",
+		"Surigao - SUG",
+		"Tablas - TBH",
+		"Tacloban - TAC",
+		"Tagbilaran - TAG",
+		"Tandag - TDG",
+		"Tawi tawi - TWT",
+		"Tuguegarao - TUG",
+		"Virac - VRC",
+		"Zamboanga - ZAM",
+    ];
+    $( "#fromTXB").autocomplete({
+      source: availableTags,
+		change: function(event,ui)
+		{
+		if (ui.item==null)
+		    {
+		    $("#fromTXB").val('');
+		    $("#fromTXB").focus();
+		    }
+		}
+});
+  } );
 
+  $( function() {
+    var availableTags = [
+		"Bacolod - BCD",
+		"Basco - BSO",
+		"Butuan - BXU",
+		"Cagayan de oro - CGY",
+		"Calbayog - CYP",
+		"Camiguin - CGM",
+		"Catarman - CRM",
+		"Cauayan - CYZ",
+		"Cebu - CEB",
+		"Coron - USU",
+		"Cotabato - CBO",
+		"Davao - DVO",
+		"Del Carmen - IAO",
+		"Dipolog - DPL",
+		"Dumaguete - DGT",
+		"General Santos - GES",
+		"Iloilo - ILO",
+		"Kalibo - KLO",
+		"Laoag - LAO",
+		"Legaspi - LGP",
+		"Luzon island - CRK",
+		"Malay - MPH",
+		"Manila - MNL",
+		"Masbate - MBT",
+		"Naga - WNP",
+		"Ozamis city - OZC",
+		"Pagadian - PAG",
+		"Puerto princesa - PPS",
+		"Roxas - RXS",
+		"San jose - SJI",
+		"Surigao - SUG",
+		"Tablas - TBH",
+		"Tacloban - TAC",
+		"Tagbilaran - TAG",
+		"Tandag - TDG",
+		"Tawi tawi - TWT",
+		"Tuguegarao - TUG",
+		"Virac - VRC",
+		"Zamboanga - ZAM",
+    ];
+    $( "#toTXB").autocomplete({
+      source: availableTags,
+      change: function(event,ui)
+		{
+			var fromTXB = $("#fromTXB").val();
+			var toTXB = $("#toTXB").val();
+			$("#xx").val(fromTXB.substr(0,fromTXB.length - 6));
+			$("#yy").val(toTXB.substr(0,toTXB.length - 6));
+			$("#xxx").val(fromTXB.substr(fromTXB.length - 3));
+			$("#yyy").val(toTXB.substr(toTXB.length - 3));
+		if (ui.item==null)
+		    {
+		    $("#toTXB").val('');
+		    $("#toTXB").focus();
+		    }
+		}
+    });
+  } );
+  </script>
 	<<!-- MAIN -->
 	<header>
+
 		<div class="container">
 			<form action="save" id="main-container" method="post" name="main-container">
+				<input id="xx" name="xx" type="hidden"><input id="yy" name="yy" type="hidden"><input id="xxx" name="xxx" type="hidden"><input id="yyy" name="yyy" type="hidden">
 				<div class="form-group">
 					<div class="row">
 						<div class="col-md-2" style="float: left;">
-							<label class="radio-inline header-login"><input checked="checked" id="direct" name="trip-type" onclick="indexRadio()" type="radio">Direct Trip</label>
+							<label class="radio-inline header-login"><input checked="checked" id="direct" name="trip-type" onclick="indexRadio()" type="radio">One Way</label>
 						</div>
-						<div class="col-md-2" style="float: left;">
+						<div class="col-md-3" style="float: left;">
 							<label class="radio-inline header-login"><input id="round-trip" name="trip-type" onclick="indexRadio()" type="radio">Round Trip</label>
 						</div><!--
                         <div class="col-md-2" style="float: left;">
@@ -37,14 +155,14 @@
 							<input class="form-control datepicker" placeholder="Arrival date" type="text">
 						</div>
 						<div class="col-md-6">
-							<input class="form-control" placeholder="No. of Travellers" type="password">
+							<input class="form-control" placeholder="No. of Travellers" type="text">
 						</div>
 					</div>
 				</div>
 				<div class="form-group">
 					<div class="row">
-						<div class="col-md-3" style="float: right;">
-							<input class="btn btn-default" id="search-button" onclick="dothemagic()" type="submit" value="Search Flights and Hotels">
+						<div class="col-md-4" style="float: right;">
+								<input class="btn" id="search-button" onclick="dothemagic()" type="submit" value="Search Flights and Hotels">		
 						</div>
 					</div>
 				</div>
