@@ -9,11 +9,10 @@ Best thezuz
 	<br />```$ npm start ```
 	<br />```$ node_modules/.bin/nodemon --watch public/options.html node_modules/webdriverio/bin/wdio ```
 	<br />```$ node_modules/.bin/nodemon --watch public/flights.txt converter.js --i=public/flights.txt --o=public/flights.json --h ```
-3. Manually input API site to crawl in 'test/magic.js'
-4. Open browser and navigate to ```localhost:8008```
-5. Input **3-LETTER CITY CODE**
-6. Click Search button.
-7. Refresh page after API browser closes.
+3. Open browser and navigate to ```localhost:8008```
+4. Input Origin and Destination
+5. Click Search button.
+6. Refresh page after API browser closes.
 
 
 ##Task-List
@@ -25,7 +24,7 @@ Best thezuz
 - [x] Reroute to support handlebars directory
 - [x] Fix UI bugs
 - [X] Location and destination Autofill textbox
-- [ ] Remove login/reg (?)
+- [X] Remove login/reg (?)
 
 
 ![Thumbs Up](http://thestudioexec.com/wp-content/uploads/2015/04/dany.jpg)
