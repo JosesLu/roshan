@@ -16,7 +16,7 @@ Best thezuz
 
 
 ##Task-List
-- [ ] One Way Searching
+- [X] One Way Searching
 - [x] Automation
 - [ ] Hotels
 - [ ] Add more details to flight results
