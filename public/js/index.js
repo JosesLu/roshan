@@ -109,6 +109,55 @@ function populate() {
 
 
 }
+function populateOne() {
+	$.ajax({
+		url: 'http://localhost:8008/flights.json',
+		type: 'GET',
+		contentType: 'application/json; charset=utf-8',
+		dataType: 'JSON',
+
+		success: function(data) {
+			//console.log(data);
+			var length = data.length;
+			renderHTML(data, length);
+		}
+	});
+
+	function renderHTML(data, length) {
+		var counter = 0;
+		var counter1 = 0;
+		var htFrom = $("#fromTXB").val();
+		var htTo = $("#toTXB").val();
+
+
+
+
+		var dtime = "dTime";
+		var atime = "aTime";
+		var price = "price";
+		for (var i = 1; i < 6; i++) {
+			dtime = dtime + i;
+			document.getElementById(dtime).innerHTML = data[i - 1].timeDepart;
+			dtime = "dTime";
+
+		}
+		for (var i = 1; i < 6; i++) {
+			atime = atime + i;
+			document.getElementById(atime).innerHTML = data[i - 1].timeArrive;
+			atime = "aTime";
+
+		}
+		for (var i = 1; i < 6; i++) {
+			price = i + price;
+			document.getElementById(price).innerHTML = "P " + data[i - 1].price1;
+			price = "price";
+
+		}
+
+	}
+
+
+}
 
 function dothemagic() {
 

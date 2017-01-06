@@ -1,10 +1,26 @@
  <script>
+ $( function() {
+   $("#direct") // select the radio by its id
+    .change(function(){ // bind a function to the change event
+        if( $(this).is(":checked") ){ // check if the radio is checked
+            $("#triptype").val("0");
+        }
+    });
+$("#round-trip") // select the radio by its id
+    .change(function(){ // bind a function to the change event
+        if( $(this).is(":checked") ){ // check if the radio is checked
+            $("#triptype").val("1");
+        }
+    });
+  } );
+
+
   $( function() {
     var availableTags = [
 		"Bacolod - BCD",
 		"Basco - BSO",
 		"Butuan - BXU",
-		"Cagayan de oro - CGY",
+		"Cagayan De Oro - CGY",
 		"Calbayog - CYP",
 		"Camiguin - CGM",
 		"Catarman - CRM",
@@ -16,27 +32,27 @@
 		"Del Carmen - IAO",
 		"Dipolog - DPL",
 		"Dumaguete - DGT",
-		"Gen san - GES",
+		"General Santos - GES",
 		"Iloilo - ILO",
 		"Kalibo - KLO",
 		"Laoag - LAO",
 		"Legaspi - LGP",
-		"Luzon island - CRK",
+		"Luzon Island - CRK",
 		"Malay - MPH",
 		"Manila - MNL",
 		"Masbate - MBT",
 		"Naga - WNP",
-		"Ozamis city - OZC",
+		"Ozamis City - OZC",
 		"Pagadian - PAG",
-		"Puerto princesa - PPS",
+		"Puerto Princesa - PPS",
 		"Roxas - RXS",
-		"San jose - SJI",
+		"San Jose - SJI",
 		"Surigao - SUG",
 		"Tablas - TBH",
 		"Tacloban - TAC",
 		"Tagbilaran - TAG",
 		"Tandag - TDG",
-		"Tawi tawi - TWT",
+		"Tawi Tawi - TWT",
 		"Tuguegarao - TUG",
 		"Virac - VRC",
 		"Zamboanga - ZAM",
@@ -59,7 +75,7 @@
 		"Bacolod - BCD",
 		"Basco - BSO",
 		"Butuan - BXU",
-		"Cagayan de oro - CGY",
+		"Cagayan De Oro - CGY",
 		"Calbayog - CYP",
 		"Camiguin - CGM",
 		"Catarman - CRM",
@@ -76,22 +92,22 @@
 		"Kalibo - KLO",
 		"Laoag - LAO",
 		"Legaspi - LGP",
-		"Luzon island - CRK",
+		"Luzon Island - CRK",
 		"Malay - MPH",
 		"Manila - MNL",
 		"Masbate - MBT",
 		"Naga - WNP",
-		"Ozamis city - OZC",
+		"Ozamis City - OZC",
 		"Pagadian - PAG",
-		"Puerto princesa - PPS",
+		"Puerto Princesa - PPS",
 		"Roxas - RXS",
-		"San jose - SJI",
+		"San Jose - SJI",
 		"Surigao - SUG",
 		"Tablas - TBH",
 		"Tacloban - TAC",
 		"Tagbilaran - TAG",
 		"Tandag - TDG",
-		"Tawi tawi - TWT",
+		"Tawi Tawi - TWT",
 		"Tuguegarao - TUG",
 		"Virac - VRC",
 		"Zamboanga - ZAM",
@@ -114,20 +130,22 @@
 		}
     });
   } );
+
+
   </script>
 	<<!-- MAIN -->
 	<header>
 
 		<div class="container">
 			<form action="save" id="main-container" method="post" name="main-container">
-				<input id="xx" name="xx" type="hidden"><input id="yy" name="yy" type="hidden"><input id="xxx" name="xxx" type="hidden"><input id="yyy" name="yyy" type="hidden">
+				<input id="xx" name="xx" type="hidden" ><input id="yy" name="yy" type="hidden"><input id="xxx" name="xxx" type="hidden"><input id="yyy" name="yyy" type="hidden"><input id="triptype" name="triptype" type="hidden" value="0">
 				<div class="form-group">
 					<div class="row">
 						<div class="col-md-2" style="float: left;">
-							<label class="radio-inline header-login"><input checked="checked" id="direct" name="trip-type" onclick="indexRadio()" type="radio">One Way</label>
+							<label class="radio-inline header-login"><input name="triptypename" checked="checked" id="direct"  type="radio">One Way</label>
 						</div>
 						<div class="col-md-3" style="float: left;">
-							<label class="radio-inline header-login"><input id="round-trip" name="trip-type" onclick="indexRadio()" type="radio">Round Trip</label>
+							<label class="radio-inline header-login"><input name="triptypename" id="round-trip"  type="radio">Round Trip</label>
 						</div><!--
                         <div class="col-md-2" style="float: left;">
                             <label class="radio-inline header-login"><input name="trip-type" type=

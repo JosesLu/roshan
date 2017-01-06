@@ -39,23 +39,28 @@ app.get('/save', function(req, res) {
 	res.render('save');
 });
 app.post('/save', function(req, res) {
-
 	var counter = 0;
 	var currentLocation = req.body.xx;
 	var destination = req.body.yy;
 	var from3 = req.body.xxx;
 	var to3 = req.body.yyy;
+	var tripType=req.body.triptype;
 	var options;
 	options = "<div id='from2'>" + currentLocation + "</div>" + "<div id='to2'>" + destination + "</div>";//Writes HTML file containing user input
-	options = options + "<div id='from3'>" + from3 + "</div>" + "<div id='to3'>" + to3 + "</div>";
+	options = options + "<div id='from3'>" + from3 + "</div>" + "<div id='to3'>" + to3 + "</div>" +  "<div id='typeofTrip'>" + tripType + "</div>" ;
 	fs = require('fs');
 	fs.writeFile('public/options.html', options, function(err) {
 		if (err) return console.log(err);
 		console.log('Write successful!');
-
 	});
-	res.render('flight-results');
-
+	if(tripType == "0")
+	{
+		res.render('flight-results');
+	}
+	else
+	{
+		res.render('round-trip-results');
+	}
 });
 
 app.listen(8008);
