@@ -17,9 +17,6 @@ app.set('view engine', 'handlebars');
 app.get('/', function(req, res) {
 	res.render('index');
 });
-app.get('/fly', function(req, res) {
-	res.render('flights.json');
-});
 app.get('/login-register', function(req, res) {
 	res.render('login-register');
 });
