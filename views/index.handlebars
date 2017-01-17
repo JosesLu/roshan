@@ -14,7 +14,16 @@ $("#round-trip") // select the radio by its id
     });
   } );
 
+$( function() {
 
+  $("#depDate").datepicker().on("change", function() {
+     $('#dateDepart').val(($('#depDate').val()));
+  });
+   $("#arDate").datepicker().on("change", function() {
+     $('#dateArrive').val(($('#arDate').val()));
+  });
+
+});
   $( function() {
     var availableTags = [
 		"Bacolod - BCD",
@@ -139,6 +148,8 @@ $("#round-trip") // select the radio by its id
 		<div class="container">
 			<form action="save" id="main-container" method="post" name="main-container">
 				<input id="xx" name="xx" type="hidden" ><input id="yy" name="yy" type="hidden"><input id="xxx" name="xxx" type="hidden"><input id="yyy" name="yyy" type="hidden"><input id="triptype" name="triptype" type="hidden" value="0">
+				<input id="dateDepart" name="dateDepart" type="hidden">
+				<input id="dateArrive" name="dateArrive" type="hidden">
 				<div class="form-group">
 					<div class="row">
 						<div class="col-md-2" style="float: left;">
@@ -167,10 +178,10 @@ $("#round-trip") // select the radio by its id
 				<div class="form-group">
 					<div class="row">
 						<div class="col-md-3">
-							<input class="form-control datepicker" placeholder="Depart date" type="text">
+							<input id="depDate" class="form-control datepicker" placeholder="Depart date" type="text">
 						</div>
 						<div class="col-md-3">
-							<input class="form-control datepicker" placeholder="Arrival date" type="text">
+							<input id="arDate" class="form-control datepicker" placeholder="Arrival date" type="text">
 						</div>
 						<div class="col-md-6">
 							<input class="form-control" placeholder="No. of Travellers" type="text">
@@ -180,7 +191,7 @@ $("#round-trip") // select the radio by its id
 				<div class="form-group">
 					<div class="row">
 						<div class="col-md-4" style="float: right;">
-								<input class="btn" id="search-button" onclick="dothemagic()" type="submit" value="Search Flights and Hotels">		
+								<input class="btn" name="searchme" id="search-button" onclick="dothemagic()" type="submit" value="Search Flights and Hotels">		
 						</div>
 					</div>
 				</div>

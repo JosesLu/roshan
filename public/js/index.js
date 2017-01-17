@@ -19,48 +19,13 @@ function login() {
 		var htTo = $("#toTXB").val();
 
 		window.location = "/flight-results.html";
-		/*
-				for(i = 0; i < length ; i++){
-					var from = data[i].username;
-					var to = data[i].password;
-
-					if(htUsername == '' || htPassword == '')
-					{
-						loginemptyFieldsError();
-						counter = 1;
-					}
-
-					if(username == htUsername && password == htPassword)
-					{
-						document.getElementById("modal-text").textContent = "Login Successful";
-						$('#modal').modal('show');
-						currentUser = htUsername;
-						$('#logEmail').val('');
-						$('#logPass').val('');
-						sessionStorage.setItem('achoc', 'nein');
-						sessionStorage.setItem('user', currentUser);
-						sessionStorage.removeItem('registrationError');
-						window.location = '/dashboard';
-						counter1=1;
-
-					}
-					if (htUsername != '' && htPassword != '' && counter == 0 && counter1 == 0) {
-						window.alert('Username or Password incorrect.');
-						$("#logEmail").val('');
-						$("#logPass").val('');
-					}
-					
-				} */
+	
 
 	}
-	/*
-	jQuery.get('flights.txt', function(data) {
-	console.log(data);
-	
-	});*/
+
 }
 
-function populate() {
+function populate() { //Round-Trip
 	$.ajax({
 		url: 'http://localhost:8008/flights.json',
 		type: 'GET',
@@ -109,7 +74,51 @@ function populate() {
 
 
 }
-function populateOne() {
+function populateOne() { //One-way flights
+	$.ajax({
+		url: 'http://localhost:8008/oneway.txt',
+		type: 'GET',
+		contentType: 'application/text; charset=utf-8',
+		dataType: 'text',
+
+		success: function(data) {
+			//console.log(data);
+			var length = data.length;
+			renderIMG(data, length);
+		}
+	});
+	function renderIMG(data, length) {
+		
+		data = data.replace(/,/g, "");
+		var img = [];
+		var counter = 0;
+		for(var i=0;i<5;i++)
+		{
+			img[i] = data[counter] + data[counter+1];
+			counter=counter+2;
+		}
+		// for(var i=0;i<img.length;i++)
+		// console.log(img[i] + " ");
+		var logo = "logo";
+		for(var i=0;i<6;i++)
+		{
+			logo = logo + i;
+			if(img[i]=='Z2'){
+				document.getElementById(logo).src = "img/airline%20logo/air-asia.png";
+				logo = "logo";
+			}
+			if(img[i]=='PR'){
+				document.getElementById(logo).src = "img/airline%20logo/philippine-airlines.png";
+				logo = "logo";
+			}
+			if(img[i]=='5J'){
+				document.getElementById(logo).src = "img/airline%20logo/cebu-pacific.png";
+				logo = "logo";
+			}
+			
+		}
+	}
+
 	$.ajax({
 		url: 'http://localhost:8008/flights.json',
 		type: 'GET',
@@ -129,14 +138,11 @@ function populateOne() {
 		var htFrom = $("#fromTXB").val();
 		var htTo = $("#toTXB").val();
 
-
-
-
 		var dtime = "dTime";
 		var atime = "aTime";
 		var price = "price";
 		for (var i = 1; i < 6; i++) {
-			dtime = dtime + i;
+			dtime = dtime + i; //Append current iteration to match dtime ID
 			document.getElementById(dtime).innerHTML = data[i - 1].timeDepart;
 			dtime = "dTime";
 
@@ -155,6 +161,8 @@ function populateOne() {
 		}
 
 	}
+
+
 
 
 }
