@@ -66,5 +66,5 @@ app.post('/save', function(req, res) {
 	}
 });
 
-app.listen(8008);
+app.listen(process.env.PORT || 8008);
 console.log("Roshan respawned at port 8008!");
