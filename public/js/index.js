@@ -1,6 +1,6 @@
 function login() {
 	$.ajax({
-		url: 'http://localhost:8008/flights.json/',
+		url: 'https://localhost:8008/flights.json/',
 		type: 'GET',
 		contentType: 'application/json; charset=utf-8',
 		dataType: 'JSON',
@@ -27,7 +27,7 @@ function login() {
 
 function populate() { //Round-Trip
 	$.ajax({
-		url: 'http://localhost:8008/flights.json/',
+		url: 'https://localhost:8008/flights.json/',
 		type: 'GET',
 		contentType: 'application/json; charset=utf-8',
 		dataType: 'JSON',
@@ -76,7 +76,7 @@ function populate() { //Round-Trip
 }
 function populateOne() { //One-way flights
 	$.ajax({
-		url: 'http://localhost:8008/oneway.txt/',
+		url: 'https://localhost:8008/oneway.txt/',
 		type: 'GET',
 		contentType: 'application/text; charset=utf-8',
 		dataType: 'text',
@@ -120,7 +120,7 @@ function populateOne() { //One-way flights
 	}
 
 	$.ajax({
-		url: 'http://localhost:8008/flights.json/',
+		url: 'https://localhost:8008/flights.json/',
 		type: 'GET',
 		contentType: 'application/json; charset=utf-8',
 		dataType: 'JSON',
