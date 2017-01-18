@@ -1,5 +1,5 @@
 var assert = require('assert');
-var URL, htmlFrom, htmlTo, htmlDepDate, htmlArDate;
+var URL, htmlFrom, htmlTo, htmlDepDate, htmlArDate, htmlPassengers;
 describe('Where the magic happens', function() {
 	it('Crawl for results', function() {
 		var temp = 'http://www.jetcost.com.ph/en/flights/philippines/from/to-from/?date1=insDate1&date2=insDate2';
@@ -11,6 +11,7 @@ describe('Where the magic happens', function() {
 		htmlTripType = $('div#typeofTrip').getText();
 		htmlDepDate = $('div#dateD').getText();
 		htmlArDate = $('div#dateA').getText();
+		htmlPassengers = $('div#numPass').getText();
 		browser.close();
 		htmlDepDate = htmlDepDate.replace("/","%2F")
 		htmlArDate = htmlArDate.replace("/","%2F")
@@ -21,11 +22,19 @@ describe('Where the magic happens', function() {
 		browser.url(temp);
 		if (htmlTripType == "1") {
 			browser.setValue('[name="_from"]', fullFrom); //Sets value of "From" txtbox to whatever user input
-			browser.pause(3000);
+			browser.pause(1000);
 			browser.keys('\uE004');
 			browser.setValue('[name="To"]', fullTo); //Sets value of "To" txtbox to whatever user input
-			browser.pause(3000);
+			browser.pause(1000);
 			browser.keys('\uE004'); //Equivalent to pressing tab key
+			
+			browser.click('//*[@id="main-search-flight"]/section/div[3]/button');
+			for(var i=1;i<htmlPassengers;i++)
+			{
+				browser.click('//*[@id="main-search-flight"]/section/div[3]/div[2]/div[1]/div[2]/div/span[2]/button');
+			}
+			browser.click('//*[@id="main-search-flight"]/section/div[3]/button');
+
 			browser.click('.form-search-btn--submit'); //Click submit button
 			URL = browser.getUrl(); //Gets URL of whatever the fuck airline site gave
 			//Where the magic happens
@@ -92,11 +101,19 @@ describe('Where the magic happens', function() {
 		if (htmlTripType == "0") {
 			browser.click("//label[contains(., 'One-way')]");
 			browser.setValue('[name="_from"]', fullFrom); //Sets value of "From" txtbox to whatever user input
-			browser.pause(3000);
+			browser.pause(1000);
 			browser.keys('\uE004');
 			browser.setValue('[name="To"]', fullTo); //Sets value of "To" txtbox to whatever user input
-			browser.pause(3000);
+			browser.pause(1000);
 			browser.keys('\uE004'); //Equivalent to pressing tab key
+
+			browser.click('//*[@id="main-search-flight"]/section/div[3]/button');
+			for(var i=1;i<htmlPassengers;i++)
+			{
+				browser.click('//*[@id="main-search-flight"]/section/div[3]/div[2]/div[1]/div[2]/div/span[2]/button');
+			}
+			browser.click('//*[@id="main-search-flight"]/section/div[3]/button');
+
 			browser.click('.form-search-btn--submit'); //Click submit button
 			URL = browser.getUrl(); //Gets URL of whatever the fuck airline site gave
 			//Where the magic happens

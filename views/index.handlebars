@@ -22,49 +22,20 @@ $( function() {
    $("#arDate").datepicker().on("change", function() {
      $('#dateArrive').val(($('#arDate').val()));
   });
+   $("#numOfPass").on("input", function() {
+     $('#numberOfPassengers').val(($('#numOfPass').val()));
+  });
 
 });
   $( function() {
     var availableTags = [
-		"Bacolod - BCD",
-		"Basco - BSO",
-		"Butuan - BXU",
-		"Cagayan De Oro - CGY",
-		"Calbayog - CYP",
-		"Camiguin - CGM",
-		"Catarman - CRM",
-		"Cauayan - CYZ",
-		"Cebu - CEB",
-		"Coron - USU",
-		"Cotabato - CBO",
-		"Davao - DVO",
-		"Del Carmen - IAO",
-		"Dipolog - DPL",
-		"Dumaguete - DGT",
-		"General Santos - GES",
-		"Iloilo - ILO",
-		"Kalibo - KLO",
-		"Laoag - LAO",
-		"Legaspi - LGP",
-		"Luzon Island - CRK",
-		"Malay - MPH",
-		"Manila - MNL",
-		"Masbate - MBT",
-		"Naga - WNP",
-		"Ozamis City - OZC",
-		"Pagadian - PAG",
-		"Puerto Princesa - PPS",
-		"Roxas - RXS",
-		"San Jose - SJI",
-		"Surigao - SUG",
-		"Tablas - TBH",
-		"Tacloban - TAC",
-		"Tagbilaran - TAG",
-		"Tandag - TDG",
-		"Tawi Tawi - TWT",
-		"Tuguegarao - TUG",
-		"Virac - VRC",
-		"Zamboanga - ZAM",
+		"Bacolod - BCD","Basco - BSO","Butuan - BXU","Cagayan De Oro - CGY","Calbayog - CYP",
+		"Camiguin - CGM","Catarman - CRM","Cauayan - CYZ","Cebu - CEB","Coron - USU","Cotabato - CBO",
+		"Davao - DVO","Del Carmen - IAO","Dipolog - DPL","Dumaguete - DGT","General Santos - GES","Iloilo - ILO",
+		"Kalibo - KLO","Laoag - LAO","Legaspi - LGP","Luzon Island - CRK","Malay - MPH","Manila - MNL",
+		"Masbate - MBT","Naga - WNP","Ozamis City - OZC","Pagadian - PAG","Puerto Princesa - PPS","Roxas - RXS",
+		"San Jose - SJI","Surigao - SUG","Tablas - TBH","Tacloban - TAC","Tagbilaran - TAG","Tandag - TDG",
+		"Tawi Tawi - TWT","Tuguegarao - TUG","Virac - VRC","Zamboanga - ZAM",
     ];
     $( "#fromTXB").autocomplete({
       source: availableTags,
@@ -81,45 +52,13 @@ $( function() {
 
   $( function() {
     var availableTags = [
-		"Bacolod - BCD",
-		"Basco - BSO",
-		"Butuan - BXU",
-		"Cagayan De Oro - CGY",
-		"Calbayog - CYP",
-		"Camiguin - CGM",
-		"Catarman - CRM",
-		"Cauayan - CYZ",
-		"Cebu - CEB",
-		"Coron - USU",
-		"Cotabato - CBO",
-		"Davao - DVO",
-		"Del Carmen - IAO",
-		"Dipolog - DPL",
-		"Dumaguete - DGT",
-		"General Santos - GES",
-		"Iloilo - ILO",
-		"Kalibo - KLO",
-		"Laoag - LAO",
-		"Legaspi - LGP",
-		"Luzon Island - CRK",
-		"Malay - MPH",
-		"Manila - MNL",
-		"Masbate - MBT",
-		"Naga - WNP",
-		"Ozamis City - OZC",
-		"Pagadian - PAG",
-		"Puerto Princesa - PPS",
-		"Roxas - RXS",
-		"San Jose - SJI",
-		"Surigao - SUG",
-		"Tablas - TBH",
-		"Tacloban - TAC",
-		"Tagbilaran - TAG",
-		"Tandag - TDG",
-		"Tawi Tawi - TWT",
-		"Tuguegarao - TUG",
-		"Virac - VRC",
-		"Zamboanga - ZAM",
+		"Bacolod - BCD","Basco - BSO","Butuan - BXU","Cagayan De Oro - CGY","Calbayog - CYP",
+		"Camiguin - CGM","Catarman - CRM","Cauayan - CYZ","Cebu - CEB","Coron - USU","Cotabato - CBO",
+		"Davao - DVO","Del Carmen - IAO","Dipolog - DPL","Dumaguete - DGT","General Santos - GES","Iloilo - ILO",
+		"Kalibo - KLO","Laoag - LAO","Legaspi - LGP","Luzon Island - CRK","Malay - MPH","Manila - MNL",
+		"Masbate - MBT","Naga - WNP","Ozamis City - OZC","Pagadian - PAG","Puerto Princesa - PPS","Roxas - RXS",
+		"San Jose - SJI","Surigao - SUG","Tablas - TBH","Tacloban - TAC","Tagbilaran - TAG","Tandag - TDG",
+		"Tawi Tawi - TWT","Tuguegarao - TUG","Virac - VRC","Zamboanga - ZAM",
     ];
     $( "#toTXB").autocomplete({
       source: availableTags,
@@ -147,9 +86,12 @@ $( function() {
 
 		<div class="container">
 			<form action="save" id="main-container" method="post" name="main-container">
-				<input id="xx" name="xx" type="hidden" ><input id="yy" name="yy" type="hidden"><input id="xxx" name="xxx" type="hidden"><input id="yyy" name="yyy" type="hidden"><input id="triptype" name="triptype" type="hidden" value="0">
+				<input id="xx" name="xx" type="hidden" ><input id="yy" name="yy" type="hidden">
+				<input id="xxx" name="xxx" type="hidden"><input id="yyy" name="yyy" type="hidden">
+				<input id="triptype" name="triptype" type="hidden" value="0">
 				<input id="dateDepart" name="dateDepart" type="hidden">
 				<input id="dateArrive" name="dateArrive" type="hidden">
+				<input id="numberOfPassengers" name="numberOfPassengers" type="hidden">
 				<div class="form-group">
 					<div class="row">
 						<div class="col-md-2" style="float: left;">
@@ -184,7 +126,7 @@ $( function() {
 							<input id="arDate" class="form-control datepicker" placeholder="Arrival date" type="text">
 						</div>
 						<div class="col-md-6">
-							<input class="form-control" placeholder="No. of Travellers" type="text">
+							<input class="form-control" placeholder="No. of Travellers" type="text" id="numOfPass">
 						</div>
 					</div>
 				</div>

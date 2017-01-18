@@ -2,3 +2,7 @@ node_modules/
 npm.debug.log
 node_modules/express
 errorShots/
+public/flights.json
+public/flights.txt
+public/oneway.txt
+public/options.txt

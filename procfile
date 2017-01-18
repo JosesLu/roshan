@@ -1,3 +1,0 @@
-web: selenium-standalone start
-web: node_modules/.bin/nodemon --watch public/options.html node_modules/webdriverio/bin/wdio
-web: node_modules/.bin/nodemon --watch public/flights.txt converter.js --i=public/flights.txt --o=public/flights.json --h

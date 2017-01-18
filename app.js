@@ -44,10 +44,11 @@ app.post('/save', function(req, res) {
 	var tripType=req.body.triptype;
 	var dateDep = req.body.dateDepart;
 	var dateAr = req.body.dateArrive;
+	var passengerNum = req.body.numberOfPassengers;
 	var options;
 	options = "<div id='from2'>" + currentLocation + "</div>" + "<div id='to2'>" + destination + "</div>";//Writes HTML file containing user input
 	options = options + "<div id='from3'>" + from3 + "</div>" + "<div id='to3'>" + to3 + "</div>" +  "<div id='typeofTrip'>" + tripType + "</div>" ;
-	options = options + "<div id='dateD'>"+ dateDep + "</div>" + "<div id='dateA'>" + dateAr + "</div>";
+	options = options + "<div id='dateD'>"+ dateDep + "</div>" + "<div id='dateA'>" + dateAr + "</div>" + "<div id='numPass'>" + passengerNum + "</div>";
 	fs = require('fs');
 	fs.writeFile('public/options.html', options, function(err) {
 		if (err) return console.log(err);
