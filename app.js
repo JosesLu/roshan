@@ -32,9 +32,10 @@ app.get('/final-results', function(req, res) {
 app.get('/round-trip-results', function(req, res) {
 	res.render('round-trip-results');
 });
-app.get('/save', function(req, res) {
-	res.render('save');
+app.get('/loading', function(req, res) {
+	res.render('loading');
 });
+
 app.post('/save', function(req, res) {
 	var counter = 0;
 	var currentLocation = req.body.xx;
@@ -56,7 +57,7 @@ app.post('/save', function(req, res) {
 	});
 	if(tripType == "0")
 	{
-		res.render('flight-results');
+		res.render('loading');
 	}
 	else
 	{

@@ -8,6 +8,9 @@ height:auto
 	text-align: left;
 
 }
+#controller {
+	width:1%;
+}
 .description-cards {
 	width:90%;
 
@@ -27,6 +30,9 @@ transition-duration:.3s;
 -webkit-transition-property:box-shadow;
 transition-property:box-shadow;
 
+}
+.btn-default {
+	float: right;
 }
 .result-container {
 width:75%;

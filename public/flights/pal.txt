@@ -1,0 +1,1 @@
+id price1 timeDepart	timeArrive fDuration1 fDuration2 origin destination 

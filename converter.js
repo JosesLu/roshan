@@ -52,7 +52,7 @@ function writeFile(data, path){
 	jsonOut.write(JSON.stringify(data));
 	jsonOut.on('error', function(err) { console.log(err); });
 	jsonOut.end();
-	console.log("done!");
+	//console.log("");
 }
 
 function setHeaderRowAsKeys(line){

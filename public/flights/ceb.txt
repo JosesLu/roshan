@@ -1,0 +1,4 @@
+id flightID timeDepart timeArrive price1 price2 price3 
+0  599 1150  1250      3472.28  3853.08 
+1  593 1315  1420      3113.88  3494.68 
+2  597 1520  1625      3113.88  3494.68  3696.2

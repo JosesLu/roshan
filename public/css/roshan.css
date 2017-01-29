@@ -197,7 +197,10 @@ text-align:center;
 width:100%;
 display:block;
 height:auto;
-background:url(../img/background.jpg)
+background:url(../img/background.jpg);
+background-repeat:no-repeat;
+background-color: #001515;
+
 }
 
 header .container {

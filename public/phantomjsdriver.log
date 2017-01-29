@@ -1,0 +1,902 @@
+[INFO  - 2017-01-21T01:14:47.164Z] GhostDriver - Main - running on port 13214
+[INFO  - 2017-01-21T01:14:48.412Z] Session [00830e70-df77-11e6-9db8-7b10662bddcf] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-01-21T01:14:48.412Z] Session [00830e70-df77-11e6-9db8-7b10662bddcf] - page.customHeaders:  - {}
+[INFO  - 2017-01-21T01:14:48.412Z] Session [00830e70-df77-11e6-9db8-7b10662bddcf] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-01-21T01:14:48.415Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 00830e70-df77-11e6-9db8-7b10662bddcf
+[INFO  - 2017-01-21T01:19:47.162Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-01-21T01:24:47.162Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-01-21T01:29:47.173Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-01-21T01:34:47.172Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-01-21T01:39:47.183Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-01-21T01:44:47.200Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-01-21T01:46:48.814Z] ShutdownReqHand - _handle - About to shutdown
+ts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-01-21T01:16:05.460Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 2e6f7ee0-df77-11e6-a8a8-dbd5d6242042
+[ERROR - 2017-01-21T01:18:22.269Z] Session [2e6f7ee0-df77-11e6-a8a8-dbd5d6242042] - page.onError - msg: ReferenceError: Can't find variable: heap
+[ERROR - 2017-01-21T01:18:22.269Z] Session [2e6f7ee0-df77-11e6-a8a8-dbd5d6242042] - page.onError - stack:
+  global code (http://www.airasia.com/ph/en/home.page?cid=1:1)
+  insertBefore (:0)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:81)
+  Wh (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:83)
+  Cf (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:37)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:130)
+  eg (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:140)
+  ng (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:45)
+  push (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:146)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:146)
+  Pf (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:40)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:147)
+[ERROR - 2017-01-21T01:18:22.276Z] Session [2e6f7ee0-df77-11e6-a8a8-dbd5d6242042] - page.onError - msg: ReferenceError: Can't find variable: heap
+[ERROR - 2017-01-21T01:18:22.276Z] Session [2e6f7ee0-df77-11e6-a8a8-dbd5d6242042] - page.onError - stack:
+  global code (http://www.airasia.com/ph/en/home.page?cid=1:1)
+  insertBefore (:0)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:81)
+  Wh (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:83)
+  Cf (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:37)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:130)
+  eg (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:140)
+  ng (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:45)
+  push (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:146)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:146)
+  Pf (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:40)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:147)
+[ERROR - 2017-01-21T01:18:37.324Z] Session [2e6f7ee0-df77-11e6-a8a8-dbd5d6242042] - page.onError - msg: ReferenceError: Can't find variable: $
+[ERROR - 2017-01-21T01:18:37.324Z] Session [2e6f7ee0-df77-11e6-a8a8-dbd5d6242042] - page.onError - stack:
+  storeLowFare (https://cdn.optimizely.com/js/2453920098.js:2809)
+  (anonymous function) (https://cdn.optimizely.com/js/2453920098.js:2851)
+[ERROR - 2017-01-21T01:19:09.798Z] Session [2e6f7ee0-df77-11e6-a8a8-dbd5d6242042] - page.onError - msg: ReferenceError: Can't find variable: heap
+[ERROR - 2017-01-21T01:19:09.798Z] Session [2e6f7ee0-df77-11e6-a8a8-dbd5d6242042] - page.onError - stack:
+  global code (http://www.airasia.com/ph/en/home.page?cid=1:1)
+  insertBefore (:0)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:81)
+  Wh (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:83)
+  Cf (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:37)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:130)
+  eg (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:140)
+  ng (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:45)
+  push (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:146)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:146)
+  Pf (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:40)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:147)
+[ERROR - 2017-01-21T01:19:09.805Z] Session [2e6f7ee0-df77-11e6-a8a8-dbd5d6242042] - page.onError - msg: ReferenceError: Can't find variable: heap
+[ERROR - 2017-01-21T01:19:09.805Z] Session [2e6f7ee0-df77-11e6-a8a8-dbd5d6242042] - page.onError - stack:
+  global code (http://www.airasia.com/ph/en/home.page?cid=1:1)
+  insertBefore (:0)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:81)
+  Wh (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:83)
+  Cf (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:37)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:130)
+  eg (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:140)
+  ng (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:45)
+  push (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:146)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:146)
+  Pf (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:40)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:147)
+[ERROR - 2017-01-21T01:19:15.330Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1484961555279
+[ERROR - 2017-01-21T01:19:39.931Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1484961579902
+[INFO  - 2017-01-21T01:19:46.065Z] ShutdownReqHand - _handle - About to shutdown
+[INFO  - 2017-01-21T01:20:17.890Z] GhostDriver - Main - running on port 40068
+[INFO  - 2017-01-21T01:20:18.037Z] Session [c4fb61d0-df77-11e6-8fed-7de990e6b90e] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-01-21T01:20:18.037Z] Session [c4fb61d0-df77-11e6-8fed-7de990e6b90e] - page.customHeaders:  - {}
+[INFO  - 2017-01-21T01:20:18.037Z] Session [c4fb61d0-df77-11e6-8fed-7de990e6b90e] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-01-21T01:20:18.037Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: c4fb61d0-df77-11e6-8fed-7de990e6b90e
+[ERROR - 2017-01-21T01:21:18.871Z] Session [c4fb61d0-df77-11e6-8fed-7de990e6b90e] - page.onError - msg: ReferenceError: Can't find variable: heap
+[ERROR - 2017-01-21T01:21:18.871Z] Session [c4fb61d0-df77-11e6-8fed-7de990e6b90e] - page.onError - stack:
+  global code (http://www.airasia.com/ph/en/home.page?cid=1:1)
+  insertBefore (:0)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:81)
+  Wh (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:83)
+  Cf (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:37)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:130)
+  eg (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:140)
+  ng (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:45)
+  push (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:146)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:146)
+  Pf (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:40)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:147)
+[ERROR - 2017-01-21T01:21:18.878Z] Session [c4fb61d0-df77-11e6-8fed-7de990e6b90e] - page.onError - msg: ReferenceError: Can't find variable: heap
+[ERROR - 2017-01-21T01:21:18.878Z] Session [c4fb61d0-df77-11e6-8fed-7de990e6b90e] - page.onError - stack:
+  global code (http://www.airasia.com/ph/en/home.page?cid=1:1)
+  insertBefore (:0)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:81)
+  Wh (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:83)
+  Cf (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:37)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:130)
+  eg (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:140)
+  ng (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:45)
+  push (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:146)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:146)
+  Pf (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:40)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:147)
+[ERROR - 2017-01-21T01:21:41.605Z] Session [c4fb61d0-df77-11e6-8fed-7de990e6b90e] - page.onError - msg: ReferenceError: Can't find variable: heap
+[ERROR - 2017-01-21T01:21:41.606Z] Session [c4fb61d0-df77-11e6-8fed-7de990e6b90e] - page.onError - stack:
+  global code (http://www.airasia.com/ph/en/home.page?cid=1:1)
+  insertBefore (:0)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:81)
+  Wh (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:83)
+  Cf (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:37)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:130)
+  eg (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:140)
+  ng (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:45)
+  push (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:146)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:146)
+  Pf (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:40)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:147)
+[ERROR - 2017-01-21T01:21:41.614Z] Session [c4fb61d0-df77-11e6-8fed-7de990e6b90e] - page.onError - msg: ReferenceError: Can't find variable: heap
+[ERROR - 2017-01-21T01:21:41.614Z] Session [c4fb61d0-df77-11e6-8fed-7de990e6b90e] - page.onError - stack:
+  global code (http://www.airasia.com/ph/en/home.page?cid=1:1)
+  insertBefore (:0)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:81)
+  Wh (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:83)
+  Cf (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:37)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:130)
+  eg (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:140)
+  ng (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:45)
+  push (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:146)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:146)
+  Pf (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:40)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:147)
+[ERROR - 2017-01-21T01:21:45.168Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1484961705125
+[ERROR - 2017-01-21T01:22:07.389Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1484961727355
+[INFO  - 2017-01-21T01:22:13.914Z] ShutdownReqHand - _handle - About to shutdown
+[INFO  - 2017-01-21T01:25:22.931Z] GhostDriver - Main - running on port 12171
+[INFO  - 2017-01-21T01:25:23.006Z] Session [7ac24380-df78-11e6-b007-e53ac9d68633] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-01-21T01:25:23.006Z] Session [7ac24380-df78-11e6-b007-e53ac9d68633] - page.customHeaders:  - {}
+[INFO  - 2017-01-21T01:25:23.006Z] Session [7ac24380-df78-11e6-b007-e53ac9d68633] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-01-21T01:25:23.006Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 7ac24380-df78-11e6-b007-e53ac9d68633
+[ERROR - 2017-01-21T01:26:18.499Z] Session [7ac24380-df78-11e6-b007-e53ac9d68633] - page.onError - msg: ReferenceError: Can't find variable: heap
+[ERROR - 2017-01-21T01:26:18.499Z] Session [7ac24380-df78-11e6-b007-e53ac9d68633] - page.onError - stack:
+  global code (http://www.airasia.com/ph/en/home.page?cid=1:1)
+  insertBefore (:0)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:81)
+  Wh (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:83)
+  Cf (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:37)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:130)
+  eg (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:140)
+  ng (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:45)
+  push (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:146)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:146)
+  Pf (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:40)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:147)
+[ERROR - 2017-01-21T01:26:18.507Z] Session [7ac24380-df78-11e6-b007-e53ac9d68633] - page.onError - msg: ReferenceError: Can't find variable: heap
+[ERROR - 2017-01-21T01:26:18.507Z] Session [7ac24380-df78-11e6-b007-e53ac9d68633] - page.onError - stack:
+  global code (http://www.airasia.com/ph/en/home.page?cid=1:1)
+  insertBefore (:0)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:81)
+  Wh (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:83)
+  Cf (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:37)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:130)
+  eg (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:140)
+  ng (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:45)
+  push (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:146)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:146)
+  Pf (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:40)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:147)
+[ERROR - 2017-01-21T01:27:06.114Z] Session [7ac24380-df78-11e6-b007-e53ac9d68633] - page.onError - msg: ReferenceError: Can't find variable: heap
+[ERROR - 2017-01-21T01:27:06.114Z] Session [7ac24380-df78-11e6-b007-e53ac9d68633] - page.onError - stack:
+  global code (http://www.airasia.com/ph/en/home.page?cid=1:1)
+  insertBefore (:0)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:81)
+  Wh (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:83)
+  Cf (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:37)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:130)
+  eg (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:140)
+  ng (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:45)
+  og (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:45)
+[ERROR - 2017-01-21T01:27:06.285Z] Session [7ac24380-df78-11e6-b007-e53ac9d68633] - page.onError - msg: ReferenceError: Can't find variable: heap
+[ERROR - 2017-01-21T01:27:06.285Z] Session [7ac24380-df78-11e6-b007-e53ac9d68633] - page.onError - stack:
+  global code (http://www.airasia.com/ph/en/home.page?cid=1:1)
+  insertBefore (:0)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:81)
+  Wh (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:83)
+  Cf (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:37)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:130)
+  eg (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:140)
+  ng (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:45)
+  push (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:146)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:146)
+  Pf (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:40)
+[ERROR - 2017-01-21T01:27:13.785Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1484962033724
+[INFO  - 2017-01-21T01:27:20.459Z] ShutdownReqHand - _handle - About to shutdown
+[INFO  - 2017-01-21T01:37:53.172Z] GhostDriver - Main - running on port 6858
+[INFO  - 2017-01-21T01:37:53.279Z] Session [39f4d690-df7a-11e6-bb08-0df27d8a6b50] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-01-21T01:37:53.279Z] Session [39f4d690-df7a-11e6-bb08-0df27d8a6b50] - page.customHeaders:  - {}
+[INFO  - 2017-01-21T01:37:53.279Z] Session [39f4d690-df7a-11e6-bb08-0df27d8a6b50] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-01-21T01:37:53.279Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 39f4d690-df7a-11e6-bb08-0df27d8a6b50
+[ERROR - 2017-01-21T01:38:39.781Z] Session [39f4d690-df7a-11e6-bb08-0df27d8a6b50] - page.onError - msg: ReferenceError: Can't find variable: heap
+[ERROR - 2017-01-21T01:38:39.781Z] Session [39f4d690-df7a-11e6-bb08-0df27d8a6b50] - page.onError - stack:
+  global code (http://www.airasia.com/ph/en/home.page?cid=1:1)
+  insertBefore (:0)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:81)
+  Wh (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:83)
+  Cf (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:37)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:130)
+  eg (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:140)
+  ng (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:45)
+  push (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:146)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:146)
+  Pf (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:40)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:147)
+[ERROR - 2017-01-21T01:38:39.789Z] Session [39f4d690-df7a-11e6-bb08-0df27d8a6b50] - page.onError - msg: ReferenceError: Can't find variable: heap
+[ERROR - 2017-01-21T01:38:39.789Z] Session [39f4d690-df7a-11e6-bb08-0df27d8a6b50] - page.onError - stack:
+  global code (http://www.airasia.com/ph/en/home.page?cid=1:1)
+  insertBefore (:0)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:81)
+  Wh (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:83)
+  Cf (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:37)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:130)
+  eg (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:140)
+  ng (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:45)
+  push (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:146)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:146)
+  Pf (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:40)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:147)
+[ERROR - 2017-01-21T01:39:21.405Z] Session [39f4d690-df7a-11e6-bb08-0df27d8a6b50] - page.onError - msg: ReferenceError: Can't find variable: heap
+[ERROR - 2017-01-21T01:39:21.406Z] Session [39f4d690-df7a-11e6-bb08-0df27d8a6b50] - page.onError - stack:
+  global code (http://www.airasia.com/ph/en/home.page?cid=1:1)
+  insertBefore (:0)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:81)
+  Wh (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:83)
+  Cf (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:37)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:130)
+  eg (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:140)
+  ng (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:45)
+  push (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:146)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:146)
+  Pf (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:40)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:147)
+[ERROR - 2017-01-21T01:39:21.412Z] Session [39f4d690-df7a-11e6-bb08-0df27d8a6b50] - page.onError - msg: ReferenceError: Can't find variable: heap
+[ERROR - 2017-01-21T01:39:21.412Z] Session [39f4d690-df7a-11e6-bb08-0df27d8a6b50] - page.onError - stack:
+  global code (http://www.airasia.com/ph/en/home.page?cid=1:1)
+  insertBefore (:0)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:81)
+  Wh (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:83)
+  Cf (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:37)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:130)
+  eg (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:140)
+  ng (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:45)
+  push (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:146)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:146)
+  Pf (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:40)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:147)
+[ERROR - 2017-01-21T01:39:27.313Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1484962767309
+[INFO  - 2017-01-21T01:39:33.740Z] ShutdownReqHand - _handle - About to shutdown
+[INFO  - 2017-01-21T01:41:53.869Z] GhostDriver - Main - running on port 3173
+[INFO  - 2017-01-21T01:41:54.434Z] Session [c9b252d0-df7a-11e6-801a-cf4187b0b63d] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-01-21T01:41:54.434Z] Session [c9b252d0-df7a-11e6-801a-cf4187b0b63d] - page.customHeaders:  - {}
+[INFO  - 2017-01-21T01:41:54.434Z] Session [c9b252d0-df7a-11e6-801a-cf4187b0b63d] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-01-21T01:41:54.435Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: c9b252d0-df7a-11e6-801a-cf4187b0b63d
+[ERROR - 2017-01-21T01:42:32.334Z] Session [c9b252d0-df7a-11e6-801a-cf4187b0b63d] - page.onError - msg: ReferenceError: Can't find variable: heap
+[ERROR - 2017-01-21T01:42:32.334Z] Session [c9b252d0-df7a-11e6-801a-cf4187b0b63d] - page.onError - stack:
+  global code (http://www.airasia.com/ph/en/home.page?cid=1:1)
+  insertBefore (:0)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:81)
+  Wh (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:83)
+  Cf (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:37)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:130)
+  eg (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:140)
+  ng (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:45)
+  push (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:146)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:146)
+  Pf (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:40)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:147)
+[ERROR - 2017-01-21T01:42:32.341Z] Session [c9b252d0-df7a-11e6-801a-cf4187b0b63d] - page.onError - msg: ReferenceError: Can't find variable: heap
+[ERROR - 2017-01-21T01:42:32.341Z] Session [c9b252d0-df7a-11e6-801a-cf4187b0b63d] - page.onError - stack:
+  global code (http://www.airasia.com/ph/en/home.page?cid=1:1)
+  insertBefore (:0)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:81)
+  Wh (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:83)
+  Cf (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:37)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:130)
+  eg (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:140)
+  ng (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:45)
+  push (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:146)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:146)
+  Pf (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:40)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:147)
+[ERROR - 2017-01-21T01:42:35.266Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1484962955207
+[INFO  - 2017-01-21T01:42:41.617Z] ShutdownReqHand - _handle - About to shutdown
+[INFO  - 2017-01-21T01:50:36.444Z] GhostDriver - Main - running on port 13186
+[INFO  - 2017-01-21T01:50:36.554Z] Session [00e70e20-df7c-11e6-a91a-1b9f9d9bd4e4] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-01-21T01:50:36.554Z] Session [00e70e20-df7c-11e6-a91a-1b9f9d9bd4e4] - page.customHeaders:  - {}
+[INFO  - 2017-01-21T01:50:36.554Z] Session [00e70e20-df7c-11e6-a91a-1b9f9d9bd4e4] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-01-21T01:50:36.555Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 00e70e20-df7c-11e6-a91a-1b9f9d9bd4e4
+[INFO  - 2017-01-21T01:55:36.583Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-01-21T02:00:38.232Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-01-21T02:05:37.347Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-01-21T02:10:37.529Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-01-21T02:15:37.523Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-01-21T02:20:37.533Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-01-21T02:22:49.834Z] ShutdownReqHand - _handle - About to shutdown
+ts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-01-21T01:51:02.861Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 10955660-df7c-11e6-a628-cffcd91d5d97
+[INFO  - 2017-01-21T01:56:02.891Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-01-21T02:01:04.870Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-01-21T02:06:03.132Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-01-21T02:11:03.162Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-01-21T02:16:03.175Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-01-21T02:21:03.174Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-01-21T02:22:49.584Z] ShutdownReqHand - _handle - About to shutdown
+s":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-01-21T01:51:18.865Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 1a1f5aa0-df7c-11e6-b7a5-5ba09a27a8e6
+[INFO  - 2017-01-21T01:51:18.913Z] ShutdownReqHand - _handle - About to shutdown
+[INFO  - 2017-01-21T01:51:38.473Z] GhostDriver - Main - running on port 4087
+[INFO  - 2017-01-21T01:51:38.609Z] Session [25e3e590-df7c-11e6-832d-2b0ba5aaab21] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-01-21T01:51:38.609Z] Session [25e3e590-df7c-11e6-832d-2b0ba5aaab21] - page.customHeaders:  - {}
+[INFO  - 2017-01-21T01:51:38.609Z] Session [25e3e590-df7c-11e6-832d-2b0ba5aaab21] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-01-21T01:51:38.609Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 25e3e590-df7c-11e6-832d-2b0ba5aaab21
+[ERROR - 2017-01-21T01:51:56.274Z] Session [25e3e590-df7c-11e6-832d-2b0ba5aaab21] - page.onError - msg: ReferenceError: Can't find variable: s_pageName
+[ERROR - 2017-01-21T01:51:56.275Z] Session [25e3e590-df7c-11e6-832d-2b0ba5aaab21] - page.onError - stack:
+  clstr_gatrack (https://flights.expedia.com/assets/min/js/footer.min.dd9dd273fb7c44e498b210977d50baa8.js:8)
+  b (https://flights.expedia.com/assets/min/js/footer.min.dd9dd273fb7c44e498b210977d50baa8.js:1)
+  dispatch (https://flights.expedia.com/assets/min/js/header.min.87df9b54d49272776ceed9c9e01faf53.js:2)
+  handle (https://flights.expedia.com/assets/min/js/header.min.87df9b54d49272776ceed9c9e01faf53.js:2)
+  dispatchEvent (:0)
+  U (:119)
+  $ (:108)
+  $ (:101)
+  gh (:141)
+  sh (:152)
+  (anonymous function) (:152)
+  (anonymous function) (:152)
+  (anonymous function) (:153)
+[ERROR - 2017-01-21T01:52:22.445Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1484963542388
+[INFO  - 2017-01-21T01:52:29.307Z] ShutdownReqHand - _handle - About to shutdown
+[INFO  - 2017-01-21T01:53:06.398Z] GhostDriver - Main - running on port 43751
+[INFO  - 2017-01-21T01:53:06.421Z] Session [5a3b18e0-df7c-11e6-98e9-dba6970a1dc2] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-01-21T01:53:06.421Z] Session [5a3b18e0-df7c-11e6-98e9-dba6970a1dc2] - page.customHeaders:  - {}
+[INFO  - 2017-01-21T01:53:06.421Z] Session [5a3b18e0-df7c-11e6-98e9-dba6970a1dc2] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-01-21T01:53:06.421Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 5a3b18e0-df7c-11e6-98e9-dba6970a1dc2
+[ERROR - 2017-01-21T01:53:37.648Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1484963617610
+[INFO  - 2017-01-21T01:53:43.882Z] ShutdownReqHand - _handle - About to shutdown
+[INFO  - 2017-01-21T01:56:54.740Z] GhostDriver - Main - running on port 38936
+[INFO  - 2017-01-21T01:56:56.895Z] Session [e39a5560-df7c-11e6-b55c-61c64b06dc8e] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-01-21T01:56:56.895Z] Session [e39a5560-df7c-11e6-b55c-61c64b06dc8e] - page.customHeaders:  - {}
+[INFO  - 2017-01-21T01:56:56.896Z] Session [e39a5560-df7c-11e6-b55c-61c64b06dc8e] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-01-21T01:56:56.896Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: e39a5560-df7c-11e6-b55c-61c64b06dc8e
+[ERROR - 2017-01-21T01:57:52.608Z] Session [e39a5560-df7c-11e6-b55c-61c64b06dc8e] - page.onError - msg: Failed to post impression data to collector web
+onErrorMsg=%22undefined%22
+onErrorUrl=%22NA%22
+onErrorLine=%22NA%22
+onErrorChar=%22NA%22
+stack=%22NA%22
+origin=impressionData.log
+[ERROR - 2017-01-21T01:57:52.608Z] Session [e39a5560-df7c-11e6-b55c-61c64b06dc8e] - page.onError - stack:
+  D (https://b.travel-assets.com/datacapture/2-96/de1cd7136f9df118389f14e6fd0247b5e2c7897c/datacapture/js/client-logging-bundle-min.js:1)
+[INFO  - 2017-01-21T01:58:40.640Z] ShutdownReqHand - _handle - About to shutdown
+[INFO  - 2017-01-21T02:11:32.255Z] GhostDriver - Main - running on port 7411
+[INFO  - 2017-01-21T02:11:33.303Z] Session [edfb94e0-df7e-11e6-8e20-dd4631568057] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-01-21T02:11:33.303Z] Session [edfb94e0-df7e-11e6-8e20-dd4631568057] - page.customHeaders:  - {}
+[INFO  - 2017-01-21T02:11:33.303Z] Session [edfb94e0-df7e-11e6-8e20-dd4631568057] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-01-21T02:11:33.303Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: edfb94e0-df7e-11e6-8e20-dd4631568057
+[ERROR - 2017-01-21T02:12:03.169Z] Session [edfb94e0-df7e-11e6-8e20-dd4631568057] - page.onError - msg: Failed to post impression data to collector web
+onErrorMsg=%22undefined%22
+onErrorUrl=%22NA%22
+onErrorLine=%22NA%22
+onErrorChar=%22NA%22
+stack=%22NA%22
+origin=impressionData.log
+[ERROR - 2017-01-21T02:12:03.169Z] Session [edfb94e0-df7e-11e6-8e20-dd4631568057] - page.onError - stack:
+  D (https://b.travel-assets.com/datacapture/2-96/de1cd7136f9df118389f14e6fd0247b5e2c7897c/datacapture/js/client-logging-bundle-min.js:1)
+[ERROR - 2017-01-21T02:12:06.899Z] Session [edfb94e0-df7e-11e6-8e20-dd4631568057] - page.onError - msg: Failed to post impression data to collector web
+onErrorMsg=%22undefined%22
+onErrorUrl=%22NA%22
+onErrorLine=%22NA%22
+onErrorChar=%22NA%22
+stack=%22NA%22
+origin=impressionData.log
+[ERROR - 2017-01-21T02:12:06.899Z] Session [edfb94e0-df7e-11e6-8e20-dd4631568057] - page.onError - stack:
+  D (https://b.travel-assets.com/datacapture/2-96/de1cd7136f9df118389f14e6fd0247b5e2c7897c/datacapture/js/client-logging-bundle-min.js:1)
+[INFO  - 2017-01-21T02:12:17.516Z] ShutdownReqHand - _handle - About to shutdown
+[INFO  - 2017-01-21T02:24:15.540Z] GhostDriver - Main - running on port 22790
+[INFO  - 2017-01-21T02:24:15.693Z] Session [b4675e60-df80-11e6-8856-8f89e9262c34] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-01-21T02:24:15.693Z] Session [b4675e60-df80-11e6-8856-8f89e9262c34] - page.customHeaders:  - {}
+[INFO  - 2017-01-21T02:24:15.693Z] Session [b4675e60-df80-11e6-8856-8f89e9262c34] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-01-21T02:24:15.693Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: b4675e60-df80-11e6-8856-8f89e9262c34
+[ERROR - 2017-01-21T02:24:57.559Z] Session [b4675e60-df80-11e6-8856-8f89e9262c34] - page.onError - msg: ReferenceError: Can't find variable: heap
+[ERROR - 2017-01-21T02:24:57.559Z] Session [b4675e60-df80-11e6-8856-8f89e9262c34] - page.onError - stack:
+  global code (http://www.airasia.com/ph/en/home.page?cid=1:1)
+  insertBefore (:0)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:81)
+  Wh (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:83)
+  Cf (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:37)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:130)
+  eg (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:140)
+  ng (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:45)
+  push (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:146)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:146)
+  Pf (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:40)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:147)
+[ERROR - 2017-01-21T02:24:57.570Z] Session [b4675e60-df80-11e6-8856-8f89e9262c34] - page.onError - msg: ReferenceError: Can't find variable: heap
+[ERROR - 2017-01-21T02:24:57.570Z] Session [b4675e60-df80-11e6-8856-8f89e9262c34] - page.onError - stack:
+  global code (http://www.airasia.com/ph/en/home.page?cid=1:1)
+  insertBefore (:0)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:81)
+  Wh (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:83)
+  Cf (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:37)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:130)
+  eg (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:140)
+  ng (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:45)
+  push (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:146)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:146)
+  Pf (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:40)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:147)
+[ERROR - 2017-01-21T02:25:29.040Z] Session [b4675e60-df80-11e6-8856-8f89e9262c34] - page.onError - msg: ReferenceError: Can't find variable: heap
+[ERROR - 2017-01-21T02:25:29.040Z] Session [b4675e60-df80-11e6-8856-8f89e9262c34] - page.onError - stack:
+  global code (http://www.airasia.com/ph/en/home.page?cid=1:1)
+  insertBefore (:0)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:81)
+  Wh (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:83)
+  Cf (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:37)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:130)
+  eg (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:140)
+  ng (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:45)
+  og (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:45)
+[ERROR - 2017-01-21T02:25:29.237Z] Session [b4675e60-df80-11e6-8856-8f89e9262c34] - page.onError - msg: ReferenceError: Can't find variable: heap
+[ERROR - 2017-01-21T02:25:29.237Z] Session [b4675e60-df80-11e6-8856-8f89e9262c34] - page.onError - stack:
+  global code (http://www.airasia.com/ph/en/home.page?cid=1:1)
+  insertBefore (:0)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:81)
+  Wh (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:83)
+  Cf (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:37)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:130)
+  eg (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:140)
+  ng (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:45)
+  push (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:146)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:146)
+  Pf (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:40)
+[ERROR - 2017-01-21T02:25:32.849Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1484965532806
+[INFO  - 2017-01-21T02:25:39.332Z] ShutdownReqHand - _handle - About to shutdown
+[INFO  - 2017-01-21T02:33:25.314Z] GhostDriver - Main - running on port 29691
+[INFO  - 2017-01-21T02:33:25.357Z] Session [fc06d420-df81-11e6-a536-618647d7dec8] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-01-21T02:33:25.357Z] Session [fc06d420-df81-11e6-a536-618647d7dec8] - page.customHeaders:  - {}
+[INFO  - 2017-01-21T02:33:25.357Z] Session [fc06d420-df81-11e6-a536-618647d7dec8] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-01-21T02:33:25.357Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: fc06d420-df81-11e6-a536-618647d7dec8
+[ERROR - 2017-01-21T02:33:35.929Z] Session [fc06d420-df81-11e6-a536-618647d7dec8] - page.onError - msg: ReferenceError: Can't find variable: heap
+[ERROR - 2017-01-21T02:33:35.929Z] Session [fc06d420-df81-11e6-a536-618647d7dec8] - page.onError - stack:
+  global code (http://www.airasia.com/ph/en/home.page?cid=1:1)
+  insertBefore (:0)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:81)
+  Wh (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:83)
+  Cf (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:37)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:130)
+  eg (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:140)
+  ng (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:45)
+  push (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:146)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:146)
+  Pf (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:40)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:147)
+[ERROR - 2017-01-21T02:33:35.938Z] Session [fc06d420-df81-11e6-a536-618647d7dec8] - page.onError - msg: ReferenceError: Can't find variable: heap
+[ERROR - 2017-01-21T02:33:35.939Z] Session [fc06d420-df81-11e6-a536-618647d7dec8] - page.onError - stack:
+  global code (http://www.airasia.com/ph/en/home.page?cid=1:1)
+  insertBefore (:0)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:81)
+  Wh (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:83)
+  Cf (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:37)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:130)
+  eg (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:140)
+  ng (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:45)
+  push (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:146)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:146)
+  Pf (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:40)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:147)
+[ERROR - 2017-01-21T02:33:59.780Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1484966039729
+[INFO  - 2017-01-21T02:34:06.295Z] ShutdownReqHand - _handle - About to shutdown
+[INFO  - 2017-01-21T02:35:15.779Z] GhostDriver - Main - running on port 11653
+[INFO  - 2017-01-21T02:35:15.933Z] Session [3defd850-df82-11e6-b6e3-2924de8e8853] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-01-21T02:35:15.934Z] Session [3defd850-df82-11e6-b6e3-2924de8e8853] - page.customHeaders:  - {}
+[INFO  - 2017-01-21T02:35:15.934Z] Session [3defd850-df82-11e6-b6e3-2924de8e8853] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-01-21T02:35:15.934Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 3defd850-df82-11e6-b6e3-2924de8e8853
+[ERROR - 2017-01-21T02:35:30.550Z] Session [3defd850-df82-11e6-b6e3-2924de8e8853] - page.onError - msg: ReferenceError: Can't find variable: heap
+[ERROR - 2017-01-21T02:35:30.551Z] Session [3defd850-df82-11e6-b6e3-2924de8e8853] - page.onError - stack:
+  global code (http://www.airasia.com/ph/en/home.page?cid=1:1)
+  insertBefore (:0)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:81)
+  Wh (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:83)
+  Cf (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:37)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:130)
+  eg (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:140)
+  ng (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:45)
+  push (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:146)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:146)
+  Pf (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:40)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:147)
+[ERROR - 2017-01-21T02:35:30.557Z] Session [3defd850-df82-11e6-b6e3-2924de8e8853] - page.onError - msg: ReferenceError: Can't find variable: heap
+[ERROR - 2017-01-21T02:35:30.557Z] Session [3defd850-df82-11e6-b6e3-2924de8e8853] - page.onError - stack:
+  global code (http://www.airasia.com/ph/en/home.page?cid=1:1)
+  insertBefore (:0)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:81)
+  Wh (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:83)
+  Cf (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:37)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:130)
+  eg (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:140)
+  ng (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:45)
+  push (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:146)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:146)
+  Pf (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:40)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:147)
+[ERROR - 2017-01-21T02:36:12.304Z] Session [3defd850-df82-11e6-b6e3-2924de8e8853] - page.onError - msg: ReferenceError: Can't find variable: heap
+[ERROR - 2017-01-21T02:36:12.304Z] Session [3defd850-df82-11e6-b6e3-2924de8e8853] - page.onError - stack:
+  global code (http://www.airasia.com/ph/en/home.page?cid=1:1)
+  insertBefore (:0)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:81)
+  Wh (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:83)
+  Cf (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:37)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:130)
+  eg (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:140)
+  ng (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:45)
+  og (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:45)
+[ERROR - 2017-01-21T02:36:12.355Z] Session [3defd850-df82-11e6-b6e3-2924de8e8853] - page.onError - msg: ReferenceError: Can't find variable: heap
+[ERROR - 2017-01-21T02:36:12.355Z] Session [3defd850-df82-11e6-b6e3-2924de8e8853] - page.onError - stack:
+  global code (http://www.airasia.com/ph/en/home.page?cid=1:1)
+  insertBefore (:0)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:81)
+  Wh (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:83)
+  Cf (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:37)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:130)
+  eg (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:140)
+  ng (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:45)
+  push (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:146)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:146)
+  Pf (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:40)
+[ERROR - 2017-01-21T02:36:17.612Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1484966177579
+[INFO  - 2017-01-21T02:36:24.099Z] ShutdownReqHand - _handle - About to shutdown
+[INFO  - 2017-01-21T02:57:37.815Z] GhostDriver - Main - running on port 10854
+[INFO  - 2017-01-21T02:57:38.243Z] Session [5e0466d0-df85-11e6-ab3e-9917a024d602] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-01-21T02:57:38.243Z] Session [5e0466d0-df85-11e6-ab3e-9917a024d602] - page.customHeaders:  - {}
+[INFO  - 2017-01-21T02:57:38.243Z] Session [5e0466d0-df85-11e6-ab3e-9917a024d602] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-01-21T02:57:38.244Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 5e0466d0-df85-11e6-ab3e-9917a024d602
+[INFO  - 2017-01-21T02:58:11.308Z] ShutdownReqHand - _handle - About to shutdown
+[INFO  - 2017-01-21T03:01:34.906Z] GhostDriver - Main - running on port 23784
+[INFO  - 2017-01-21T03:01:35.329Z] Session [eb54dab0-df85-11e6-b7ac-c5d4c175bd91] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-01-21T03:01:35.329Z] Session [eb54dab0-df85-11e6-b7ac-c5d4c175bd91] - page.customHeaders:  - {}
+[INFO  - 2017-01-21T03:01:35.329Z] Session [eb54dab0-df85-11e6-b7ac-c5d4c175bd91] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-01-21T03:01:35.329Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: eb54dab0-df85-11e6-b7ac-c5d4c175bd91
+[ERROR - 2017-01-21T03:03:16.152Z] Session [eb54dab0-df85-11e6-b7ac-c5d4c175bd91] - page.onError - msg: ReferenceError: Can't find variable: heap
+[ERROR - 2017-01-21T03:03:16.153Z] Session [eb54dab0-df85-11e6-b7ac-c5d4c175bd91] - page.onError - stack:
+  global code (http://www.airasia.com/ph/en/home.page?cid=1:1)
+  insertBefore (:0)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:81)
+  Wh (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:83)
+  Cf (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:37)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:130)
+  eg (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:140)
+  ng (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:45)
+  push (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:146)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:146)
+  Pf (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:40)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:147)
+[ERROR - 2017-01-21T03:03:16.160Z] Session [eb54dab0-df85-11e6-b7ac-c5d4c175bd91] - page.onError - msg: ReferenceError: Can't find variable: heap
+[ERROR - 2017-01-21T03:03:16.160Z] Session [eb54dab0-df85-11e6-b7ac-c5d4c175bd91] - page.onError - stack:
+  global code (http://www.airasia.com/ph/en/home.page?cid=1:1)
+  insertBefore (:0)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:81)
+  Wh (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:83)
+  Cf (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:37)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:130)
+  eg (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:140)
+  ng (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:45)
+  push (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:146)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:146)
+  Pf (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:40)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:147)
+[ERROR - 2017-01-21T03:03:20.761Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1484967800717
+[ERROR - 2017-01-21T03:03:22.122Z] Session [eb54dab0-df85-11e6-b7ac-c5d4c175bd91] - page.onError - msg: TypeError: undefined is not an object (evaluating 'new CT.ABE.Step1.Display')
+[ERROR - 2017-01-21T03:03:22.123Z] Session [eb54dab0-df85-11e6-b7ac-c5d4c175bd91] - page.onError - stack:
+  d (undefined:1)
+  one (:1)
+  (anonymous function) (:1)
+  (anonymous function) (:1)
+  error (:1)
+[ERROR - 2017-01-21T03:03:49.119Z] Session [eb54dab0-df85-11e6-b7ac-c5d4c175bd91] - page.onError - msg: Failed to post impression data to collector web
+onErrorMsg=%22undefined%22
+onErrorUrl=%22NA%22
+onErrorLine=%22NA%22
+onErrorChar=%22NA%22
+stack=%22NA%22
+origin=impressionData.log
+[ERROR - 2017-01-21T03:03:49.119Z] Session [eb54dab0-df85-11e6-b7ac-c5d4c175bd91] - page.onError - stack:
+  D (https://b.travel-assets.com/datacapture/2-96/de1cd7136f9df118389f14e6fd0247b5e2c7897c/datacapture/js/client-logging-bundle-min.js:1)
+[ERROR - 2017-01-21T03:03:50.775Z] Session [eb54dab0-df85-11e6-b7ac-c5d4c175bd91] - page.onError - msg: Failed to post impression data to collector web
+onErrorMsg=%22undefined%22
+onErrorUrl=%22NA%22
+onErrorLine=%22NA%22
+onErrorChar=%22NA%22
+stack=%22NA%22
+origin=impressionData.log
+[ERROR - 2017-01-21T03:03:50.775Z] Session [eb54dab0-df85-11e6-b7ac-c5d4c175bd91] - page.onError - stack:
+  D (https://b.travel-assets.com/datacapture/2-96/de1cd7136f9df118389f14e6fd0247b5e2c7897c/datacapture/js/client-logging-bundle-min.js:1)
+[INFO  - 2017-01-21T03:04:05.994Z] ShutdownReqHand - _handle - About to shutdown
+[INFO  - 2017-01-21T03:07:21.257Z] GhostDriver - Main - running on port 6230
+[INFO  - 2017-01-21T03:07:21.690Z] Session [b9c6bd00-df86-11e6-b7f5-efe02653a0d3] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-01-21T03:07:21.691Z] Session [b9c6bd00-df86-11e6-b7f5-efe02653a0d3] - page.customHeaders:  - {}
+[INFO  - 2017-01-21T03:07:21.691Z] Session [b9c6bd00-df86-11e6-b7f5-efe02653a0d3] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-01-21T03:07:21.691Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: b9c6bd00-df86-11e6-b7f5-efe02653a0d3
+[INFO  - 2017-01-21T03:07:21.740Z] ShutdownReqHand - _handle - About to shutdown
+[INFO  - 2017-01-21T03:07:43.797Z] GhostDriver - Main - running on port 29044
+[INFO  - 2017-01-21T03:07:43.986Z] Session [c710fd90-df86-11e6-b688-7783cda8b183] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-01-21T03:07:43.986Z] Session [c710fd90-df86-11e6-b688-7783cda8b183] - page.customHeaders:  - {}
+[INFO  - 2017-01-21T03:07:43.986Z] Session [c710fd90-df86-11e6-b688-7783cda8b183] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-01-21T03:07:43.987Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: c710fd90-df86-11e6-b688-7783cda8b183
+[ERROR - 2017-01-21T03:08:20.999Z] Session [c710fd90-df86-11e6-b688-7783cda8b183] - page.onError - msg: ReferenceError: Can't find variable: heap
+[ERROR - 2017-01-21T03:08:20.999Z] Session [c710fd90-df86-11e6-b688-7783cda8b183] - page.onError - stack:
+  global code (http://www.airasia.com/ph/en/home.page?cid=1:1)
+  insertBefore (:0)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:81)
+  Wh (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:83)
+  Cf (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:37)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:130)
+  eg (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:140)
+  ng (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:45)
+  push (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:146)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:146)
+  Pf (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:40)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:147)
+[ERROR - 2017-01-21T03:08:21.007Z] Session [c710fd90-df86-11e6-b688-7783cda8b183] - page.onError - msg: ReferenceError: Can't find variable: heap
+[ERROR - 2017-01-21T03:08:21.007Z] Session [c710fd90-df86-11e6-b688-7783cda8b183] - page.onError - stack:
+  global code (http://www.airasia.com/ph/en/home.page?cid=1:1)
+  insertBefore (:0)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:81)
+  Wh (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:83)
+  Cf (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:37)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:130)
+  eg (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:140)
+  ng (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:45)
+  push (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:146)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:146)
+  Pf (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:40)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:147)
+[ERROR - 2017-01-21T03:08:31.189Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1484968111182
+[INFO  - 2017-01-21T03:08:38.130Z] ShutdownReqHand - _handle - About to shutdown
+[INFO  - 2017-01-21T03:09:59.974Z] GhostDriver - Main - running on port 43038
+[INFO  - 2017-01-21T03:10:00.578Z] Session [187b4690-df87-11e6-8ffd-e78a9f5302d5] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-01-21T03:10:00.578Z] Session [187b4690-df87-11e6-8ffd-e78a9f5302d5] - page.customHeaders:  - {}
+[INFO  - 2017-01-21T03:10:00.578Z] Session [187b4690-df87-11e6-8ffd-e78a9f5302d5] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-01-21T03:10:00.578Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 187b4690-df87-11e6-8ffd-e78a9f5302d5
+[ERROR - 2017-01-21T03:10:30.845Z] Session [187b4690-df87-11e6-8ffd-e78a9f5302d5] - page.onError - msg: Failed to post impression data to collector web
+onErrorMsg=%22undefined%22
+onErrorUrl=%22NA%22
+onErrorLine=%22NA%22
+onErrorChar=%22NA%22
+stack=%22NA%22
+origin=impressionData.log
+[ERROR - 2017-01-21T03:10:30.845Z] Session [187b4690-df87-11e6-8ffd-e78a9f5302d5] - page.onError - stack:
+  D (https://b.travel-assets.com/datacapture/2-96/de1cd7136f9df118389f14e6fd0247b5e2c7897c/datacapture/js/client-logging-bundle-min.js:1)
+[ERROR - 2017-01-21T03:10:33.526Z] Session [187b4690-df87-11e6-8ffd-e78a9f5302d5] - page.onError - msg: Failed to post impression data to collector web
+onErrorMsg=%22undefined%22
+onErrorUrl=%22NA%22
+onErrorLine=%22NA%22
+onErrorChar=%22NA%22
+stack=%22NA%22
+origin=impressionData.log
+[ERROR - 2017-01-21T03:10:33.526Z] Session [187b4690-df87-11e6-8ffd-e78a9f5302d5] - page.onError - stack:
+  D (https://b.travel-assets.com/datacapture/2-96/de1cd7136f9df118389f14e6fd0247b5e2c7897c/datacapture/js/client-logging-bundle-min.js:1)
+[INFO  - 2017-01-21T03:13:24.572Z] GhostDriver - Main - running on port 39168
+[INFO  - 2017-01-21T03:13:24.690Z] Session [9224c0c0-df87-11e6-b941-ed7d3ac3a95c] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-01-21T03:13:24.690Z] Session [9224c0c0-df87-11e6-b941-ed7d3ac3a95c] - page.customHeaders:  - {}
+[INFO  - 2017-01-21T03:13:24.691Z] Session [9224c0c0-df87-11e6-b941-ed7d3ac3a95c] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-01-21T03:13:24.691Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 9224c0c0-df87-11e6-b941-ed7d3ac3a95c
+[ERROR - 2017-01-21T03:13:42.660Z] Session [9224c0c0-df87-11e6-b941-ed7d3ac3a95c] - page.onError - msg: ReferenceError: Can't find variable: heap
+[ERROR - 2017-01-21T03:13:42.660Z] Session [9224c0c0-df87-11e6-b941-ed7d3ac3a95c] - page.onError - stack:
+  global code (http://www.airasia.com/ph/en/home.page?cid=1:1)
+  insertBefore (:0)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:81)
+  Wh (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:83)
+  Cf (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:37)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:130)
+  eg (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:140)
+  ng (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:45)
+  push (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:146)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:146)
+  Pf (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:40)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:147)
+[ERROR - 2017-01-21T03:13:42.673Z] Session [9224c0c0-df87-11e6-b941-ed7d3ac3a95c] - page.onError - msg: ReferenceError: Can't find variable: heap
+[ERROR - 2017-01-21T03:13:42.674Z] Session [9224c0c0-df87-11e6-b941-ed7d3ac3a95c] - page.onError - stack:
+  global code (http://www.airasia.com/ph/en/home.page?cid=1:1)
+  insertBefore (:0)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:81)
+  Wh (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:83)
+  Cf (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:37)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:130)
+  eg (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:140)
+  ng (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:45)
+  push (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:146)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:146)
+  Pf (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:40)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:147)
+[ERROR - 2017-01-21T03:14:03.530Z] Session [9224c0c0-df87-11e6-b941-ed7d3ac3a95c] - page.onError - msg: ReferenceError: Can't find variable: heap
+[ERROR - 2017-01-21T03:14:03.530Z] Session [9224c0c0-df87-11e6-b941-ed7d3ac3a95c] - page.onError - stack:
+  global code (http://www.airasia.com/ph/en/home.page?cid=1:1)
+  insertBefore (:0)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:81)
+  Wh (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:83)
+  Cf (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:37)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:130)
+  eg (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:140)
+  ng (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:45)
+  push (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:146)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:146)
+  Pf (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:40)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:147)
+[ERROR - 2017-01-21T03:14:03.539Z] Session [9224c0c0-df87-11e6-b941-ed7d3ac3a95c] - page.onError - msg: ReferenceError: Can't find variable: heap
+[ERROR - 2017-01-21T03:14:03.539Z] Session [9224c0c0-df87-11e6-b941-ed7d3ac3a95c] - page.onError - stack:
+  global code (http://www.airasia.com/ph/en/home.page?cid=1:1)
+  insertBefore (:0)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:81)
+  Wh (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:83)
+  Cf (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:37)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:130)
+  eg (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:140)
+  ng (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:45)
+  push (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:146)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:146)
+  Pf (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:40)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:147)
+[ERROR - 2017-01-21T03:14:06.248Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1484968446197
+[INFO  - 2017-01-21T03:14:12.715Z] ShutdownReqHand - _handle - About to shutdown
+[INFO  - 2017-01-21T03:16:28.009Z] GhostDriver - Main - running on port 47880
+[INFO  - 2017-01-21T03:16:28.174Z] Session [ff81bb50-df87-11e6-a20f-d7dbd4334407] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-01-21T03:16:28.174Z] Session [ff81bb50-df87-11e6-a20f-d7dbd4334407] - page.customHeaders:  - {}
+[INFO  - 2017-01-21T03:16:28.174Z] Session [ff81bb50-df87-11e6-a20f-d7dbd4334407] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-01-21T03:16:28.175Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: ff81bb50-df87-11e6-a20f-d7dbd4334407
+[ERROR - 2017-01-21T03:16:47.570Z] Session [ff81bb50-df87-11e6-a20f-d7dbd4334407] - page.onError - msg: ReferenceError: Can't find variable: heap
+[ERROR - 2017-01-21T03:16:47.570Z] Session [ff81bb50-df87-11e6-a20f-d7dbd4334407] - page.onError - stack:
+  global code (http://www.airasia.com/ph/en/home.page?cid=1:1)
+  insertBefore (:0)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:81)
+  Wh (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:83)
+  Cf (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:37)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:130)
+  eg (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:140)
+  ng (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:45)
+  push (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:146)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:146)
+  Pf (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:40)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:147)
+[ERROR - 2017-01-21T03:16:47.577Z] Session [ff81bb50-df87-11e6-a20f-d7dbd4334407] - page.onError - msg: ReferenceError: Can't find variable: heap
+[ERROR - 2017-01-21T03:16:47.577Z] Session [ff81bb50-df87-11e6-a20f-d7dbd4334407] - page.onError - stack:
+  global code (http://www.airasia.com/ph/en/home.page?cid=1:1)
+  insertBefore (:0)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:81)
+  Wh (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:83)
+  Cf (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:37)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:130)
+  eg (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:140)
+  ng (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:45)
+  push (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:146)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:146)
+  Pf (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:40)
+  (anonymous function) (http://www.googletagmanager.com/gtm.js?id=GTM-WTQCST&l=gtmDataLayer:147)
+[ERROR - 2017-01-21T03:16:50.561Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1484968610538
+[INFO  - 2017-01-21T03:16:56.874Z] ShutdownReqHand - _handle - About to shutdown
+[INFO  - 2017-01-21T03:46:23.645Z] GhostDriver - Main - running on port 22657
+[INFO  - 2017-01-21T03:46:23.915Z] Session [2ddaac60-df8c-11e6-aaa8-f16fb93693cd] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-01-21T03:46:23.915Z] Session [2ddaac60-df8c-11e6-aaa8-f16fb93693cd] - page.customHeaders:  - {}
+[INFO  - 2017-01-21T03:46:23.915Z] Session [2ddaac60-df8c-11e6-aaa8-f16fb93693cd] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-01-21T03:46:23.915Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 2ddaac60-df8c-11e6-aaa8-f16fb93693cd
+[INFO  - 2017-01-21T03:46:23.963Z] ShutdownReqHand - _handle - About to shutdown
+[INFO  - 2017-01-21T03:46:39.848Z] GhostDriver - Main - running on port 28002
+[INFO  - 2017-01-21T03:46:39.975Z] Session [376cc6f0-df8c-11e6-9cc1-af22dd189892] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-01-21T03:46:39.975Z] Session [376cc6f0-df8c-11e6-9cc1-af22dd189892] - page.customHeaders:  - {}
+[INFO  - 2017-01-21T03:46:39.975Z] Session [376cc6f0-df8c-11e6-9cc1-af22dd189892] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-01-21T03:46:39.976Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 376cc6f0-df8c-11e6-9cc1-af22dd189892
+[INFO  - 2017-01-21T03:46:55.459Z] ShutdownReqHand - _handle - About to shutdown
+[INFO  - 2017-01-21T03:55:34.859Z] GhostDriver - Main - running on port 23019
+[INFO  - 2017-01-21T03:55:34.990Z] Session [76519660-df8d-11e6-a7b7-916004637b8f] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-01-21T03:55:34.990Z] Session [76519660-df8d-11e6-a7b7-916004637b8f] - page.customHeaders:  - {}
+[INFO  - 2017-01-21T03:55:34.990Z] Session [76519660-df8d-11e6-a7b7-916004637b8f] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-01-21T03:55:34.990Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 76519660-df8d-11e6-a7b7-916004637b8f
+[INFO  - 2017-01-21T03:55:35.039Z] ShutdownReqHand - _handle - About to shutdown
+[INFO  - 2017-01-21T03:55:50.215Z] GhostDriver - Main - running on port 28572
+[INFO  - 2017-01-21T03:55:50.319Z] Session [7f74e990-df8d-11e6-b8a9-7387f4933491] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-01-21T03:55:50.319Z] Session [7f74e990-df8d-11e6-b8a9-7387f4933491] - page.customHeaders:  - {}
+[INFO  - 2017-01-21T03:55:50.319Z] Session [7f74e990-df8d-11e6-b8a9-7387f4933491] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-01-21T03:55:50.319Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 7f74e990-df8d-11e6-b8a9-7387f4933491
+[INFO  - 2017-01-21T03:55:50.359Z] ShutdownReqHand - _handle - About to shutdown
+[INFO  - 2017-01-21T03:56:41.576Z] GhostDriver - Main - running on port 5392
+[INFO  - 2017-01-21T03:56:41.713Z] Session [9e16b590-df8d-11e6-923b-abf6f17cb4f2] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-01-21T03:56:41.714Z] Session [9e16b590-df8d-11e6-923b-abf6f17cb4f2] - page.customHeaders:  - {}
+[INFO  - 2017-01-21T03:56:41.714Z] Session [9e16b590-df8d-11e6-923b-abf6f17cb4f2] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-01-21T03:56:41.714Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 9e16b590-df8d-11e6-923b-abf6f17cb4f2
+[ERROR - 2017-01-21T03:57:06.704Z] Session [9e16b590-df8d-11e6-923b-abf6f17cb4f2] - page.onError - msg: Failed to post impression data to collector web
+onErrorMsg=%22undefined%22
+onErrorUrl=%22NA%22
+onErrorLine=%22NA%22
+onErrorChar=%22NA%22
+stack=%22NA%22
+origin=impressionData.log
+[ERROR - 2017-01-21T03:57:06.704Z] Session [9e16b590-df8d-11e6-923b-abf6f17cb4f2] - page.onError - stack:
+  D (https://b.travel-assets.com/datacapture/2-96/de1cd7136f9df118389f14e6fd0247b5e2c7897c/datacapture/js/client-logging-bundle-min.js:1)
+[ERROR - 2017-01-21T03:57:08.924Z] Session [9e16b590-df8d-11e6-923b-abf6f17cb4f2] - page.onError - msg: Failed to post impression data to collector web
+onErrorMsg=%22undefined%22
+onErrorUrl=%22NA%22
+onErrorLine=%22NA%22
+onErrorChar=%22NA%22
+stack=%22NA%22
+origin=impressionData.log
+[ERROR - 2017-01-21T03:57:08.925Z] Session [9e16b590-df8d-11e6-923b-abf6f17cb4f2] - page.onError - stack:
+  D (https://b.travel-assets.com/datacapture/2-96/de1cd7136f9df118389f14e6fd0247b5e2c7897c/datacapture/js/client-logging-bundle-min.js:1)
+[INFO  - 2017-01-21T04:01:41.574Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-01-21T04:06:41.581Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-01-21T04:11:42.098Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-01-21T04:16:41.580Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-01-21T04:21:41.581Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-01-21T04:26:41.588Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-01-21T03:57:24.687Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: b7b47aa0-df8d-11e6-a715-4b7acb22f83f
+[ERROR - 2017-01-21T03:57:44.192Z] Session [b7b47aa0-df8d-11e6-a715-4b7acb22f83f] - page.onError - msg: Failed to post impression data to collector web
+onErrorMsg=%22undefined%22
+onErrorUrl=%22NA%22
+onErrorLine=%22NA%22
+onErrorChar=%22NA%22
+stack=%22NA%22
+origin=impressionData.log
+[ERROR - 2017-01-21T03:57:44.192Z] Session [b7b47aa0-df8d-11e6-a715-4b7acb22f83f] - page.onError - stack:
+  D (https://b.travel-assets.com/datacapture/2-96/de1cd7136f9df118389f14e6fd0247b5e2c7897c/datacapture/js/client-logging-bundle-min.js:1)
+[INFO  - 2017-01-21T04:02:24.543Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-01-21T04:07:24.543Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-01-21T04:12:24.663Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-01-21T04:17:24.544Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-01-21T04:22:24.555Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-01-21T04:27:24.561Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-01-21T04:00:29.301Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 25be2ff0-df8e-11e6-ab25-9352eab9bc30
+[ERROR - 2017-01-21T04:01:41.781Z] Session [25be2ff0-df8e-11e6-ab25-9352eab9bc30] - page.onError - msg: Failed to post impression data to collector web
+onErrorMsg=%22undefined%22
+onErrorUrl=%22NA%22
+onErrorLine=%22NA%22
+onErrorChar=%22NA%22
+stack=%22NA%22
+origin=impressionData.log
+[ERROR - 2017-01-21T04:01:41.782Z] Session [25be2ff0-df8e-11e6-ab25-9352eab9bc30] - page.onError - stack:
+  D (https://b.travel-assets.com/datacapture/2-96/de1cd7136f9df118389f14e6fd0247b5e2c7897c/datacapture/js/client-logging-bundle-min.js:1)
+[ERROR - 2017-01-21T04:01:44.037Z] Session [25be2ff0-df8e-11e6-ab25-9352eab9bc30] - page.onError - msg: Failed to post impression data to collector web
+onErrorMsg=%22undefined%22
+onErrorUrl=%22NA%22
+onErrorLine=%22NA%22
+onErrorChar=%22NA%22
+stack=%22NA%22
+origin=impressionData.log
+[ERROR - 2017-01-21T04:01:44.037Z] Session [25be2ff0-df8e-11e6-ab25-9352eab9bc30] - page.onError - stack:
+  D (https://b.travel-assets.com/datacapture/2-96/de1cd7136f9df118389f14e6fd0247b5e2c7897c/datacapture/js/client-logging-bundle-min.js:1)
+[INFO  - 2017-01-21T04:01:56.664Z] ShutdownReqHand - _handle - About to shutdown
+[INFO  - 2017-01-21T04:17:33.324Z] GhostDriver - Main - running on port 32566
+[INFO  - 2017-01-21T04:17:33.936Z] Session [88793bb0-df90-11e6-82b3-8b5b5c59cd8a] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-01-21T04:17:33.936Z] Session [88793bb0-df90-11e6-82b3-8b5b5c59cd8a] - page.customHeaders:  - {}
+[INFO  - 2017-01-21T04:17:33.936Z] Session [88793bb0-df90-11e6-82b3-8b5b5c59cd8a] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-01-21T04:17:33.936Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 88793bb0-df90-11e6-82b3-8b5b5c59cd8a
+[ERROR - 2017-01-21T04:18:52.026Z] Session [88793bb0-df90-11e6-82b3-8b5b5c59cd8a] - page.onError - msg: undefined
+[ERROR - 2017-01-21T04:18:52.026Z] Session [88793bb0-df90-11e6-82b3-8b5b5c59cd8a] - page.onError - stack:
+  (anonymous function) (https://tpc.googlesyndication.com/pagead/js/r20170116/r20110914/abg.js:35)
+[ERROR - 2017-01-21T04:20:29.697Z] Session [88793bb0-df90-11e6-82b3-8b5b5c59cd8a] - page.onError - msg: undefined
+[ERROR - 2017-01-21T04:20:29.697Z] Session [88793bb0-df90-11e6-82b3-8b5b5c59cd8a] - page.onError - stack:
+  (anonymous function) (https://tpc.googlesyndication.com/pagead/js/r20170116/r20110914/abg.js:35)
+[ERROR - 2017-01-21T04:21:04.104Z] Session [88793bb0-df90-11e6-82b3-8b5b5c59cd8a] - page.onError - msg: undefined
+[ERROR - 2017-01-21T04:21:04.105Z] Session [88793bb0-df90-11e6-82b3-8b5b5c59cd8a] - page.onError - stack:
+  (anonymous function) (https://tpc.googlesyndication.com/pagead/js/r20170116/r20110914/abg.js:35)
+[ERROR - 2017-01-21T04:22:25.769Z] Session [88793bb0-df90-11e6-82b3-8b5b5c59cd8a] - page.onError - msg: Failed to post impression data to collector web
+onErrorMsg=%22undefined%22
+onErrorUrl=%22NA%22
+onErrorLine=%22NA%22
+onErrorChar=%22NA%22
+stack=%22NA%22
+origin=impressionData.log
+[ERROR - 2017-01-21T04:22:25.769Z] Session [88793bb0-df90-11e6-82b3-8b5b5c59cd8a] - page.onError - stack:
+  D (https://b.travel-assets.com/datacapture/2-96/de1cd7136f9df118389f14e6fd0247b5e2c7897c/datacapture/js/client-logging-bundle-min.js:1)
+[INFO  - 2017-01-21T04:22:34.794Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-01-21T04:22:40.739Z] ShutdownReqHand - _handle - About to shutdown
+[INFO  - 2017-01-21T04:25:06.803Z] GhostDriver - Main - running on port 5214
+[INFO  - 2017-01-21T04:25:06.893Z] Session [9674d570-df91-11e6-bcb1-8fed48b25185] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-01-21T04:25:06.893Z] Session [9674d570-df91-11e6-bcb1-8fed48b25185] - page.customHeaders:  - {}
+[INFO  - 2017-01-21T04:25:06.893Z] Session [9674d570-df91-11e6-bcb1-8fed48b25185] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-01-21T04:25:06.893Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 9674d570-df91-11e6-bcb1-8fed48b25185
+[ERROR - 2017-01-21T04:26:18.377Z] Session [9674d570-df91-11e6-bcb1-8fed48b25185] - page.onError - msg: Failed to post impression data to collector web
+onErrorMsg=%22undefined%22
+onErrorUrl=%22NA%22
+onErrorLine=%22NA%22
+onErrorChar=%22NA%22
+stack=%22NA%22
+origin=impressionData.log
+[ERROR - 2017-01-21T04:26:18.377Z] Session [9674d570-df91-11e6-bcb1-8fed48b25185] - page.onError - stack:
+  D (https://b.travel-assets.com/datacapture/2-96/de1cd7136f9df118389f14e6fd0247b5e2c7897c/datacapture/js/client-logging-bundle-min.js:1)
+[INFO  - 2017-01-21T04:26:31.222Z] ShutdownReqHand - _handle - About to shutdown

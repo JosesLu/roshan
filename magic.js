@@ -126,7 +126,7 @@ describe('Where the magic happens', function() {
 
 			var imgArray = [];
     		var source = browser.getSource();
-    		for(var i=0;i<5;i++)
+    		for(var i=0;i<20;i++)
     		{
 	    		var v = source.indexOf('<img class="logo hidden-xxs" src="http://a.jtcstatic.com/images/MicroCompagnies/square/medium/')
 	    		imgArray[i] = source.substring(v+94,v+96);

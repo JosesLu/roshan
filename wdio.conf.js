@@ -12,6 +12,17 @@ exports.config = {
     specs: [
         './test/**/*.js'
     ],
+
+     suites: {
+        flights: [
+            './test/specs/airasia.js',
+            './test/specs/cebpac.js',
+            './test/specs/pal.js'
+        ],
+        hotels: [
+            './test/specs/hotels.js'
+        ]
+    },
     // Patterns to exclude.
     exclude: [
         // 'path/to/excluded/files'
@@ -43,9 +54,9 @@ exports.config = {
         // maxInstances can get overwritten per capability. So if you have an in-house Selenium
         // grid with only 5 firefox instances available you can make sure that not more than
         // 5 instances get started at a time.
-        maxInstances: 2,
+        maxInstances: 3,
         //
-        browserName: 'chrome'
+        browserName: 'phantomjs'
     }],
     //
     // ===================
