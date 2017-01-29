@@ -4,17 +4,17 @@ Best thezuz
 
 ##Quick-Start
 1. Open 2 Gitbash windows
-2. Run these 4 commands in the following order:
+2. Run these 2 commands in the following order:
 	<br />```$ selenium-standalone start ```
 	<br />```$ npm start ```
 3. Open browser and navigate to ```localhost:8008```
 4. Input Origin and Destination
 5. Click Search button.
-6. Refresh page after API browser closes.
 
 
 ##Task-List
 - [X] One Way Searching
+- [X] Round trip searching
 - [x] Automation
 - [ ] Hotels
 - [ ] Add more details to flight results
