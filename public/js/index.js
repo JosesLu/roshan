@@ -88,7 +88,7 @@ $span.attr('id', function (index) {
 
 	function renderIMG(data, length) {
 
-		data = data.replace(/,/g, "");
+
 		var img = [];
 		var counter = 0;
 		for (var i = 0; i < 20; i++) {
@@ -269,7 +269,7 @@ $span.attr('id', function (index) {
 
 		for(var i = 0;i < palJson.length;i++)
 		{
-			palJson[i].price1 = (palJson[i].price1*49);
+			palJson[i].price1 = (palJson[i].price1*50);
 		}
 		var counterx;
 		var cebJson1;
@@ -382,6 +382,66 @@ $span.attr('id', function (index) {
 	}
 
 }
+
+function populateHotels() { //One-way flights
+
+var hotels = (function() {
+		var json = null;
+		$.ajax({
+			'async': false,
+			'global': false,
+			'url': "hotels.txt",
+			'dataType': "text",
+			'success': function(data) {
+				json = data;
+			}
+		});
+
+		return json;
+	})();
+	var lines = hotels.split("\n");  
+
+	var hotelNames = [];
+	var hotelInfo = [];
+	for(var i = 0;i < lines.length/2;i++){
+		hotelNames[i] = lines[i * 2];
+	}
+	for(var i = 0,counter = 1;i < lines.length/2;i++){
+		hotelInfo[i] = lines[counter];
+		counter = counter+2;
+	}
+
+	for(var i = 0;i<lines.length/2;i++){
+		var hText = hotelInfo[i];
+		
+		hText = hText.replace("Business Type: ","");
+		hText = hText.replace("Tel: "," ");
+		hText = hText.replace("Fax: "," ");
+		hText = hText.replace("Web:"," ");
+		hText = hText.substr(hText.indexOf(":") + 1);
+		hotelInfo[i] = hText;
+		console.log(hText);
+	}
+	//console.log(hotelInfo);	
+
+	var hotelName = "hotelName";
+	var info = "info";
+	for (var i = 0; i < 5; i++) {
+
+			hotelName = hotelName + i; //Append current iteration to match dtime ID
+			document.getElementById(hotelName).innerHTML = hotelNames[i];
+			hotelName = "hotelName";
+
+		}
+	for (var i = 0; i < 5; i++) {
+
+		info = info + i; //Append current iteration to match dtime ID
+		document.getElementById(info).innerHTML = hotelInfo[i];
+		info = "info";
+
+	}	
+}
+
 
 function dothemagic() {
 

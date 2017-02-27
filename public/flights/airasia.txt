@@ -1,1 +1,4 @@
 id price1 timeDepart	timeArrive fDuration1 fDuration2 origin destination 
+ 1 2789.88 845  1030 AirAsia Zest 1h 45m DVO  MNL  There may be an additional fee based on your payment method. Fee is not reflected in the ticket price. 2789.88 as of 8 minutes ago 2789 .88 as of 8 minutes ago  Select Select r 1 
+  2 3181.88 2320  105   AirAsia Zest 1h 45m DVO  MNL  There may be an additional fee based on your payment method. Fee is not reflected in the ticket price. 3181.88 as of 8 minutes ago 3181 .88 as of 8 minutes ago  Select Select r 2 
+  3 3181.88 1825  2020 AirAsia Zest 1h 55m DVO  MNL  There may be an additional fee based on your payment method. Fee is not reflected in the ticket price. 3181.88 as of 8 minutes ago 3181 .88 as of 8 minutes ago  Select Select r 3

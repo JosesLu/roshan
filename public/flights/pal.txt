@@ -1,1 +1,10 @@
 id price1 timeDepart	timeArrive fDuration1 fDuration2 origin destination 
+ 1 93.99 910p  1055p  1h 45m MNL  DVO  93.99 as of 8 minutes ago 93 .99 as of 8 minutes ago   Select Select r 1 
+  2 93.99 740p  930p  1h 50m MNL  DVO     93.99 as of 8 minutes ago 93 .99 as of 8 minutes ago   Select Select r 2 
+  3 105.99 640p  830p  1h 50m MNL  DVO     105.99 as of 8 minutes ago 105 .99 as of 8 minutes ago   Select Select r 3 
+  4 111.99 1105a  1245p  1h 40m MNL  DVO     111.99 as of 8 minutes ago 111 .99 as of 8 minutes ago   Select Select r 4 
+  5 111.99 855a  1045a  1h 50m MNL  DVO     111.99 as of 8 minutes ago 111 .99 as of 8 minutes ago   Select Select r 5 
+  6 118.99 315p  505p  1h 50m MNL  DVO     118.99 as of 8 minutes ago 118 .99 as of 8 minutes ago   Select Select r 6 
+  7 118.99 4a  550a  1h 50m MNL  DVO     118.99 as of 8 minutes ago 118 .99 as of 8 minutes ago   Select Select r 7 
+  8 118.99 640a  830a  1h 50m MNL  DVO     118.99 as of 8 minutes ago 118 .99 as of 8 minutes ago   Select Select r 8 
+  9 311.98 4p  940p  5h 40m MNL  DVO 1 stop 3h 25m in CEB 3

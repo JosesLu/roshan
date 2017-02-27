@@ -30,8 +30,8 @@ casper.then(function() {
 casper.wait(10000,function() {
 	this.capture('screens/filled.png');
   this.echo(this.getCurrentUrl());	
-  
-this.capture('screens/bforesrch.png');
+ 
+ this.capture('screens/bforesrch.png');
 });
 
 // casper.thenClick('[name="btnK"]', function(){

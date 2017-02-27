@@ -14,46 +14,49 @@ it('Expedia Hotels', function() {
 	browser.close();
 
 
-	browser.url('https://www.google.com.ph/search?q=webdriverio+how+to+get+text+from+all+h3+class&oq=webdriverio+how+to+get+text+from+all+h3+class+&aqs=chrome..69i57.7203j0j7&sourceid=chrome&ie=UTF-8#hotel_dates=2017-02-05%2C2017-02-06&tbm=lcl&q=davao+hotels+list+with+info+and+price');
-	browser.click("//span[contains(., 'Price')]");
-	browser.pause(3000);
-	var hotels = $('//*[@id="rl_ist0"]/div/div/div[1]').getText();
-	for(var i = 0;i < hotels.length;i++)
-	{
-		hotels = hotels.replace("\n"," ");
-	}
-	var z = [];
-	var counter = 1;
-	for (x = 1; x < hotels.length; x++) {
-		if (hotels[x] == "₱") {
-			z[x] = "\n" + counter + " ";
-			counter++;
-		} else {
-			z[x] = hotels[x];
+	var parser = require('rss-parser');
+	var link = 'http://www.philippinecompanies.com/searchapi.php?what=hotels&where=davao'
+	link = link.replace('davao',fullTo);
+	parser.parseURL(link, function(err, parsed) {
+	 // console.log(parsed.feed.title);
+	 	var hotels = [];
+		for(var i = 0;i<20;i++){
+		hotels[i] = parsed.feed.entries[i].title + " "  + parsed.feed.entries[i].contentSnippet;	
+		//console.log(parsed.feed.entries[i].contentSnippet);
+		//var data = parsed.feed;
+
 		}
-	}
-	var temp;
-	var here;
-	for(var i = 0;i < hotels.length; i++)
-	{
-		if(hotels[x]*0 == 0 && hotels[x + 2]*0 != 0)
+		hotels = hotels.toString();
+		
+		hotels = hotels.replace(/\n/g, '');
+		hotels = hotels.replace(/\t/g, '');
+
+		var hotelCharArray = hotels.split("");
+
+		for(var i = 0;i < hotelCharArray.length;i++)
 		{
-
+			if(hotelCharArray[i] == " " && hotelCharArray[i+1] == "B" && hotelCharArray[i+2] == "u" && hotelCharArray[i+3] == "s" && hotelCharArray[i+14] == ":")
+			{
+				hotelCharArray[i] = "\n";
+			}
+			if (hotelCharArray[i] == ":" && hotelCharArray[i+1] == ",")
+			{
+				hotelCharArray[i + 1] = "\n";
+			}
+			if (hotelCharArray[i] == "." && hotelCharArray[i+1] == "c" && hotelCharArray[i+4] == ",")
+			{
+				hotelCharArray[i+4] = "\n";
+			}
 		}
-	}
 
 
+		hotels = hotelCharArray.join('');
+	    fs = require('fs');
+		fs.writeFile('D:/Roshan/public/hotels.txt',hotels, function(err) {
+			if (err) return console.log(err);
+			console.log('Write successful!');
+		});
 
-
-	hotels = z.join('');
-	hotels = "0 " + hotels;
-	hotels = "id price \n" + hotels;
-	fs = require('fs');
-	fs.writeFile('D:/Roshan/public/flights.txt', hotels, function(err) {
-		if (err) return console.log(err);
-		console.log('Write successful!');
-	});
-
-
+	})
 });
 });

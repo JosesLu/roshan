@@ -6,7 +6,6 @@
   "scripts": {
     "test": "wdio",
     "start": "concurrently \"node app\" \"node_modules/.bin/nodemon --watch public/options.html node_modules/webdriverio/bin/wdio --suite flights\" \"node_modules/.bin/nodemon --watch public/flights/ceb.txt converter.js --i=public/flights/ceb.txt --o=public/flights/ceb.json --h\" \"node_modules/.bin/nodemon --watch public/flights/airasia.txt converter.js --i=public/flights/airasia.txt --o=public/flights/airasia.json --h\" \"node_modules/.bin/nodemon --watch public/flights/pal.txt converter.js --i=public/flights/pal.txt --o=public/flights/pal.json --h\""
-   
   },
   "repository": {
     "type": "git",
@@ -29,6 +28,7 @@
     "express": "^4.14.0",
     "express-handlebars": "^3.0.0",
     "mocha": "^3.2.0",
+    "rss-parser": "^2.5.2",
     "selenium-standalone": "^5.9.0",
     "split": "^1.0.0",
     "text-2-json": "^1.0.0",
