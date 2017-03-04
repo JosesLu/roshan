@@ -16,9 +16,11 @@ Best thezuz
 - [X] One Way Searching
 - [X] Round trip searching
 - [x] Automation
-- [ ] Hotels
+- [x] Hotels
 - [ ] Add more details to flight results
 - [ ] Flight Sorting
+- [ ] Code Cleanup
+- [ ] Dynamic Results
 - [x] Reroute to support handlebars directory
 - [x] Fix UI bugs
 - [X] Location and destination Autofill textbox
