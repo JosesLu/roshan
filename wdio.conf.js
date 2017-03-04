@@ -17,7 +17,8 @@ exports.config = {
         flights: [
             './test/specs/airasia.js',
             './test/specs/cebpac.js',
-            './test/specs/pal.js'
+            './test/specs/pal.js',
+             './test/specs/hotels.js'
         ],
         hotels: [
             './test/specs/hotels.js'
@@ -56,7 +57,7 @@ exports.config = {
         // 5 instances get started at a time.
         maxInstances: 3,
         //
-        browserName: 'chrome'
+        browserName: 'phantomjs'
     }],
     //
     // ===================

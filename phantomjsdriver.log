@@ -860,20 +860,14 @@ origin=impressionData.log
 [INFO  - 2017-02-27T14:05:26.368Z] Session [c9b57bc0-fcf5-11e6-b6dd-0755f431b0[INFO  - 2017-02-27T14:05:26.372Z] Session [c9b26e80-fcf5-11e6-81d7-2b5b6e7ba5d3] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
 [INFO  - 2017-02-27T14:05:26.372[ERROR - 2017-02-27T14:06:13.004Z] Session [c9b57bc0-fcf5-11e6-b6dd-0755f431b0[INFO  - 2017-02-27T14:10:25.733Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
 [INFO  - 2017-02-27T14:15:25.733Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-a.log
-[ERROR - 2017-02-27T14:06:25.558Z] Session [c9b26e80-fcf5-11e6-81d7-2b5b6e7ba5d3] - page.onError - stack:
-  D (https://b.travel-assets.com/datacapture/2-101/33c6243252bf33c5b7fb23c874e0d6b4612d4092/datacapture/js/client-logging-bundle-min.js:1)
-[ERROR - 2017-02-27T14:06:33.038Z] Session [c9b26e80-fcf5-11e6-81d7-2b5b6e7ba5d3] - page.onError - msg: Failed to post impression data to collector web
-onErrorMsg=%22undefined%22
-onErrorUrl=%22NA%22
-onErrorLine=%22NA%22
-onErrorChar=%22NA%22
-stack=%22NA%22
-origin=impressionData.log
-[ERROR - 2017-02-27T14:06:33.039Z] Session [c9b26e80-fcf5-11e6-81d7-2b5b6e7ba5d3] - page.onError - stack:
-  D (https://b.travel-assets.com/datacapture/2-101/33c6243252[INFO  - 2017-02-27T14:10:25.725Z] SessionManagerReqHand - _cleanupWindowlessS[INFO  - 2017-02-27T14:10:25.750Z] SessionManagerReqHand - _[INFO  - 2017-02-27T14:15:25.730Z] SessionManagerReqHand - _cleanupWindowlessS[INFO  - 2017-02-27T14:15:25.751Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-FO  - 2017-02-27T14:05:48.078Z] Session [d69f9af0-fcf5-11e6-9add-53c8338622[INFO  - 2017-02-27T14:05:48.110Z] Session [d6a54040-fcf5-11e6-8baf-0bd51d06c86d] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
-[INFO  - 2017-02-27T14:05:48.110[INFO  - 2017-02-27T14:07:01.001Z] ShutdownReqHand - _handle - About to shutdown
+[INFO  - 2017-02-27T14:20:25.733Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-02-27T14:25:25.734Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-02-27T14:30:25.735Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-02-27T14:35:25.734Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-02-27T14:37:06.309Z] ShutdownReqHand - _handle - About to shutdown
+tack:
+  D (https://b.travel-assets.com/datacapture/2-101/33c6243252[INFO  - 2017-02-27T14:10:25.725Z] SessionManagerReqHand - _cleanupWindowlessS[INFO  - 2017-02-27T14:10:25.750Z] SessionManagerReqHand - _[INFO  - 2017-02-27T14:15:25.730Z] SessionManagerReqHand - _cleanupWindowlessS[INFO  - 2017-02-27T14:15:25.751Z] SessionManagerReqHand - _[INFO  - 2017-02-27T14:20:25.732Z] SessionManagerReqHand - _cleanupWindowlessS[INFO  - 2017-02-27T14:20:25.750Z] SessionManagerReqHand - _[INFO  - 2017-02-27T14:25:25.733Z] SessionManagerReqHand - _cleanupWindowlessS[INFO  - 2017-02-27T14:25:25.759Z] SessionManagerReqHand - _[INFO  - 2017-02-27T14:30:25.732Z] SessionManagerReqHand - _cleanupWindowlessS[INFO  - 2017-02-27T14:30:25.759Z] SessionManagerReqHand - _[INFO  - 2017-02-27T14:35:25.742Z] SessionManagerReqHand - _cleanupWindowlessS[INFO  - 2017-02-27T14:35:25.763Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+1.001Z] ShutdownReqHand - _handle - About to shutdown
 ROR - 2017-02-27T14:06:48.592Z] Session [d6a54040-fcf5-11e6-8baf-0bd51d06c86d] - page.onError - msg: Failed to post impression data to collector web
 onErrorMsg=%22undefined%22
 onErrorUrl=%22NA%22
@@ -893,3 +887,809 @@ origin=impressionData.log
 [ERROR - 2017-02-27T14:06:52.555Z] Session [d6a54040-fcf5-11e6-8baf-0bd51d06c86d] - page.onError - stack:
   D (https://b.travel-assets.com/datacapture/2-101/33c6243252bf33c5b7fb23c874e0d6b4612d4092/datacapture/js/client-logging-bundle-min.js:1)
 [INFO  - 2017-02-27T14:06:53.544Z] ShutdownReqHand - _handle - About to shutdown
+[INFO  - 2017-03-03T08:28:06.733Z] GhostDriver - Main - running on port 25256
+[INFO  - 2017-03-03T08:28:07.395Z] Session [540c2ba0-ffeb-11e6-ae14-a1dc4e612c8a] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-03-03T08:28:07.396Z] Session [540c0490-ffeb-11e6-a37b-c5e1c14fc7ac] - page.customHeaders:  - {}
+[INFO  - 2017-03-03T08:28:07.410Z] Session [540c0490-ffeb-11e6-a37b-c5e1c14fc7ac] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-03-03T08:28:07.411Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 540c0490-ffeb-11e6-a37b-c5e1c14fc7ac
+[INFO  - 2017-03-03T08:28:07.524Z] Session [540c2ba0-ffeb-11e6-ae14-a1dc4e612c8a] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-03-03T08:28:07.524Z] Session [540c2ba0-ffeb-11e6-ae14-a1dc4e612c8a] - page.customHeaders:  - {}
+[ERROR - 2017-03-03T08:28:30.670Z] Session [540c0490-ffeb-11e6-a37b-c5e1c14fc7ac] - page.onError - msg: Failed to post impression data to collector web
+onErrorMsg=%22undefined%22
+onErrorUrl=%22NA%22
+onErrorLine=%22NA%22
+onErrorChar=%22NA%22
+stack=%22NA%22
+origin=impressionData.log
+[ERROR - 2017-03-03T08:28:30.670Z] Session [540c0490-ffeb-11e6-a37b-c5e1c14fc7ac] - page.onError - stack:
+  D (https://b.travel-assets.com/datacapture/2-102/9732a6961190229cceb083a46a7b76ab93d9fc53/datacapture/js/client-logging-bundle-min.js:1)
+JS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-03-03T08:28:18.116Z] Session [5a705ed0-ffeb-11e6-b5b2-1bc4c6b1371e] - page.customHeaders:  - {}
+[INFO  - 2017-03-03T08:28:18.116Z] Session [5a705ed0-ffeb-11e6-b5b2-1bc4c6b1371e] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-03-03T08:28:18.116Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 5a705ed0-ffeb-11e6-b5b2-1bc4c6b1371e
+[INFO  - 2017-03-03T08:28:18.177Z] Session [5a705ed0-ffeb-11e6-b5b2-1bc4c6b1371e] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-03-03T08:28:18.177Z] Session [5a705ed0-ffeb-11e6-b5b2-1bc4c6b1371e] - page.customHeaders:  - {}
+[INFO  - 2017-03-03T08:28:39.096Z] ShutdownReqHand - _handle - About to shutdown
+[INFO  - 2017-03-03T08:32:20.638Z] GhostDriver - Main - running on port 48644
+[INFO  - 2017-03-03T08:32:21.160Z] Session [eb4e3f30-ffeb-11e6-be2e-1b0373ad9c[INFO  - 2017-03-03T08:32:21.212Z] Session [eb559230-ffeb-11e6-9b05-737877d1912a] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-03-03T08:32:21.212Z] Session [eb559230-ffeb-11e6-9b05-737877d1912a] - page.customHeaders:  - {}
+[INFO  - 2017-03-03T08:32:21.212Z] Session [eb559230-ffeb-11e6-9b05-737877d1912a] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-03-03T08:32:21.213Z] SessionManagerReqHand - _post[INFO  - 2017-03-03T08:32:21.243Z] Session [eb4e3f30-ffeb-11e6-be2e-1b0373ad9c[INFO  - 2017-03-03T08:32:21.307Z] Session [eb559230-ffeb-11e6-9b05-737877d1912a] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-03-03T08:32:21.307[ERROR - 2017-03-03T08:32:46.009Z] Session [eb4e3f30-ffeb-11e6-be2e-1b0373ad9cde] - page.onError - msg: Failed to post impression data to collector web
+onErrorMsg=%22undefined%22
+onErrorUrl=%22NA%22
+onErrorLine=%22NA%22
+onErrorChar=%22NA%22
+stack=%22NA%22
+origin=impressionData.log
+[ERROR - 2017-03-03T08:32:46.010Z] Session [eb4e3f30-ffeb-11e6-be2e-1b0373ad9cde] - page.onError - stack:
+  D (https://b.travel-assets.com/datacapture/2-102/9732a6961190229cceb083a46a7b76ab93d9fc53/datacapture/js/client-logging-bundle-min.js:1)
+[INFO  - 2017-03-03T08:32:58.253Z] ShutdownReqHand - _handle - About to shutdown
+2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-03-03T08:32:30.804Z] Session [f10c2040-ffeb-11e6-b869-cbb68081806c] - page.customHeaders:  - {}
+[INFO  - 2017-03-03T08:32:30.804Z] Session [f10c2040-ffeb-11e6-b869-cbb68081806c] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-03-03T08:32:30.804Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: f10c2040-ffeb-11e6-b869-cbb68081806c
+[INFO  - 2017-03-03T08:32:30.912Z] Session [f10c2040-ffeb-11e6-b869-cbb68081806c] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-03-03T08:32:30.912Z] Session [f10c2040-ffeb-11e6-b869-cbb68081806c] - page.customHeaders:  - {}
+[INFO  - 2017-03-03T08:32:52.458Z] ShutdownReqHand - _handle - About to shutdown
+[INFO  - 2017-03-03T12:43:37.815Z] GhostDriver - Main - running on port 24150
+[INFO  - 2017-03-03T12:43:38.843Z] Session [064d5410-000f-11e7-9b30-7fc8e8f0dfc3] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-03-03T12:43:38.843Z] Session [064d5410-000f-11e7-9b30-7fc8e8f0dfc3] - page.customHeaders:  - {}
+[INFO  - 2017-03-03T12:43:38.843Z] Session [064d5410-000f-11e7-9b30-7fc8e8f0dfc3] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-03-03T12:43:38.843Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 064d5410-000f-11e7-9b30-7fc8e8f0dfc3
+[INFO  - 2017-03-03T12:43:39.153Z] Session [064d5410-000f-11e7-9b30-7fc8e8f0dfc3] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-03-03T12:43:39.153Z] Session [064d5410-000f-11e7-9b30-7fc8e8f0dfc3] - page.customHeaders:  - {}
+[INFO  - 2017-03-03T12:48:38.311Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-03-03T12:53:38.612Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-03-03T12:58:38.614Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-03-03T13:03:38.612Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-03-03T13:08:38.612Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-03-03T13:13:38.615Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-03-03T13:16:17.517Z] ShutdownReqHand - _handle - About to shutdown
+tack:
+  D (https://b.travel-assets.com/datacapture/2-102/9732a6961190229cceb083a46a7b76ab93d9fc53/datacapture/js/client-logging-bundle-min.js:1)
+[INFO  - 2017-03-03T12:48:37.818Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-03-03T12:53:37.822Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-03-03T12:58:37.824Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-03-03T13:03:37.834Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-03-03T13:08:37.846Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-03-03T13:13:37.845Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":fal[INFO  - 2017-03-03T12:44:07.591Z] SessionManagerReqHand - _postNewSessionComm[INFO  - 2017-03-03T12:44:07.591Z] SessionManagerReqHand - _post[INFO  - 2017-03-03T12:44:08.002Z] Session [176342a0-000f-11e7-8ffb-2172453ee9ca] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-03-03T12:44:08.002Z] Session [176342a0-000f-11e7-8ffb-2172453ee9ca] - page.customHeaders:  - {}
+[[INFO  - 2017-03-03T12:44:29.301Z] ShutdownReqHand - _handle - About to shutdown
+O  - 2017-03-03T12:44:23.232Z] ShutdownReqHand - _handle - About to shutdown
+[INFO  - 2017-03-03T12:44:34.235Z] GhostDriver - Main - running on port 12406
+[INFO  - 2017-03-03T12:44:34.339Z] Session [2761f4d0-000f-11e7-8d3f-35952a23733e] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-03-03T12:44:34.339Z] Session [2761f4d0-000f-11e7-8d3f-35952a23733e] - page.customHeaders:  - {}
+[INFO  - 2017-03-03T12:44:34.340Z] Session [2761f4d0-000f-11e7-8d3f-35952a23733e] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-03-03T12:44:34.340Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 2761f4d0-000f-11e7-8d3f-35952a23733e
+[INFO  - 2017-03-03T12:44:34.566Z] Session [2761f4d0-000f-11e7-8d3f-35952a23733e] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-03-03T12:44:34.566Z] Session [2761f4d0-000f-11e7-8d3f-35952a23733e] - page.customHeaders:  - {}
+[INFO  - 2017-03-03T12:44:51.002Z] ShutdownReqHand - _handle - About to shutdown
+[INFO  - 2017-03-03T13:07:46.242Z] GhostDriver - Main - running on port 45798
+[INFO  - 2017-03-03T13:07:46.841Z] Session [656022e0-0012-11e7-8a7c-5db252aafc[INFO  - 2017-03-03T13:07:46.842Z] Session [656022e0-0012-11e7-ad89-e31bb889abe2] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-03-03T13:07:46.842Z] Session [656022e0-0012-11e7-ad89-e31bb889abe2] - page.customHeaders:  - {}
+[INFO  - 2017-03-03T13:07:46.842Z] Session [656022e0-0012-11e7-ad89-e31bb889abe2] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-03-03T13:07:46.843Z] SessionManagerReqHand - _post[INFO  - 2017-03-03T13:07:46.960Z] Session [656022e0-0012-11e7-8a7c-5db252aafc[INFO  - 2017-03-03T13:07:47.011Z] Session [656022e0-0012-11e7-ad89-e31bb889abe2] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-03-03T13:07:47.012[INFO  - 2017-03-03T13:12:46.241Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-03-03T13:17:46.253Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-03-03T13:22:46.264Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-03-03T13:27:46.261Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-03-03T13:32:46.259Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-03-03T13:37:46.269Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-03-03T13:40:18.751Z] ShutdownReqHand - _handle - About to shutdown
+.257Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-03-03T13:27:46.257Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-03-03T13:32:46.258Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-03-03T13:37:46.258Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-03-03T13:40:18.477Z] ShutdownReqHand - _handle - About to shutdown
+ion Created: 6bf02100-0012-11e7-9af5-4130fcbfca62
+[INFO  - 2017-03-03T13:07:57.980Z] Session [6bf02100-0012-11e7-9af5-4130fcbfca62] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-03-03T13:07:57.980Z] Session [6bf02100-0012-11e7-9af5-4130fcbfca62] - page.customHeaders:  - {}
+[INFO  - 2017-03-03T13:12:57.308Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-03-03T13:17:57.313Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-03-03T13:22:57.321Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-03-03T13:27:57.321Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-03-03T13:32:57.324Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-03-03T13:37:57.328Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-03-03T13:40:19.662Z] ShutdownReqHand - _handle - About to shutdown
+bled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-03-03T13:23:50.029Z] Session [a37af620-0014-11e7-a494-e9c6932b7fc8] - page.customHeaders:  - {}
+[INFO  - 2017-03-03T13:23:50.029Z] Session [a37af620-0014-11e7-a494-e9c6932b7fc8] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType[INFO  - 2017-03-03T13:23:50.049Z] Session [a36ec120-0014-11e7-9902-bf6cf3992641] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows"[INFO  - 2017-03-03T13:23:50.143Z] Session [a37af620-0014-11e7-a494-e9c6932b7fc8] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.[INFO  - 2017-03-03T13:24:11.349Z] ShutdownReqHand - _handle - About to shutdown
+O  - 2017-03-03T13:23:57.214Z] ShutdownReqHand - _handle - About to shutdown
+[INFO  - 2017-03-03T13:24:08.804Z] GhostDriver - Main - running on port 19763
+[INFO  - 2017-03-03T13:24:08.862Z] Session [aeb54270-0014-11e7-a1ac-9339ae44552e] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-03-03T13:24:08.862Z] Session [aeb54270-0014-11e7-a1ac-9339ae44552e] - page.customHeaders:  - {}
+[INFO  - 2017-03-03T13:24:08.862Z] Session [aeb54270-0014-11e7-a1ac-9339ae44552e] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-03-03T13:24:08.863Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: aeb54270-0014-11e7-a1ac-9339ae44552e
+[INFO  - 2017-03-03T13:24:09.013Z] Session [aeb54270-0014-11e7-a1ac-9339ae44552e] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-03-03T13:24:09.013Z] Session [aeb54270-0014-11e7-a1ac-9339ae44552e] - page.customHeaders:  - {}
+[INFO  - 2017-03-03T13:25:27.545Z] ShutdownReqHand - _handle - About to shutdown
+[INFO  - 2017-03-03T13:44:14.897Z] GhostDriver - Main - running on port 43287
+[INFO  - 2017-03-03T13:44:15.518Z] Session [7dec3790-0017-11e7-9f74-1b37e86106da] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-03-03T13:44:15.518Z] Session [7dec3790-0017-11e7-9f74-1b37e86106da] - page.customHeaders:  - {}
+[INFO  - 2017-03-03T13:44:15.518Z] Session [7dec3790-0017-11e7-9f74-1b37e86106da] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-03-03T13:44:15.519Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 7dec3790-0017-11e7-9f74-1b37e86106da
+[INFO  - 2017-03-03T13:44:15.754Z] Session [7dec1080-0017-11e7-aaf3-3553fa836d4d] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-03-03T13:44:15.754Z] Session [7dec1080-0017-11e7-aaf3-3553fa836d4d] - page.customHeaders:  - {}
+[INFO  - 2017-03-03T13:44:40.397Z] ShutdownReqHand - _handle - About to shutdown
+[INFO  - 2017-03-03T13:44:25.671Z] GhostDriver - Main - running on port 11791
+[INFO  - 2017-03-03T13:44:25.759Z] Session [84092890-0017-11e7-a6ef-b1db8ca31a40] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-03-03T13:44:25.759Z] Session [84092890-0017-11e7-a6ef-b1db8ca31a40] - page.customHeaders:  - {}
+[INFO  - 2017-03-03T13:44:25.760Z] Session [84092890-0017-11e7-a6ef-b1db8ca31a40] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-03-03T13:44:25.760Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 84092890-0017-11e7-a6ef-b1db8ca31a40
+[INFO  - 2017-03-03T13:44:25.820Z] Session [84092890-0017-11e7-a6ef-b1db8ca31a40] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-03-03T13:44:25.820Z] Session [84092890-0017-11e7-a6ef-b1db8ca31a40] - page.customHeaders:  - {}
+[INFO  - 2017-03-03T13:45:44.311Z] ShutdownReqHand - _handle - About to shutdown
+[INFO  - 2017-03-03T13:47:54.225Z] GhostDriver - Main - running on port 6764
+[INFO  - 2017-03-03T13:47:54.813Z] Session [00a3f650-0018-11e7-a235-539cde9fa0[INFO  - 2017-03-03T13:47:54.829Z] Session [00a64040-0018-11e7-9cf0-0dc5edb7525a] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-03-03T13:47:54.829Z] Session [00a64040-0018-11e7-9cf0-0dc5edb7525a] - page.customHeaders:  - {}
+[INFO  - 2017-03-03T13:47:54.829Z] Session [00a64040-0018-11e7-9cf0-0dc5edb7525a] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-03-03T13:47:54.829Z] SessionManagerReqHand - _post[INFO  - 2017-03-03T13:47:54.994Z] Session [00a3f650-0018-11e7-a235-539cde9fa0d7] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-03-03T13:47:54.994Z] Session [00a3f650-0018-11e7-a235-539cde9fa0d7] - page.customHeaders:  - {}
+[INFO  - 2017-03-03T13:48:01.871Z] ShutdownReqHand - _handle - About to shutdo[ERROR - 2017-03-03T13:48:18.278Z] Session [00a64040-0018-11e7-9cf0-0dc5edb7525a] - page.onError - msg: Failed to post impression data to collector web
+onErrorMsg=%22undefined%22
+onErrorUrl=%22NA%22
+onErrorLine=%22NA%22
+onErrorChar=%22NA%22
+stack=%22NA%22
+origin=impressionData.log
+[ERROR - 2017-03-03T13:48:18.278Z] Session [00a64040-0018-11e7-9cf0-0dc5edb7525a] - page.onError - stack:
+  D (https://b.travel-assets.com/datacapture/2-102/9732a6961190229cceb083a46a7b76ab93d9fc53/datacapture/js/client-logging-bundle-min.js:1)
+2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-03-03T13:48:05.146Z] Session [06cca720-0018-11e7-b013-29b55cb5cf6e] - page.customHeaders:  - {}
+[INFO  - 2017-03-03T13:48:05.147Z] Session [06cca720-0018-11e7-b013-29b55cb5cf6e] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-03-03T13:48:05.147Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 06cca720-0018-11e7-b013-29b55cb5cf6e
+[INFO  - 2017-03-03T13:48:05.206Z] Session [06cca720-0018-11e7-b013-29b55cb5cf6e] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-03-03T13:48:05.206Z] Session [06cca720-0018-11e7-b013-29b55cb5cf6e] - page.customHeaders:  - {}
+[INFO  - 2017-03-03T13:48:29.799Z] ShutdownReqHand - _handle - About to shutdown
+[INFO  - 2017-03-03T14:17:35.113Z] GhostDriver - Main - running on port 2141
+[INFO  - 2017-03-03T14:17:35.258Z] Session [25dec450-001c-11e7-ad43-7d084ad09180] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-03-03T14:17:35.259Z] Session [25dec450-001c-11e7-ad43-7d084ad09180] - page.customHeaders:  - {}
+[INFO  - 2017-03-03T14:17:35.259Z] Session [25dec450-001c-11e7-ad43-7d084ad09180] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-03-03T14:17:35.259Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 25dec450-001c-11e7-ad43-7d084ad09180
+[INFO  - 2017-03-03T14:17:35.330Z] Session [25dec450-001c-11e7-ad43-7d084ad09180] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-03-03T14:17:35.330Z] Session [25dec450-001c-11e7-ad43-7d084ad09180] - page.customHeaders:  - {}
+[INFO  - 2017-03-03T14:17:51.265Z] ShutdownReqHand - _handle - About to shutdown
+[INFO  - 2017-03-03T14:18:43.951Z] GhostDriver - Main - running on port 10540
+[INFO  - 2017-03-03T14:18:44.059Z] Session [4ee03410-001c-11e7-8a0d-23dd94863d3d] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-03-03T14:18:44.059Z] Session [4ee03410-001c-11e7-8a0d-23dd94863d3d] - page.customHeaders:  - {}
+[INFO  - 2017-03-03T14:18:44.059Z] Session [4ee03410-001c-11e7-8a0d-23dd94863d3d] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-03-03T14:18:44.059Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 4ee03410-001c-11e7-8a0d-23dd94863d3d
+[INFO  - 2017-03-03T14:18:44.127Z] Session [4ee03410-001c-11e7-8a0d-23dd94863d3d] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-03-03T14:18:44.127Z] Session [4ee03410-001c-11e7-8a0d-23dd94863d3d] - page.customHeaders:  - {}
+[INFO  - 2017-03-03T14:19:03.238Z] ShutdownReqHand - _handle - About to shutdown
+[INFO  - 2017-03-03T14:21:03.335Z] GhostDriver - Main - running on port 49117
+[INFO  - 2017-03-03T14:21:03.525Z] Session [a20154d0-001c-11e7-a2a4-6be2d71bf232] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-03-03T14:21:03.525Z] Session [a20154d0-001c-11e7-a2a4-6be2d71bf232] - page.customHeaders:  - {}
+[INFO  - 2017-03-03T14:21:03.525Z] Session [a20154d0-001c-11e7-a2a4-6be2d71bf232] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-03-03T14:21:03.525Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: a20154d0-001c-11e7-a2a4-6be2d71bf232
+[INFO  - 2017-03-03T14:21:03.590Z] Session [a20154d0-001c-11e7-a2a4-6be2d71bf232] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-03-03T14:21:03.590Z] Session [a20154d0-001c-11e7-a2a4-6be2d71bf232] - page.customHeaders:  - {}
+[ERROR - 2017-03-03T14:21:21.891Z] Session [a20154d0-001c-11e7-a2a4-6be2d71bf232] - page.onError - msg: Failed to post impression data to collector web
+onErrorMsg=%22undefined%22
+onErrorUrl=%22NA%22
+onErrorLine=%22NA%22
+onErrorChar=%22NA%22
+stack=%22NA%22
+origin=impressionData.log
+[ERROR - 2017-03-03T14:21:21.891Z] Session [a20154d0-001c-11e7-a2a4-6be2d71bf232] - page.onError - stack:
+  D (https://b.travel-assets.com/datacapture/2-102/9732a6961190229cceb083a46a7b76ab93d9fc53/datacapture/js/client-logging-bundle-min.js:1)
+[INFO  - 2017-03-03T14:21:38.567Z] ShutdownReqHand - _handle - About to shutdown
+[INFO  - 2017-03-03T14:25:41.800Z] GhostDriver - Main - running on port 39693
+[INFO  - 2017-03-03T14:25:41.896Z] Session [47ec9cb0-001d-11e7-aa4a-f9bcd85f1243] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-03-03T14:25:41.896Z] Session [47ec9cb0-001d-11e7-aa4a-f9bcd85f1243] - page.customHeaders:  - {}
+[INFO  - 2017-03-03T14:25:41.897Z] Session [47ec9cb0-001d-11e7-aa4a-f9bcd85f1243] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-03-03T14:25:41.897Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 47ec9cb0-001d-11e7-aa4a-f9bcd85f1243
+[INFO  - 2017-03-03T14:25:41.970Z] Session [47ec9cb0-001d-11e7-aa4a-f9bcd85f1243] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-03-03T14:25:41.970Z] Session [47ec9cb0-001d-11e7-aa4a-f9bcd85f1243] - page.customHeaders:  - {}
+[ERROR - 2017-03-03T14:26:10.045Z] Session [47ec4e90-001d-11e7-a8fd-e5c7fc2a1081] - page.onError - msg: Failed to post impression data to collector web
+onErrorMsg=%22undefined%22
+onErrorUrl=%22NA%22
+onErrorLine=%22NA%22
+onErrorChar=%22NA%22
+stack=%22NA%22
+origin=impressionData.log
+[ERROR - 2017-03-03T14:26:10.046Z] Session [47ec4e90-001d-11e7-a8fd-e5c7fc2a1081] - page.onError - stack:
+  D (https://b.travel-assets.com/datacapture/2-102/9732a6961190229cceb083a46a7b76ab93d9fc53/datacapture/js/client-logging-bundle-min.js:1)
+[INFO  - 2017-03-03T14:30:41.805Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-03-03T14:35:41.804Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-03-03T14:40:41.807Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-03-03T14:45:41.806Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-03-03T14:50:41.808Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-03-03T14:55:41.808Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-03-03T14:26:48.615Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 6fb146b0-001d-11e7-9105-414443767482
+[INFO  - 2017-03-03T14:26:48.699Z] Session [6fb146b0-001d-11e7-9105-414443767482] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-03-03T14:26:48.699Z] Session [6fb146b0-001d-11e7-9105-414443767482] - page.customHeaders:  - {}
+[ERROR - 2017-03-03T14:27:29.644Z] Session [6fb146b0-001d-11e7-9105-414443767482] - page.onError - msg: Failed to post impression data to collector web
+onErrorMsg=%22undefined%22
+onErrorUrl=%22NA%22
+onErrorLine=%22NA%22
+onErrorChar=%22NA%22
+stack=%22NA%22
+origin=impressionData.log
+[ERROR - 2017-03-03T14:27:29.644Z] Session [6fb146b0-001d-11e7-9105-414443767482] - page.onError - stack:
+  D (https://b.travel-assets.com/datacapture/2-102/9732a6961190229cceb083a46a7b76ab93d9fc53/datacapture/js/client-logging-bundle-min.js:1)
+[ERROR - 2017-03-03T14:27:30.683Z] Session [6fb146b0-001d-11e7-9105-414443767482] - page.onError - msg: Failed to post impression data to collector web
+onErrorMsg=%22undefined%22
+onErrorUrl=%22NA%22
+onErrorLine=%22NA%22
+onErrorChar=%22NA%22
+stack=%22NA%22
+origin=impressionData.log
+[ERROR - 2017-03-03T14:27:30.683Z] Session [6fb146b0-001d-11e7-9105-414443767482] - page.onError - stack:
+  D (https://b.travel-assets.com/datacapture/2-102/9732a6961190229cceb083a46a7b76ab93d9fc53/datacapture/js/client-logging-bundle-min.js:1)
+[ERROR - 2017-03-03T14:28:49.570Z] Session [6fb146b0-001d-11e7-9105-414443767482] - page.onError - msg: Failed to post impression data to collector web
+onErrorMsg=%22undefined%22
+onErrorUrl=%22NA%22
+onErrorLine=%22NA%22
+onErrorChar=%22NA%22
+stack=%22NA%22
+origin=impressionData.log
+[ERROR - 2017-03-03T14:28:49.571Z] Session [6fb146b0-001d-11e7-9105-414443767482] - page.onError - stack:
+  D (https://b.travel-assets.com/datacapture/2-102/9732a6961190229cceb083a46a7b76ab93d9fc53/datacapture/js/client-logging-bundle-min.js:1)
+[INFO  - 2017-03-03T14:31:48.560Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-03-03T14:36:48.569Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-03-03T14:41:48.569Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-03-03T14:46:48.572Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-03-03T14:51:48.572Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-03-03T14:56:48.576Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-03-03T15:01:21.854Z] ShutdownReqHand - _handle - About to shutdown
+tingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-03-03T14:28:29.132Z] Session [ab8e70e0-001d-11e7-9f21-e5d787feb51a] - page.customHeaders:  - {}
+[ERROR - 2017-03-03T14:29:10.500Z] Session [ab8c26f0-001d-11e7-be66-3fcde95ae9ab] - page.onError - msg: Failed to post impression data to collector web
+onErrorMsg=%22undefined%22
+onErrorUrl=%22NA%22
+onErrorLine=%22NA%22
+onErrorChar=%22NA%22
+stack=%22NA%22
+origin=impressionData.log
+[ERROR - 2017-03-03T14:29:10.501Z] Session [ab8c26f0-001d-11e7-be66-3fcde95ae9ab] - page.onError - stack:
+  D (https://b.travel-assets.com/datacapture/2-102/9732a6961190229cceb083a46a7b76ab93d9fc53/datacapture/js/client-logging-bundle-min.js:1)
+[ERROR - 2017-03-03T14:29:13.101Z] Session [ab8c26f0-001d-11e7-be66-3fcde95ae9ab] - page.onError - msg: Failed to post impression data to collector web
+onErrorMsg=%22undefined%22
+onErrorUrl=%22NA%22
+onErrorLine=%22NA%22
+onErrorChar=%22NA%22
+stack=%22NA%22
+origin=impressionData.log
+[ERROR - 2017-03-03T14:29:13.101Z] Session [ab8c26f0-001d-11e7-be66-3fcde95ae9ab] - page.onError - stack:
+  D (https://b.travel-assets.com/datacapture/2-102/9732a6961190229cceb083a46a7b76ab93d9fc53/datacapture/js/client-logging-bundle-min.js:1)
+[INFO  - 2017-03-03T14:41:20.348Z] GhostDriver - Main - running on port 25191
+[INFO  - 2017-03-03T14:41:20.752Z] Session [7787e3b0-001f-11e7-bafc-39775508923e] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-03-03T14:41:20.753Z] Session [7787e3b0-001f-11e7-bafc-39775508923e] - page.customHeaders:  - {}
+[INFO  - 2017-03-03T14:41:20.753Z] Session [7787e3b0-001f-11e7-bafc-39775508923e] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-03-03T14:41:20.753Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 7787e3b0-001f-11e7-bafc-39775508923e
+[INFO  - 2017-03-03T14:41:20.850Z] Session [7787e3b0-001f-11e7-bafc-39775508923e] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-03-03T14:41:20.850Z] Session [7787e3b0-001f-11e7-bafc-39775508923e] - page.customHeaders:  - {}
+[ERROR - 2017-03-03T14:41:37.755Z] Session [7787e3b0-001f-11e7-bafc-39775508923e] - page.onError - msg: Failed to post impression data to collector web
+onErrorMsg=%22undefined%22
+onErrorUrl=%22NA%22
+onErrorLine=%22NA%22
+onErrorChar=%22NA%22
+stack=%22NA%22
+origin=impressionData.log
+[ERROR - 2017-03-03T14:41:37.755Z] Session [7787e3b0-001f-11e7-bafc-39775508923e] - page.onError - stack:
+  D (https://b.travel-assets.com/datacapture/2-102/9732a6961190229cceb083a46a7b76ab93d9fc53/datacapture/js/client-logging-bundle-min.js:1)
+[ERROR - 2017-03-03T14:41:44.718Z] Session [7787e3b0-001f-11e7-bafc-39775508923e] - page.onError - msg: Failed to post impression data to collector web
+onErrorMsg=%22undefined%22
+onErrorUrl=%22NA%22
+onErrorLine=%22NA%22
+onErrorChar=%22NA%22
+stack=%22NA%22
+origin=impressionData.log
+[ERROR - 2017-03-03T14:41:44.718Z] Session [7787e3b0-001f-11e7-bafc-39775508923e] - page.onError - stack:
+  D (https://b.travel-assets.com/datacapture/2-102/9732a6961190229cceb083a46a7b76ab93d9fc53/datacapture/js/client-logging-bundle-min.js:1)
+[INFO  - 2017-03-03T14:41:57.974Z] ShutdownReqHand - _handle - About to shutdown
+[INFO  - 2017-03-03T14:43:19.036Z] GhostDriver - Main - running on port 23558
+[INFO  - 2017-03-03T14:43:19.393Z] Session [be3f11c0-001f-11e7-aaac-83754c2a9f[INFO  - 2017-03-03T14:43:19.489Z] Session [be4cf470-001f-11e7-8ccb-e7eef37df6e1] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-03-03T14:43:19.489Z] Session [be4cf470-001f-11e7-8ccb-e7eef37df6e1] - page.customHeaders:  - {}
+[INFO  - 2017-03-03T14:43:19.489Z] Session [be4cf470-001f-11e7-8ccb-e7eef37df6e1] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-03-03T14:43:19.490Z] SessionManagerReqHand - _post[INFO  - 2017-03-03T14:43:19.507Z] Session [be3f11c0-001f-11e7-aaac-83754c2a9f[INFO  - 2017-03-03T14:43:19.620Z] Session [be4cf470-001f-11e7-8ccb-e7eef37df6e1] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-03-03T14:43:19.621[INFO  - 2017-03-03T14:43:39.120Z] ShutdownReqHand - _handle - About to shutdown
+FO  - 2017-03-03T14:43:26.674Z] ShutdownReqHand - _handle - About to shutdown
+[INFO  - 2017-03-03T14:43:31.491Z] GhostDriver - Main - running on port 15215
+[INFO  - 2017-03-03T14:43:32.075Z] Session [c5cdbb30-001f-11e7-8a4f-81c0edd28e04] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-03-03T14:43:32.075Z] Session [c5cdbb30-001f-11e7-8a4f-81c0edd28e04] - page.customHeaders:  - {}
+[INFO  - 2017-03-03T14:43:32.075Z] Session [c5cdbb30-001f-11e7-8a4f-81c0edd28e04] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-03-03T14:43:32.075Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: c5cdbb30-001f-11e7-8a4f-81c0edd28e04
+[INFO  - 2017-03-03T14:43:32.242Z] Session [c5cdbb30-001f-11e7-8a4f-81c0edd28e04] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-03-03T14:43:32.242Z] Session [c5cdbb30-001f-11e7-8a4f-81c0edd28e04] - page.customHeaders:  - {}
+[INFO  - 2017-03-03T14:43:55.993Z] ShutdownReqHand - _handle - About to shutdown
+[INFO  - 2017-03-03T14:54:27.730Z] GhostDriver - Main - running on port 3213
+[INFO  - 2017-03-03T14:54:28.168Z] Session [4cdcf7c0-0021-11e7-89a5-9384fb5a4e82] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-03-03T14:54:28.168Z] Session [4cdcf7c0-0021-11e7-89a5-9384fb5a4e82] - page.customHeaders:  - {}
+[INFO  - 2017-03-03T14:54:28.168Z] Session [4cdcf7c0-0021-11e7-89a5-9384fb5a4e82] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-03-03T14:54:28.168Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 4cdcf7c0-0021-11e7-89a5-9384fb5a4e82
+[INFO  - 2017-03-03T14:54:28.312Z] Session [4cdcf7c0-0021-11e7-89a5-9384fb5a4e82] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":[INFO  - 2017-03-03T14:54:28.348Z] Session [4cda38a0-0021-11e7-9a55-c1cdd632e707] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2[INFO  - 2017-03-03T14:54:35.891Z] ShutdownReqHand - _handle - About to shutdo[ERROR - 2017-03-03T14:55:01.443Z] Session [4cdaadd0-0021-11e7-8818-c12814b187f1] - page.onError - msg: Failed to post impression data to collector web
+onErrorMsg=%22undefined%22
+onErrorUrl=%22NA%22
+onErrorLine=%22NA%22
+onErrorChar=%22NA%22
+stack=%22NA%22
+origin=impressionData.log
+[ERROR - 2017-03-03T14:55:01.443Z] Session [4cdaadd0-0021-11e7-8818-c12814b187f1] - page.onError - stack:
+  D (https://b.travel-assets.com/datacapture/2-102/9732a6961190229cceb083a46a7b76ab93d9fc53/datacapture/js/client-logging-bundle-min.js:1)
+[ERROR - 2017-03-03T14:55:02.008Z] Session [4cdaadd0-0021-11e7-8818-c12814b187f1] - page.onError - msg: Failed to post impression data to collector web
+onErrorMsg=%22undefined%22
+onErrorUrl=%22NA%22
+onErrorLine=%22NA%22
+onErrorChar=%22NA%22
+stack=%22NA%22
+origin=impressionData.log
+[ERROR - 2017-03-03T14:55:02.008Z] Session [4cdaadd0-0021-11e7-8818-c12814b187f1] - page.onError - stack:
+  D (https://b.travel-assets.com/datacapture/2-102/9732a6961190229cceb083a46a7b76ab93d9fc53/datacapture/js/client-logging-bundle-min.js:1)
+[INFO  - 2017-03-03T14:55:13.354Z] ShutdownReqHand - _handle - About to shutdown
+ed":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-03-03T14:54:40.578Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 54437fc0-0021-11e7-9112-0966c5a00894
+[INFO  - 2017-03-03T14:54:40.702Z] Session [54437fc0-0021-11e7-9112-0966c5a00894] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-03-03T14:54:40.702Z] Session [54437fc0-0021-11e7-9112-0966c5a00894] - page.customHeaders:  - {}
+[INFO  - 2017-03-03T14:55:56.454Z] GhostDriver - Main - running on port 6660
+[INFO  - 2017-03-03T14:55:56.999Z] Session [81cf80b0-0021-11e7-8c34-f77b40047157] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-03-03T14:55:56.999Z] Session [81cf80b0-0021-11e7-8c34-f77b40047157] - page.customHeaders:  - {}
+[INFO  - 2017-03-03T14:55:56.999Z] Session [81cf80b0-0021-11e7-8c34-f77b40047157] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-03-03T14:55:57.000Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 81cf80b0-0021-11e7-8c34-f77b40047157
+[INFO  - 2017-03-03T14:55:57.195Z] Session [81cf80b0-0021-11e7-8c34-f77b40047157] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-03-03T14:55:57.195Z] Session [81cf80b0-0021-11e7-8c34-f77b40047157] - page.customHeaders:  - {}
+[[ERROR - 2017-03-03T14:56:24.096Z] Session [81cf80b0-0021-11e7-838f-3f802c77fc3b] - page.onError - msg: Failed to post impression data to collector web
+onErrorMsg=%22undefined%22
+onErrorUrl=%22NA%22
+onErrorLine=%22NA%22
+onErrorChar=%22NA%22
+stack=%22NA%22
+origin=impressionData.log
+[ERROR - 2017-03-03T14:56:24.096Z] Session [81cf80b0-0021-11e7-838f-3f802c77fc3b] - page.onError - stack:
+  D (https://b.travel-assets.com/datacapture/2-102/9732a6961190229cceb083a46a7b76ab93d9fc53/datacapture/js/client-logging-bundle-min.js:1)
+[INFO  - 2017-03-03T14:56:33.531Z] ShutdownReqHand - _handle - About to shutdown
+Z] Session [881137c0-0021-11e7-be9a-5fe1c1fe319d] - page.customHeaders:  - {}
+[INFO  - 2017-03-03T14:56:07.494Z] Session [881137c0-0021-11e7-be9a-5fe1c1fe319d] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-03-03T14:56:07.494Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 881137c0-0021-11e7-be9a-5fe1c1fe319d
+[INFO  - 2017-03-03T14:56:07.774Z] Session [881137c0-0021-11e7-be9a-5fe1c1fe319d] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-03-03T14:56:07.774Z] Session [881137c0-0021-11e7-be9a-5fe1c1fe319d] - page.customHeaders:  - {}
+[ERROR - 2017-03-03T14:56:18.978Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1488552978924
+[INFO  - 2017-03-03T14:56:26.225Z] ShutdownReqHand - _handle - About to shutdown
+[INFO  - 2017-03-03T14:58:09.994Z] GhostDriver - Main - running on port 6172
+[[INFO  - 2017-03-03T14:58:10.420Z] Session [d155c770-0021-11e7-baa0-8bcee89b0abc] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-03-03T14:58:10.420Z] Session [d155c770-0021-11e7-baa0-8bcee89b0abc] - page.customHeaders:  - {}
+[INFO  - 2017-03-03T14:58:10.421Z] Session [d155c770-0021-11e7-baa0-8bcee89b0abc] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-03-03T14:58:10.422Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: d155c770-0021-11e7-baa0-8bcee89b0abc[INFO  - 2017-03-03T14:58:10.611Z] Session [d155a060-0021-11e7-bc0a-2337237987c[INFO  - 2017-03-03T14:58:10.638Z] Session [d155a060-0021-11e7-8bb7-8b6e66d08b8c] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-03-03T14:58:10.63[[ERROR - 2017-03-03T14:58:32.389Z] Session [d155c770-0021-11e7-baa0-8bcee89b0abc] - page.onError - msg: Failed to post impression data to collector web
+onErrorMsg=%22undefined%22
+onErrorUrl=%22NA%22
+onErrorLine=%22NA%22
+onErrorChar=%22NA%22
+stack=%22NA%22
+origin=impressionData.log
+[ERROR - 2017-03-03T14:58:32.389Z] Session [d155c770-0021-11e7-baa0-8bcee89b0abc] - page.onError - stack:
+  D (https://b.travel-assets.com/datacapture/2-102/9732a6961190229cceb083a46a7b76ab93d9fc53/datacapture/js/client-logging-bundle-min.js:1)
+[INFO  - 2017-03-03T14:58:49.162Z] ShutdownReqHand - _handle - About to shutdown
+Z] Session [d7c80460-0021-11e7-a90f-091fee3177d9] - page.customHeaders:  - {}
+[INFO  - 2017-03-03T14:58:21.232Z] Session [d7c80460-0021-11e7-a90f-091fee3177d9] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-03-03T14:58:21.232Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: d7c80460-0021-11e7-a90f-091fee3177d9
+[INFO  - 2017-03-03T14:58:21.337Z] Session [d7c80460-0021-11e7-a90f-091fee3177d9] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-03-03T14:58:21.337Z] Session [d7c80460-0021-11e7-a90f-091fee3177d9] - page.customHeaders:  - {}
+[INFO  - 2017-03-03T15:01:28.272Z] GhostDriver - Main - running on port 5956
+[INFO  - 2017-03-03T15:01:28.364Z] Session [4752b460-0022-11e7-a1fa-892fa74654e5] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-03-03T15:01:28.364Z] Session [4752b460-0022-11e7-a1fa-892fa74654e5] - page.customHeaders:  - {}
+[INFO  - 2017-03-03T15:01:28.364Z] Session [4752b460-0022-11e7-a1fa-892fa74654e5] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-03-03T15:01:28.365Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 4752b460-0022-11e7-a1fa-892fa74654e5
+[INFO  - 2017-03-03T15:01:28.428Z] Session [4752b460-0022-11e7-a1fa-892fa74654e5] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-03-03T15:01:28.428Z] Session [4752b460-0022-11e7-a1fa-892fa74654e5] - page.customHeaders:  - {}
+[INFO  - 2017-03-03T15:08:56.810Z] GhostDriver - Main - running on port 6704
+[INFO  - 2017-03-03T15:08:56.923Z] Session [52af6050-0023-11e7-994f-8118e1a53865] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-03-03T15:08:56.923Z] Session [52af6050-0023-11e7-994f-8118e1a53865] - page.customHeaders:  - {}
+[INFO  - 2017-03-03T15:08:56.923Z] Session [52af6050-0023-11e7-994f-8118e1a53865] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-03-03T15:08:56.923Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 52af6050-0023-11e7-994f-8118e1a53865
+[INFO  - 2017-03-03T15:08:56.991Z] Session [52af6050-0023-11e7-994f-8118e1a53865] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-03-03T15:08:56.992Z] Session [52af6050-0023-11e7-994f-8118e1a53865] - page.customHeaders:  - {}
+[ERROR - 2017-03-03T15:09:13.233Z] Session [52af6050-0023-11e7-994f-8118e1a53865] - page.onError - msg: Failed to post impression data to collector web
+onErrorMsg=%22undefined%22
+onErrorUrl=%22NA%22
+onErrorLine=%22NA%22
+onErrorChar=%22NA%22
+stack=%22NA%22
+origin=impressionData.log
+[ERROR - 2017-03-03T15:09:13.233Z] Session [52af6050-0023-11e7-994f-8118e1a53865] - page.onError - stack:
+  D (https://b.travel-assets.com/datacapture/2-102/9732a6961190229cceb083a46a7b76ab93d9fc53/datacapture/js/client-logging-bundle-min.js:1)
+[INFO  - 2017-03-03T15:09:25.417Z] ShutdownReqHand - _handle - About to shutdown
+[INFO  - 2017-03-03T15:10:24.669Z] GhostDriver - Main - running on port 15508
+[INFO  - 2017-03-03T15:10:24.763Z] Session [870ab250-0023-11e7-bd83-ff49de08f30b] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-03-03T15:10:24.763Z] Session [870ab250-0023-11e7-bd83-ff49de08f30b] - page.customHeaders:  - {}
+[INFO  - 2017-03-03T15:10:24.763Z] Session [870ab250-0023-11e7-bd83-ff49de08f30b] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-03-03T15:10:24.764Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 870ab250-0023-11e7-bd83-ff49de08f30b
+[INFO  - 2017-03-03T15:10:24.828Z] Session [870ab250-0023-11e7-bd83-ff49de08f30b] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-03-03T15:10:24.828Z] Session [870ab250-0023-11e7-bd83-ff49de08f30b] - page.customHeaders:  - {}
+[ERROR - 2017-03-03T15:10:45.752Z] Session [870ab250-0023-11e7-bd83-ff49de08f30b] - page.onError - msg: Failed to post impression data to collector web
+onErrorMsg=%22undefined%22
+onErrorUrl=%22NA%22
+onErrorLine=%22NA%22
+onErrorChar=%22NA%22
+stack=%22NA%22
+origin=impressionData.log
+[ERROR - 2017-03-03T15:10:45.753Z] Session [870ab250-0023-11e7-bd83-ff49de08f30b] - page.onError - stack:
+  D (https://b.travel-assets.com/datacapture/2-102/9732a6961190229cceb083a46a7b76ab93d9fc53/datacapture/js/client-logging-bundle-min.js:1)
+[INFO  - 2017-03-03T15:11:00.874Z] ShutdownReqHand - _handle - About to shutdown
+[INFO  - 2017-03-03T15:11:50.603Z] GhostDriver - Main - running on port 9857
+[INFO  - 2017-03-03T15:11:50.684Z] Session [ba40e540-0023-11e7-8573-070c563bd596] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-03-03T15:11:50.684Z] Session [ba40e540-0023-11e7-8573-070c563bd596] - page.customHeaders:  - {}
+[INFO  - 2017-03-03T15:11:50.685Z] Session [ba40e540-0023-11e7-8573-070c563bd596] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-03-03T15:11:50.685Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: ba40e540-0023-11e7-8573-070c563bd596
+[INFO  - 2017-03-03T15:11:50.751Z] Session [ba40e540-0023-11e7-8573-070c563bd596] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-03-03T15:11:50.751Z] Session [ba40e540-0023-11e7-8573-070c563bd596] - page.customHeaders:  - {}
+[ERROR - 2017-03-03T15:14:16.833Z] Session [ba40e540-0023-11e7-8573-070c563bd596] - page.onError - msg: Failed to post impression data to collector web
+onErrorMsg=%22undefined%22
+onErrorUrl=%22NA%22
+onErrorLine=%22NA%22
+onErrorChar=%22NA%22
+stack=%22NA%22
+origin=impressionData.log
+[ERROR - 2017-03-03T15:14:16.834Z] Session [ba40e540-0023-11e7-8573-070c563bd596] - page.onError - stack:
+  D (https://b.travel-assets.com/datacapture/2-102/9732a6961190229cceb083a46a7b76ab93d9fc53/datacapture/js/client-logging-bundle-min.js:1)
+[ERROR - 2017-03-03T15:14:24.419Z] Session [ba40e540-0023-11e7-8573-070c563bd596] - page.onError - msg: Failed to post impression data to collector web
+onErrorMsg=%22undefined%22
+onErrorUrl=%22NA%22
+onErrorLine=%22NA%22
+onErrorChar=%22NA%22
+stack=%22NA%22
+origin=impressionData.log
+[ERROR - 2017-03-03T15:14:24.420Z] Session [ba40e540-0023-11e7-8573-070c563bd596] - page.onError - stack:
+  D (https://b.travel-assets.com/datacapture/2-102/9732a6961190229cceb083a46a7b76ab93d9fc53/datacapture/js/client-logging-bundle-min.js:1)
+[INFO  - 2017-03-03T15:16:50.602Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-03-03T15:21:50.603Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-03-03T15:26:50.615Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-03-03T15:31:50.619Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-03-03T15:36:50.619Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-03-03T15:41:50.619Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+.950Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1488554122946
+[INFO  - 2017-03-03T15:15:29.674Z] ShutdownReqHand - _handle - About to shutdown
+[INFO  - 2017-03-03T15:15:53.967Z] GhostDriver - Main - running on port 46059
+[INFO  - 2017-03-03T15:15:54.041Z] Session [4b4e8830-0024-11e7-89ca-dd320dbee1d5] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-03-03T15:15:54.043Z] Session [4b4e8830-0024-11e7-89ca-dd320dbee1d5] - page.customHeaders:  - {}
+[INFO  - 2017-03-03T15:15:54.043Z] Session [4b4e8830-0024-11e7-89ca-dd320dbee1d5] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-03-03T15:15:54.044Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 4b4e8830-0024-11e7-89ca-dd320dbee1d5
+[INFO  - 2017-03-03T15:15:54.104Z] Session [4b4e8830-0024-11e7-89ca-dd320dbee1d5] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-03-03T15:15:54.105Z] Session [4b4e8830-0024-11e7-89ca-dd320dbee1d5] - page.customHeaders:  - {}
+[INFO  - 2017-03-03T15:20:53.975Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[ERROR - 2017-03-03T15:21:55.040Z] Session [4b4e8830-0024-11e7-89ca-dd320dbee1d5] - page.onError - msg: Failed to post impression data to collector web
+onErrorMsg=%22undefined%22
+onErrorUrl=%22NA%22
+onErrorLine=%22NA%22
+onErrorChar=%22NA%22
+stack=%22NA%22
+origin=impressionData.log
+[ERROR - 2017-03-03T15:21:55.040Z] Session [4b4e8830-0024-11e7-89ca-dd320dbee1d5] - page.onError - stack:
+  D (https://b.travel-assets.com/datacapture/2-102/9732a6961190229cceb083a46a7b76ab93d9fc53/datacapture/js/client-logging-bundle-min.js:1)
+[ERROR - 2017-03-03T15:22:03.565Z] Session [4b4e8830-0024-11e7-89ca-dd320dbee1d5] - page.onError - msg: Failed to post impression data to collector web
+onErrorMsg=%22undefined%22
+onErrorUrl=%22NA%22
+onErrorLine=%22NA%22
+onErrorChar=%22NA%22
+stack=%22NA%22
+origin=impressionData.log
+[ERROR - 2017-03-03T15:22:03.565Z] Session [4b4e8830-0024-11e7-89ca-dd320dbee1d5] - page.onError - stack:
+  D (https://b.travel-assets.com/datacapture/2-102/9732a6961190229cceb083a46a7b76ab93d9fc53/datacapture/js/client-logging-bundle-min.js:1)
+[INFO  - 2017-03-03T15:25:53.974Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-03-03T15:30:53.974Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-03-03T15:35:53.974Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-03-03T15:40:53.975Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-03-03T15:45:53.975Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-03-03T15:50:53.974Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-03-03T15:55:53.974Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-03-03T16:00:53.975Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-03-03T16:05:53.974Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-03-03T16:10:53.974Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-03-03T16:15:53.974Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+- _postNewSessionCommand - New Session Created: e99b8450-0026-11e7-aa42-f5474393918c
+[INFO  - 2017-03-03T15:34:38.684Z] Session [e99b8450-0026-11e7-aa42-f5474393918c] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-03-03T15:34:38.684Z] Session [e99b8450-0026-11e7-aa42-f5474393918c] - page.customHeaders:  - {}
+[ERROR - 2017-03-03T15:35:05.090Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1488555305086
+[INFO  - 2017-03-03T15:55:56.366Z] GhostDriver - Main - running on port 23095
+[INFO  - 2017-03-03T15:55:56.421Z] Session [e33c52d0-0029-11e7-83a5-9b8c4a4a5220] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-03-03T15:55:56.422Z] Session [e33c52d0-0029-11e7-83a5-9b8c4a4a5220] - page.customHeaders:  - {}
+[INFO  - 2017-03-03T15:55:56.422Z] Session [e33c52d0-0029-11e7-83a5-9b8c4a4a5220] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-03-03T15:55:56.422Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: e33c52d0-0029-11e7-83a5-9b8c4a4a5220
+[INFO  - 2017-03-03T15:55:56.494Z] Session [e33c52d0-0029-11e7-83a5-9b8c4a4a5220] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-03-03T15:55:56.494Z] Session [e33c52d0-0029-11e7-83a5-9b8c4a4a5220] - page.customHeaders:  - {}
+[INFO  - 2017-03-03T16:00:56.362Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-03-03T16:05:56.365Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[ERROR - 2017-03-03T16:06:30.233Z] Session [e33c52d0-0029-11e7-83a5-9b8c4a4a5220] - page.onError - msg: Failed to post impression data to collector web
+onErrorMsg=%22undefined%22
+onErrorUrl=%22NA%22
+onErrorLine=%22NA%22
+onErrorChar=%22NA%22
+stack=%22NA%22
+origin=impressionData.log
+[ERROR - 2017-03-03T16:06:30.233Z] Session [e33c52d0-0029-11e7-83a5-9b8c4a4a5220] - page.onError - stack:
+  D (https://b.travel-assets.com/datacapture/2-102/9732a6961190229cceb083a46a7b76ab93d9fc53/datacapture/js/client-logging-bundle-min.js:1)
+[ERROR - 2017-03-03T16:06:34.372Z] Session [e33c52d0-0029-11e7-83a5-9b8c4a4a5220] - page.onError - msg: Failed to post impression data to collector web
+onErrorMsg=%22undefined%22
+onErrorUrl=%22NA%22
+onErrorLine=%22NA%22
+onErrorChar=%22NA%22
+stack=%22NA%22
+origin=impressionData.log
+[ERROR - 2017-03-03T16:06:34.372Z] Session [e33c52d0-0029-11e7-83a5-9b8c4a4a5220] - page.onError - stack:
+  D (https://b.travel-assets.com/datacapture/2-102/9732a6961190229cceb083a46a7b76ab93d9fc53/datacapture/js/client-logging-bundle-min.js:1)
+[INFO  - 2017-03-03T16:10:56.365Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-03-03T16:15:56.365Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+ptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-03-03T15:56:52.696[INFO  - 2017-03-03T16:01:51.677Z] SessionManagerReqHand - _cleanupWindowlessS[INFO  - 2017-03-03T16:01:52.049Z] SessionManagerReqHand - _[ERROR - 2017-03-03T16:05:47.365Z] Session [0461bc70-002a-11e7-9b33-078354b2cc[INFO  - 2017-03-03T16:06:52.057Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-03-03T16:11:52.065Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+32a6961190229cceb083a46a7b76ab93d9fc53/datacapture/js/client-logging-bundle-min.js:1)
+[ERROR - 2017-03-03T16:05:47.367Z] Session [0461bc70-002a-11e7-9b33-078354b2cc29] - page.onError - msg: Failed to post impression data to collector web
+onError=%22NA%22
+origin=impressionData.log
+[ERROR - 2017-03-03T16:05:47.367Z] Session [0461bc70-002a-11e7-9b33-078354b2cc29] - page.onError - stack:
+  D (https://b.travel-assets.com/datacapture/2-102/9732a6961190229cceb083a46a7b76ab93d9fc53/datacapture/js/client-logging-bundle-min.js:1)
+[ERROR - 2017-03-03T16:06:04.258Z] Session [0461bc70-002a-11e7-9b33-078354b2cc29] - page.onError - msg: Failed to post impression data to collector web
+onErrorMsg=%22undefined%22
+onErrorUrl=%22NA%22
+onErrorLine=%22NA%22
+onErrorChar=%22NA%22
+stack=%22NA%22
+origin=impressionData.log
+[ERROR - 2017-03-03T16:06:04.258Z] Session [0461bc70-002a-11e7-9b33-078354b2cc29] - page.onError - stack:
+  D (https://b.travel-assets.com/datacapture/2-102/9732a6961190229cceb083a46a7b76ab93d9fc53/datacapture/js/client-logging-bundle-min.js:1)
+[ERROR - 2017-03-03T16:06:07.168Z] Session [0461bc70-002a-11e7-9b33-078354b2cc29] - page.onError - msg: Failed to post impression data to collector web
+onErrorMsg=%22undefined%22
+onErrorUrl=%22NA%22
+onErrorLine=%22NA%22
+onErrorChar=%22NA%22
+stack=%22NA%22
+origin=impressionData.log
+[ERROR - 2017-03-03T16:06:07.168Z] Session [0461bc70-002a-11e7-9b33-078354b2cc29] - page.onError - stack:
+  D (https://b.travel-assets.com/datacapture/2-102/9732a6961190229cceb083a46a7b76ab93d9fc53/datacapture/js/client-logging-bundle-min.js:1)
+[INFO  - 2017-03-03T16:06:14.234Z] ShutdownReqHand - _handle - About to shu[INFO  - 2017-03-03T16:06:57.855Z] ShutdownReqHand - _handle - About to shutdown
+[INFO  - 2017-03-04T01:17:31.163Z] GhostDriver - Main - running on port 39939
+[INFO  - 2017-03-04T01:17:31.798Z] Session [573d4c40-0078-11e7-ba0a-47fc6226ce[INFO  - 2017-03-04T01:17:32.060Z] Session [57667f20-0078-11e7-8093-338dfaf5f4[INFO  - 2017-03-04T01:17:32.060Z] Session [57667f20-0078-11e7-803e-771d8f9a3a01] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-03-04T01:17:32.061Z] Session [57667f20-0078-11e7-803e-771d8f9a3a01] - page.customHeaders:  - {}
+[INFO  - 2017-03-04T01:17:32.063Z] Session [57667f20-0078-11e7-803e-771d8f9a3a01] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-03-04T01:17:32.063Z] SessionManagerReqHand - _post[INFO  - 2017-03-04T01:17:32.211Z] Session [57667f20-0078-11e7-8093-338dfaf5f4c1] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-03-04T01:17:32.211[ERROR - 2017-03-04T01:17:47.755Z] Session [573d4c40-0078-11e7-ba0a-47fc6226ce92] - page.onError - msg: Failed to post impression data to collector web
+onEr[INFO  - 2017-03-04T01:17:55.244Z] ShutdownReqHand - _handle - About to shutdown
+%22
+stack=%22NA%22
+origin=impressionData.log
+[ERROR - 2017-03-04T01:17:47.755Z] Session [573d4c40-0078-11e7-ba0a-47fc6226ce92] - page.onError - stack:
+  D (https://b.travel-assets.com/datacapture/2-102/9732a6961190229cceb083a46a7b76ab93d9fc53/datacapture/js/client-logging-bundle-min.js:1)
+[ERROR - 2017-03-04T01:17:52.837Z] Session [573d4c40-0078-11e7-ba0a-47fc6226ce92] - page.onError - msg: Failed to post impression data to collector web
+onErrorMsg=%22undefined%22
+onErrorUrl=%22NA%22
+onErrorLine=%22NA%22
+onErrorChar=%22NA%22
+stack=%22NA%22
+origin=impressionData.log
+[ERROR - 2017-03-04T01:17:52.838Z] Session [573d4c40-0078-11e7-ba0a-47fc6226ce92] - page.onError - stack:
+  D (https://b.travel-assets.com/datacapture/2-102/9732a6961190229cceb083a46a7b76ab93d9fc53/datacapture/js/client-logging-bundle-min.js:1)
+[INFO  - 2017-03-04T01:17:54.998Z] ShutdownReqHand - _handle - About to shutdown
+[INFO  - 2017-03-04T01:17:55.415Z] GhostDriver - Main - running on port 3840
+[INFO  - 2017-03-04T01:17:55.998Z] Session [65abe890-0078-11e7-8f3c-bf21f845e245] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-03-04T01:17:55.998Z] Session [65abe890-0078-11e7-8f3c-bf21f845e245] - page.customHeaders:  - {}
+[INFO  - 2017-03-04T01:17:55.998Z] Session [65abe890-0078-11e7-8f3c-bf21f845e245] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-03-04T01:17:55.998Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 65abe890-0078-11e7-8f3c-bf21f845e245
+[INFO  - 2017-03-04T01:17:56.190Z] Session [65abe890-0078-11e7-8f3c-bf21f845e245] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-03-04T01:17:56.190Z] Session [65abe890-0078-11e7-8f3c-bf21f845e245] - page.customHeaders:  - {}
+[INFO  - 2017-03-04T01:18:14.304Z] ShutdownReqHand - _handle - About to shutdown
+[INFO  - 2017-03-04T01:21:55.540Z] GhostDriver - Main - running on port 26209
+[INFO  - 2017-03-04T01:21:56.151Z] Session [f4ceab70-0078-11e7-b93a-d769c0a5af94] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-03-04T01:21:56.151Z] Session [f4ceab70-0078-11e7-b93a-d769c0a5af94] - page.customHeaders:  - {}
+[INFO  - 2017-03-04T01:21:56.152Z] Session [f4ceab70-0078-11e7-b93a-d769c0a5af94] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-03-04T01:21:56.152Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: f4ceab70-0078-11e7-b93a-d769c0a5af94
+[INFO  - 2017-03-04T01:21:56.329Z] Session [f4cdc110-0078-11e7-9b52-41e0a38b8ca4] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-03-04T01:21:56.329Z] Session [f4cdc110-0078-11e7-9b52-41e0a38b8ca4] - page.customHeaders:  - {}
+[INFO  - 2017-03-04T01:22:20.710Z] ShutdownReqHand - _handle - About to shutdown
+ROR - 2017-03-04T01:22:15.610Z] Session [f4cd4be0-0078-11e7-8fbc-e3d6fcf1d18a] - page.onError - msg: Failed to post impression data to collector web
+onErrorMsg=%22undefined%22
+onErrorUrl=%22NA%22
+onErrorLine=%22NA%22
+onErrorChar=%22NA%22
+stack=%22NA%22
+origin=impressionData.log
+[ERROR - 2017-03-04T01:22:15.610Z] Session [f4cd4be0-0078-11e7-8fbc-e3d6fcf1d18a] - page.onError - stack:
+  D (https://b.travel-assets.com/datacapture/2-102/9732a6961190229cceb083a46a7b76ab93d9fc53/datacapture/js/client-logging-bundle-min.js:1)
+[ERROR - 2017-03-04T01:22:18.625Z] Session [f4cd4be0-0078-11e7-8fbc-e3d6fcf1d18a] - page.onError - msg: Failed to post impression data to collector web
+onErrorMsg=%22undefined%22
+onErrorUrl=%22NA%22
+onErrorLine=%22NA%22
+onErrorChar=%22NA%22
+stack=%22NA%22
+origin=impressionData.log
+[ERROR - 2017-03-04T01:22:18.625Z] Session [f4cd4be0-0078-11e7-8fbc-e3d6fcf1d18a] - page.onError - stack:
+  D (https://b.travel-assets.com/datacapture/2-102/9732a6961190229cceb083a46a7b76ab93d9fc53/datacapture/js/client-logging-bundle-min.js:1)
+[INFO  - 2017-03-04T01:22:35.580Z] ShutdownReqHand - _handle - About to shutdown
+,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-03-04T01:22:06.635Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: fb0f7820-0078-11e7-ba68-137d5e680c88
+[INFO  - 2017-03-04T01:22:06.714Z] Session [fb0f7820-0078-11e7-ba68-137d5e680c88] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-03-04T01:22:06.714Z] Session [fb0f7820-0078-11e7-ba68-137d5e680c88] - page.customHeaders:  - {}
+[INFO  - 2017-03-04T01:22:29.968Z] ShutdownReqHand - _handle - About to shutdown
+[INFO  - 2017-03-04T02:17:50.228Z] GhostDriver - Main - running on port 32940
+[INFO  - 2017-03-04T02:17:50.715Z] Session [c449e340-0080-11e7-93d5-6b1152396[INFO  - 2017-03-04T02:17:50.859Z] Session [c4602a60-0080-11e7-831e-156ea589a159] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-03-04T02:17:50.859Z] Session [c4602a60-0080-11e7-831e-156ea589a159] - page.customHeaders:  - {}
+[INFO  - 2017-03-04T02:17:50.859Z] Session [c4602a60-0080-11e7-831e-156ea589a159] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-03-04T02:17:50.860Z] SessionManagerReqHand - _postN[INFO  - 2017-03-04T02:17:50.995Z] Session [c449e340-0080-11e7-93d5-6b1152396[INFO  - 2017-03-04T02:17:51.025Z] Session [c4602a60-0080-11e7-831e-156ea589a159] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-03-04T02:17:51.025Z[INFO  - 2017-03-04T02:18:15.708Z] ShutdownReqHand - _handle - About to shutdown
+ - page.onError - msg: Failed to post impression data to collector web
+onErrorMsg=%22undefined%22
+onErrorUrl=%22NA%22
+onErrorLine=%22NA%22
+onErrorChar=%22NA%22
+stack=%22NA%22
+origin=impressionData.log
+[ERROR - 2017-03-04T02:18:15.522Z] Session [c449e340-0080-11e7-93d5-6b1152396a62] - page.onError - stack:
+  D (https://b.travel-assets.com/datacapture/2-102/9732a6961190229cceb083a46a7b76ab93d9fc53/datacapture/js/client-logging-bundle-min.js:1)
+la/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-03-04T02:18:14.362Z] Session [d2624940-0080-11e7-b8d5-0dafb4657657] - page.customHeaders:  - {}
+[INFO  - 2017-03-04T02:18:14.362Z] Session [d2624940-0080-11e7-b8d5-0dafb4657657] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-03-04T02:18:14.363Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: d2624940-0080-11e7-b8d5-0dafb4657657
+[INFO  - 2017-03-04T02:18:14.532Z] Session [d2624940-0080-11e7-b8d5-0dafb4657657] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-03-04T02:18:14.532Z] Session [d2624940-0080-11e7-b8d5-0dafb4657657] - page.customHeaders:  - {}
+[INFO  - 2017-03-04T02:31:44.802Z] GhostDriver - Main - running on port 17076
+[INFO  - 2017-03-04T02:31:45.305Z] Session [b5bde900-0082-11e7-93ae-6daf78326958] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-03-04T02:31:45.306Z] Session [b5bde900-0082-11e7-93ae-6daf78326958] - page.customHeaders:  - {}
+[INFO  - 2017-03-04T02:31:45.306Z] Session [b5bde900-0082-11e7-93ae-6daf78326958] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-03-04T02:31:45.306Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: b5bde900-0082-11e7-93ae-6daf78326958
+[INFO  - 2017-03-04T02:31:45.508Z] Session [b5bde900-0082-11e7-93ae-6daf78326958] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-03-04T02:31:45.508Z] Session [b5bde900-0082-11e7-93ae-6daf78326958] - page.customHeaders:  - {}
+[INFO  - 2017-03-04T02:32:08.908Z] ShutdownReqHand - _handle - About to shutdown
+ROR - 2017-03-04T02:32:08.150Z] Session [b5bc1440-0082-11e7-9e63-7fe46063c822] - page.onError - msg: Failed to post impression data to collector web
+onErrorMsg=%22undefined%22
+onErrorUrl=%22NA%22
+onErrorLine=%22NA%22
+onErrorChar=%22NA%22
+stack=%22NA%22
+origin=impressionData.log
+[ERROR - 2017-03-04T02:32:08.150Z] Session [b5bc1440-0082-11e7-9e63-7fe46063c822] - page.onError - stack:
+  D (https://b.travel-assets.com/datacapture/2-102/9732a6961190229cceb083a46a7b76ab93d9fc53/datacapture/js/client-logging-bundle-min.js:1)
+[INFO  - 2017-03-04T02:32:12.015Z] ShutdownReqHand - _handle - About to shutdown
+
+[INFO  - 2017-03-04T02:31:55.998Z] Session [bc1daf60-0082-11e7-bf33-5f57279cb06b] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-03-04T02:31:55.998Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: bc1daf60-0082-11e7-bf33-5f57279cb06b
+[INFO  - 2017-03-04T02:31:56.069Z] Session [bc1daf60-0082-11e7-bf33-5f57279cb06b] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-03-04T02:31:56.069Z] Session [bc1daf60-0082-11e7-bf33-5f57279cb06b] - page.customHeaders:  - {}
+[INFO  - 2017-03-04T02:38:35.291Z] GhostDriver - Main - running on port 42250
+[INFO  - 2017-03-04T02:38:35.766Z] Session [aa65e610-0083-11e7-a2dd-b9523a119aca] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-03-04T02:38:35.766Z] Session [aa65e610-0083-11e7-a2dd-b9523a119aca] - page.customHeaders:  - {}
+[INFO  - 2017-03-04T02:38:35.767Z] Session [aa65e610-0083-11e7-a2dd-b9523a119aca] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-03-04T02:38:35.767Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: aa65e610-0083-11e7-a2dd-b9523a119aca
+[INFO  - 2017-03-04T02:38:35.837Z] Session [aa65e610-0083-11e7-a2dd-b9523a119aca] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-03-04T02:38:35.837Z] Session [aa65e610-0083-11e7-a2dd-b9523a119aca] - page.customHeaders:  - {}
+[INFO  - 2017-03-04T02:38:53.975Z] ShutdownReqHand - _handle - About to shutdown
+[INFO  - 2017-03-04T02:44:24.644Z] GhostDriver - Main - running on port 8902
+[INFO  - 2017-03-04T02:44:24.776Z] Session [7a6c2400-0084-11e7-b62f-5193dd8ee3c4] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-03-04T02:44:24.776Z] Session [7a6c2400-0084-11e7-b62f-5193dd8ee3c4] - page.customHeaders:  - {}
+[INFO  - 2017-03-04T02:44:24.777Z] Session [7a6c2400-0084-11e7-b62f-5193dd8ee3c4] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-03-04T02:44:24.777Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 7a6c2400-0084-11e7-b62f-5193dd8ee3c4
+[INFO  - 2017-03-04T02:44:24.848Z] Session [7a6c2400-0084-11e7-b62f-5193dd8ee3c4] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-03-04T02:44:24.848Z] Session [7a6c2400-0084-11e7-b62f-5193dd8ee3c4] - page.customHeaders:  - {}
+[INFO  - 2017-03-04T02:44:43.681Z] ShutdownReqHand - _handle - About to shutdown
+[INFO  - 2017-03-04T02:45:50.994Z] GhostDriver - Main - running on port 48394
+[INFO  - 2017-03-04T02:45:51.146Z] Session [ade72820-0084-11e7-a436-21865a088b74] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-03-04T02:45:51.146Z] Session [ade72820-0084-11e7-a436-21865a088b74] - page.customHeaders:  - {}
+[INFO  - 2017-03-04T02:45:51.146Z] Session [ade72820-0084-11e7-a436-21865a088b74] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-03-04T02:45:51.146Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: ade72820-0084-11e7-a436-21865a088b74
+[INFO  - 2017-03-04T02:45:51.209Z] Session [ade72820-0084-11e7-a436-21865a088b74] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-03-04T02:45:51.209Z] Session [ade72820-0084-11e7-a436-21865a088b74] - page.customHeaders:  - {}
+[INFO  - 2017-03-04T02:46:17.184Z] ShutdownReqHand - _handle - About to shutdown
+[INFO  - 2017-03-04T02:47:46.107Z] GhostDriver - Main - running on port 41945
+[INFO  - 2017-03-04T02:47:46.714Z] Session [f2c9bd40-0084-11e7-94c9-3784154b61[INFO  - 2017-03-04T02:47:46.780Z] Session [f2d35a30-0084-11e7-91e1-93a69cce87ea] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-03-04T02:47:46.781Z] Session [f2d35a30-0084-11e7-91e1-93a69cce87ea] - page.customHeaders:  - {}
+[INFO  - 2017-03-04T02:47:46.782Z] Session [f2d35a30-0084-11e7-91e1-93a69cce87ea] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-03-04T02:47:46.782Z] SessionManagerReqHand - _post[INFO  - 2017-03-04T02:47:46.844Z] Session [f2c9bd40-0084-11e7-94c9-3784154b61[INFO  - 2017-03-04T02:47:46.929Z] Session [f2d35a30-0084-11e7-91e1-93a69cce87ea] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-03-04T02:47:46.929[INFO  - 2017-03-04T02:47:53.057Z] ShutdownReqHand - _handle - About to shutdo[INFO  - 2017-03-04T02:48:11.585Z] ShutdownReqHand - _handle - About to shutdown
+ - page.onError - msg: Failed to post impression data to collector web
+onErrorMsg=%22undefined%22
+onErrorUrl=%22NA%22
+onErrorLine=%22NA%22
+onErrorChar=%22NA%22
+stack=%22NA%22
+origin=impressionData.log
+[ERROR - 2017-03-04T02:48:10.553Z] Session [f2d35a30-0084-11e7-91e1-93a69cce87ea] - page.onError - stack:
+  D (https://b.travel-assets.com/datacapture/2-102/9732a6961190229cceb083a46a7b76ab93d9fc53/datacapture/js/client-logging-bundle-min.js:1)
+[INFO  - 2017-03-04T02:48:14.075Z] ShutdownReqHand - _handle - About to shutdown
+
+[INFO  - 2017-03-04T02:47:56.422Z] Session [f8916250-0084-11e7-adef-0d4d5cdb56d6] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-03-04T02:47:56.422Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: f8916250-0084-11e7-adef-0d4d5cdb56d6
+[INFO  - 2017-03-04T02:47:56.566Z] Session [f8916250-0084-11e7-adef-0d4d5cdb56d6] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-03-04T02:47:56.567Z] Session [f8916250-0084-11e7-adef-0d4d5cdb56d6] - page.customHeaders:  - {}
+[INFO  - 2017-03-04T02:48:14.148Z] ShutdownReqHand - _handle - About to shutdown
+[INFO  - 2017-03-04T02:48:58.248Z] GhostDriver - Main - running on port 1972
+[INFO  - 2017-03-04T02:48:58.772Z] Session [1dbc75b0-0085-11e7-9bd7-cdf569b3fdd9] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-03-04T02:48:58.773Z] Session [1dbc75b0-0085-11e7-9bd7-cdf569b3fdd9] - page.customHeaders:  - {}
+[INFO  - 2017-03-04T02:48:58.773Z] Session [1dbc75b0-0085-11e7-9bd7-cdf569b3fdd9] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-03-04T02:48:58.773Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 1dbc75b0-0085-11e7-9bd7-cdf569b3fdd9
+[INFO  - 2017-03-04T02:48:58.926Z] Session [1dbb8b50-0085-11e7-a986-03bda26288df] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-03-04T02:48:58.926Z] Session [1dbb8b50-0085-11e7-a986-03bda26288df] - page.customHeaders:  - {}
+[ERROR - 2017-03-04T02:49:35.840Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1488595775800
+[INFO  - 2017-03-04T02:49:42.836Z] ShutdownReqHand - _handle - About to shutdown
+ on port 32338
+[INFO  - 2017-03-04T02:49:10.610Z] Session [24caf2a0-0085-11e7-a874-5d25a59e23fa] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-03-04T02:49:10.611Z] Session [24caf2a0-0085-11e7-a874-5d25a59e23fa] - page.customHeaders:  - {}
+[INFO  - 2017-03-04T02:49:10.611Z] Session [24caf2a0-0085-11e7-a874-5d25a59e23fa] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-03-04T02:49:10.611Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 24caf2a0-0085-11e7-a874-5d25a59e23fa
+[INFO  - 2017-03-04T02:49:10.746Z] Session [24caf2a0-0085-11e7-a874-5d25a59e23fa] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-03-04T02:49:10.746Z] Session [24caf2a0-0085-11e7-a874-5d25a59e23fa] - page.customHeaders:  - {}
+[INFO  - 2017-03-04T02:49:41.374Z] ShutdownReqHand - _handle - About to shutdown
+[INFO  - 2017-03-04T02:50:10.741Z] GhostDriver - Main - running on port 24110
+[INFO  - 2017-03-04T02:50:11.202Z] Session [48e70700-0085-11e7-8d43-cdb9eafcc0[INFO  - 2017-03-04T02:50:11.211Z] Session [48e9c620-0085-11e7-b28d-dfb9762dc22e] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-03-04T02:50:11.211Z] Session [48e9c620-0085-11e7-b28d-dfb9762dc22e] - page.customHeaders:  - {}
+[INFO  - 2017-03-04T02:50:11.211Z] Session [48e9c620-0085-11e7-b28d-dfb9762dc22e] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-03-04T02:50:11.211Z] SessionManagerReqHand - _post[INFO  - 2017-03-04T02:50:11.343Z] Session [48e70700-0085-11e7-8d43-cdb9eafcc0db] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-03-04T02:50:11.343Z] Session [48e70700-0085-11e7-8d43-cdb9eafcc0db] - page.customHeaders:  - {}
+[INFO  - 2017-03-04T02:50:17.637Z] ShutdownReqHand - _handle - About to shutdo[ERROR - 2017-03-04T02:50:35.578Z] Session [48e9c620-0085-11e7-b28d-dfb9762dc22e] - page.onError - msg: Failed to post impression data to collector web
+onErrorMsg=%22undefined%22
+onErrorUrl=%22NA%22
+onErrorLine=%22NA%22
+onErrorChar=%22NA%22
+stack=%22NA%22
+origin=impressionData.log
+[ERROR - 2017-03-04T02:50:35.578Z] Session [48e9c620-0085-11e7-b28d-dfb9762dc22e] - page.onError - stack:
+  D (https://b.travel-assets.com/datacapture/2-102/9732a6961190229cceb083a46a7b76ab93d9fc53/datacapture/js/client-logging-bundle-min.js:1)
+[INFO  - 2017-03-04T02:50:49.739Z] ShutdownReqHand - _handle - About to shutdown
+
+[INFO  - 2017-03-04T02:50:21.603Z] Session [4f1b9eb0-0085-11e7-8a3a-f1d0cb283771] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-03-04T02:50:21.603Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 4f1b9eb0-0085-11e7-8a3a-f1d0cb283771
+[INFO  - 2017-03-04T02:50:21.668Z] Session [4f1b9eb0-0085-11e7-8a3a-f1d0cb283771] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-03-04T02:50:21.668Z] Session [4f1b9eb0-0085-11e7-8a3a-f1d0cb283771] - page.customHeaders:  - {}
+[INFO  - 2017-03-04T02:50:41.629Z] ShutdownReqHand - _handle - About to shutdown
+[INFO  - 2017-03-04T04:31:09.697Z] GhostDriver - Main - running on port 12963
+[INFO  - 2017-03-04T04:31:10.146Z] Session [6451e290-0093-11e7-a604-b7bea14b1347] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-03-04T04:31:10.147Z] Session [6451e290-0093-11e7-8410-0711d8b4fa31] - page.customHeaders:  - {}
+[INFO  - 2017-03-04T04:31:10.147Z] Session [6451e290-0093-11e7-a604-b7bea14b1347] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-03-04T04:31:10.147Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 6451e290-0093-11e7-a604-b7bea14b1347
+[INFO  - 2017-03-04T04:31:10.240Z] Session [6451e290-0093-11e7-a604-b7bea14b1347] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-03-04T04:31:10.240Z] Session [6451e290-0093-11e7-a604-b7bea14b1347] - page.customHeaders:  - {}
+[ERROR - 2017-03-04T04:35:37.104Z] Session [6451e290-0093-11e7-a604-b7bea14b13[INFO  - 2017-03-04T04:36:09.850Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-03-04T04:41:10.059Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-03-04T04:46:10.231Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-03-04T04:51:10.231Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+ ReferenceError: Can't find variable: UET
+[ERROR - 2017-03-04T04:36:01.069Z] Session [6451e290-0093-11e7-a604-b7bea14b1347] - page.onError - stack:
+  loader_cb (https://tags.tiqcdn.com/utag/expedia/main/prod/utag.js:1426)
+  (anonymous function) (https://tags.tiqcdn.com/utag/expedia/main/prod/utag.js:135)
+[ERROR - 2017-03-04T04:36:01.071Z] Session [6451e290-0093-11e7-a604-b7bea14b1347] - page.onError - msg: ReferenceError: Can't find variable: UET
+[ERROR - 2017-03-04T04:36:01.071Z] Session [6451e290-0093-11e7-a604-b7bea14b1347] - page.onError - stack:
+  loader_cb (https://tags.tiqcdn.com/utag/expedia/main/prod/utag.js:1412)
+  (anonymous function) (https://tags.tiqcdn.com/utag/expedia/main/prod/utag.js:135)
+[INFO  - 2017-03-04T04:36:09.703Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-03-04T04:41:09.696Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-03-04T04:46:09.709Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-03-04T04:51:09.714Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+30b99aa93] - page.customHeaders:  - {}
+[INFO  - 2017-03-04T04:36:19.790Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-03-04T04:41:19.790Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-03-04T04:46:19.791Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-03-04T04:51:19.803Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+ecurityEnabled":true}
+[INFO  - 2017-03-04T04:32:51.994Z] Session [a1068100-0093-11e7-8755-4b599bfffd04] - page.customHeaders:  - {}
+[INFO  - 2017-03-04T04:32:51.994Z] Session [a1068100-0093-11e7-8755-4b599bfffd04] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-03-04T04:32:51.994Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: a1068100-0093-11e7-8755-4b599bfffd04
+[INFO  - 2017-03-04T04:32:52.189Z] Session [a1068100-0093-11e7-8755-4b599bfffd04] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-03-04T04:32:52.189[INFO  - 2017-03-04T04:32:58.962Z] ShutdownReqHand - _handle - About to shutdo[INFO  - 2017-03-04T04:37:51.570Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[ERROR - 2017-03-04T04:39:01.373Z] Session [a105e4c0-0093-11e7-ae77-a7cc955eef40] - page.onError - msg: Failed to post impression data to collector web
+onErrorMsg=%22undefined%22
+onErrorUrl=%22NA%22
+onErrorLine=%22NA%22
+onErrorChar=%22NA%22
+stack=%22NA%22
+origin=impressionData.log
+[ERROR - 2017-03-04T04:39:01.374Z] Session [a105e4c0-0093-11e7-ae77-a7cc955eef40] - page.onError - stack:
+  D (https://b.travel-assets.com/datacapture/2-102/9732a6961190229cceb083a46a7b76ab93d9fc53/datacapture/js/client-logging-bundle-min.js:1)
+[ERROR - 2017-03-04T04:39:23.569Z] Session [a105e4c0-0093-11e7-ae77-a7cc955eef40] - page.onError - msg: Failed to post impression data to collector web
+onErrorMsg=%22undefined%22
+onErrorUrl=%22NA%22
+onErrorLine=%22NA%22
+onErrorChar=%22NA%22
+stack=%22NA%22
+origin=impressionData.log
+[ERROR - 2017-03-04T04:39:23.569Z] Session [a105e4c0-0093-11e7-ae77-a7cc955eef40] - page.onError - stack:
+  D (https://b.travel-assets.com/datacapture/2-102/9732a6961190229cceb083a46a7b76ab93d9fc53/datacapture/js/client-logging-bundle-min.js:1)
+[INFO  - 2017-03-04T04:42:51.576Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-03-04T04:47:51.586Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-03-04T04:52:51.585Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+serAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-03-04T04:33:05.781Z] Session [a9300ae0-0093-11e7-a90c-2784ed30b7a3] - page.customHeaders:  - {}
+[INFO  - 2017-03-04T04:38:05.617Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-03-04T04:43:05.619Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-03-04T04:48:05.620Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-03-04T04:53:05.619Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW

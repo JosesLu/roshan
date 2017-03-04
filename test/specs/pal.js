@@ -13,7 +13,7 @@ describe('Crawl', function() {
 		htmlPassengers = $('div#numPass').getText();
 		browser.close();
 
-		var template = 'https://www.expedia.com/Flights-Search?langid=1033&trip=oneway&leg1=from:Manila,%20Philippines%20(MNL-Ninoy%20Aquino%20Intl.),to:Davao%20(DVO-Francisco%20Bangoy%20Intl.),departure:DEPDATETANYT&passengers=children:0,adults:2,seniors:0,infantinlap:N&options=cabinclass:economy,sortby:price,carrier:PR&mode=search&paandi=true';
+		var template = 'https://www.expedia.com/Flights-Search?langid=1033&trip=oneway&leg1=from:Manila,%20Philippines%20(MNL-Ninoy%20Aquino%20Intl.),to:Davao%20(DVO-Francisco%20Bangoy%20Intl.),departure:DEPDATETANYT&passengers=children:0,adults:1,seniors:0,infantinlap:N&options=cabinclass:economy,sortby:price,carrier:PR&mode=search&paandi=true';
 		var template1 = template;
 		template = template.replace('MNL',htmlFrom);
 		template = template.replace('DVO',htmlTo);
@@ -53,6 +53,7 @@ describe('Crawl', function() {
 				break;
 			} 
 		}
+		indexCut = indexCut + 5;
 		var v = [];
 		for (x = 1; x < flights.length; x++) {
 			if (flights[x] == '2' && flights[x + 1] == '8') {
@@ -68,7 +69,7 @@ describe('Crawl', function() {
 
 		for (x = 1; x < vJoin.length; x++) {
 			if (vJoin[x] == 'R' && vJoin[x + 1] == 'e') {
-				z[x] = "\n" + " ";
+				z[x] = "\n" + "00 ";
 				counter++;
 			} else {
 				z[x] = vJoin[x];
@@ -77,10 +78,10 @@ describe('Crawl', function() {
 
 		var str = z.join('');
 		str = str.substr(0,indexCut);
-		str = str.replace(/esult/g, "");
-		str = str.replace(/sult/g, "");
+		str = str.replace(/esult/g, " ");
+		str = str.replace(/sult/g, " ");
 		str = str.replace(/.00/g, "");str = str.replace(/.01/g, "");str = str.replace(/:/g, "");
-		str = "id price1 timeDepart	timeArrive fDuration1 fDuration2 origin destination \n" + str;
+		str = "link id price1 timeDepart timeArrive fDuration1 fDuration2 origin destination \n" + template + " " + str;
 		fs = require('fs');
 		fs.writeFile('D:/Roshan/public/flights/pal.txt', str, function(err) {
 				if (err) return console.log(err);

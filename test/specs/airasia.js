@@ -51,6 +51,7 @@ it('Air Asia', function() {
 				break;
 			} 
 		}
+
 		var v = [];
 		for (x = 1; x < flights.length; x++) {
 			if (flights[x] == '2' && flights[x + 1] == '8') {
@@ -61,12 +62,11 @@ it('Air Asia', function() {
 			}
 		}
 		var vJoin = v.join('');
-
-
+		console.log("ALL THE TIME" + vJoin);
 
 		for (x = 1; x < vJoin.length; x++) {
 			if (vJoin[x] == 'R' && vJoin[x + 1] == 'e') {
-				z[x] = "\n" + " ";
+				z[x] = "\n" + "00 ";
 				counter++;
 			} else {
 				z[x] = vJoin[x];
@@ -75,14 +75,15 @@ it('Air Asia', function() {
 
 		var str = z.join('');
 		str = str.substr(0,indexCut);
-		str = str.replace(/esult/g, "");
-		str = str.replace(/sult/g, "");
+		str = str.replace(/esult/g, " ");
+		str = str.replace(/sult/g, " ");
 		str = str.replace(/.00/g, "");str = str.replace(/.01/g, "");str = str.replace(/:/g, "");
-		str = "id price1 timeDepart	timeArrive fDuration1 fDuration2 origin destination \n" + str;
+		str = "link id price1 timeDepart timeArrive fDuration1 fDuration2 origin destination \n" + template +" "+ str;
 		fs = require('fs');
 		fs.writeFile('D:/Roshan/public/flights/airasia.txt', str, function(err) {
 				if (err) return console.log(err);
 				console.log('Write successful!');
+
 			});
 	
 
@@ -154,7 +155,9 @@ it('Air Asia', function() {
 		str = str.replace(/esult/g, "");
 		str = str.replace(/sult/g, "");
 		str = str.replace(/.00/g, "");str = str.replace(/.01/g, "");str = str.replace(/:/g, "");
-		str = "id price1 timeDepart	timeArrive fDuration1 fDuration2 origin destination \n" + str;
+
+		str = "link id price1 timeDepart timeArrive fDuration1 fDuration2 origin destination \n" + str;
+		str = str + template;
 		fs = require('fs');
 		fs.writeFile('D:/Roshan/public/flights/airasiaR.txt', str, function(err) {
 				if (err) return console.log(err);

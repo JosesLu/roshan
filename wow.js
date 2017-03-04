@@ -5,7 +5,7 @@ var parser = require('rss-parser');
 parser.parseURL('http://www.philippinecompanies.com/searchapi.php?what=hotels&where=davao', function(err, parsed) {
  // console.log(parsed.feed.title);
  	var hotels = [];
-	for(var i = 0;i<20;i++){
+	for(var i = 0;i<21;i++){
 	hotels[i] = parsed.feed.entries[i].title + " "  + parsed.feed.entries[i].contentSnippet;	
 	//console.log(parsed.feed.entries[i].contentSnippet);
 	//var data = parsed.feed;

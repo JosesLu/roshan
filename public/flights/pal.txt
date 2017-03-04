@@ -1,10 +1,12 @@
-id price1 timeDepart	timeArrive fDuration1 fDuration2 origin destination 
- 1 93.99 910p  1055p  1h 45m MNL  DVO  93.99 as of 8 minutes ago 93 .99 as of 8 minutes ago   Select Select r 1 
-  2 93.99 740p  930p  1h 50m MNL  DVO     93.99 as of 8 minutes ago 93 .99 as of 8 minutes ago   Select Select r 2 
-  3 105.99 640p  830p  1h 50m MNL  DVO     105.99 as of 8 minutes ago 105 .99 as of 8 minutes ago   Select Select r 3 
-  4 111.99 1105a  1245p  1h 40m MNL  DVO     111.99 as of 8 minutes ago 111 .99 as of 8 minutes ago   Select Select r 4 
-  5 111.99 855a  1045a  1h 50m MNL  DVO     111.99 as of 8 minutes ago 111 .99 as of 8 minutes ago   Select Select r 5 
-  6 118.99 315p  505p  1h 50m MNL  DVO     118.99 as of 8 minutes ago 118 .99 as of 8 minutes ago   Select Select r 6 
-  7 118.99 4a  550a  1h 50m MNL  DVO     118.99 as of 8 minutes ago 118 .99 as of 8 minutes ago   Select Select r 7 
-  8 118.99 640a  830a  1h 50m MNL  DVO     118.99 as of 8 minutes ago 118 .99 as of 8 minutes ago   Select Select r 8 
-  9 311.98 4p  940p  5h 40m MNL  DVO 1 stop 3h 25m in CEB 3
+link id price1 timeDepart timeArrive fDuration1 fDuration2 origin destination 
+https://www.expedia.com/Flights-Search?langid=1033&trip=oneway&leg1=from:Manila,%20Philippines%20(MNL-Ninoy%20Aquino%20Intl.),to:Davao%20(CEB-Francisco%20Bangoy%20Intl.),departure:03/14/2017TANYT&passengers=children:0,adults:1,seniors:0,infantinlap:N&options=cabinclass:economy,sortby:price,carrier:PR&mode=search&paandi=true   1 70.98 4a  510a  1h 10m MNL  CEB     70.98 as of 7 minutes ago 70 .98 as of 7 minutes ago   Select Select r  1 
+00   2 70.98 1030p  1145p  1h 15m MNL  CEB  70.98 as of 7 minutes ago 70 .98 as of 7 minutes ago   Select Select r  2 
+00   3 75.98 8p  915p  1h 15m MNL  CEB     75.98 as of 7 minutes ago 75 .98 as of 7 minutes ago   Select Select r  3 
+00   4 81.98 5a  6a  1h 0m MNL  CEB     81.98 as of 7 minutes ago 81 .98 as of 7 minutes ago   Select Select r  4 
+00   5 81.98 655p  8p  1h 5m MNL  CEB     81.98 as of 7 minutes ago 81 .98 as of 7 minutes ago   Select Select r  5 
+00   6 87.98 115p  230p  1h 15m MNL  CEB     87.98 as of 7 minutes ago 87 .98 as of 7 minutes ago   Select Select r  6 
+00   7 94.98 10a  11a  1h 0m MNL  CEB  94.98 as of 7 minutes ago 94 .98 as of 7 minutes ago   Select Select r  7 
+00   8 102.98 655a  805a  1h 10m MNL  CEB     102.98 as of 7 minutes ago 102 .98 as of 7 minutes ago   Select Select r  8 
+00   9 102.98 9a  1015a  1h 15m MNL  CEB     102.98 as of 7 minutes ago 102 .98 as of 7 minutes ago   Select Select r  9 
+00   10 102.98 4p  515p  1h 15m MNL  CEB  102.98 as of 7 minutes ago 102 .98 as of 7 minutes ago   Select Select r  10 
+00   11 127.98 410a  8a  3h 50m MNL  CEB 1 sto

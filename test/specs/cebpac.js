@@ -18,29 +18,23 @@ describe('Crawl', function() {
 		userDate = parseInt(userDate);
 		var userMonth = htmlDepDate[4] + htmlDepDate[5];
 		userMonth = parseInt(userMonth);
+		var ymd = htmlDepDate[6] + htmlDepDate[7] + htmlDepDate[8] + htmlDepDate[9] + "-" + htmlDepDate[3] + htmlDepDate[4] + "-" + htmlDepDate[0] + htmlDepDate[1]; //formats user date to YEAR-MONTH-DATE
+
 		var today = new Date();
 		var mm = today.getMonth()+1; 
 		mm = parseInt(mm);
 		var numberOfClicks = userMonth - mm;
+		var link = 'https://beta.cebupacificair.com/Flight/InternalSelect?s=true&o1=FROM&d1=TO&dd1=DATEDEP&mon=true';
+		link = link.replace('FROM',htmlFrom);
+		link = link.replace('TO',htmlTo);
+		link = link.replace('DATEDEP',ymd);
 
-		browser.url('https://www.cebupacificair.com/');
-		browser.click('//*[@id="optOneWay"]');
-		browser.setValue('//*[@id="FromStation"]',fullFrom); 
-		//browser.pause(10000);
-		browser.keys('\uE015');browser.keys('\uE007');
-		browser.setValue('//*[@id="ToStation"]',fullTo);
-		//browser.pause(10000);
-		browser.keys('\uE015');browser.keys('\uE007');
-		browser.pause(1000);
-		for(var i = 0;i < numberOfClicks;i++)
-			browser.click('//td[contains(., "→")]');
-		//browser.pause(9000);
-		browser.click('//td[contains(., "' + userDate +'")]');
+
+		browser.url(link);
 		
-		browser.click('//*[@id="btnFind"]');
 		var flights = $('#depart-table > tbody');
 		flights = flights.getText();
-
+		
 		for (x = 0; x < flights.length; x++) {
 			flights = flights.replace("\n", " ");
 		}
@@ -53,15 +47,20 @@ describe('Crawl', function() {
 				break;
 			} 
 		}
-		
+
 
 		var z = [];
 		var counter = 1;
 		for (x = 1; x < flights.length; x++) {
-			if (flights[x] == '5' && flights[x + 1] == 'J') {
+			if (flights[x] == '5' && flights[x + 1] == 'J' && x == 1) {
 				z[x] = "\n" + counter + " ";
 				counter++;
-			} else {
+			} 
+			if (flights[x] == '5' && flights[x + 1] == 'J') {
+				z[x] = "\n" + "00 " + counter + " ";
+				counter++;
+			} 
+			else {
 				z[x] = flights[x];
 			}
 		}
@@ -95,8 +94,8 @@ describe('Crawl', function() {
 
 		var finalList = y.join('');
 
-		finalList = "0 " + finalList;
-		finalList = "id flightID timeDepart timeArrive price1 price2 price3 \n" + finalList;
+		finalList = link + " 0 " + finalList;
+		finalList = "link id flightID timeDepart timeArrive price1 price2 price3 \n" + finalList;
 		fs = require('fs');
 		fs.writeFile('D:/Roshan/public/flights/ceb.txt', finalList, function(err) {
 				if (err) return console.log(err);

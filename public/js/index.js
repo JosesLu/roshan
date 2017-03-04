@@ -53,19 +53,19 @@ function populate() { //Round-Trip
 		if (final.length > 20)
 			loopCount = final.length;
 
-		for (var i = 1; i < loopCount; i++) {
+		for (var i = 0; i < loopCount; i++) {
 			dtime = dtime + i;
 			document.getElementById(dtime).innerHTML = data[i - 1].timeDepart + "/" + data[i - 1].returnDepartTime;
 			dtime = "dTime";
 
 		}
-		for (var i = 1; i < loopCount; i++) {
+		for (var i = 0; i < loopCount; i++) {
 			atime = atime + i;
 			document.getElementById(atime).innerHTML = data[i - 1].timeArrive + "/" + data[i - 1].returnArriveTime;
 			atime = "aTime";
 
 		}
-		for (var i = 1; i < loopCount; i++) {
+		for (var i = 0; i < loopCount; i++) {
 			price = i + price;
 			document.getElementById(price).innerHTML = "P " + data[i - 1].price1;
 			price = "price";
@@ -180,6 +180,22 @@ $span.attr('id', function (index) {
 		for(var i = 0;i < palJson.length;i++)
 			palJson[i].airlineName = "pal";
 
+
+
+		var cebLink = cebJson[0].link;
+		var aaLink = airasiaJson[0].link;
+		var palLink = palJson[0].link;
+
+		//Adds correct links to all values in array
+		for(var i = 0;i < cebJson.length;i++)
+			cebJson[i].link = cebJson[0].link; 
+
+		for(var i = 0;i < airasiaJson.length;i++)
+			airasiaJson[i].link = airasiaJson[0].link; 
+
+		for(var i = 0;i < palJson.length;i++)
+			palJson[i].link = palJson[0].link; 
+
 		var data = [];
 		for(var i = 0;i < palJson.length;i++)
 		{
@@ -293,8 +309,18 @@ $span.attr('id', function (index) {
 			else
 				cebJson1[i] = cebJson[i];
 		}
-
-		//console.log(cebJson1);
+		for(var i = 0;i < cebJson.length;i++)
+		{
+			if(cebJson[i].price1 == null)
+			{
+				delete cebJson[i].airlineName;
+				delete cebJson[i].id;
+				delete cebJson[i].timeArrive;
+				delete cebJson[i].timeDepart;
+				counterx = i;
+			}
+		}
+		
 		//console.log(airasiaJson);
 		//console.log(palJson);
 		var xy = cebJson.concat(palJson);
@@ -321,6 +347,7 @@ $span.attr('id', function (index) {
 		var dtime = "dTime";
 		var atime = "aTime";
 		var price = "price";
+		var btn = "btn";
 
 
 
@@ -359,6 +386,7 @@ $span.attr('id', function (index) {
 
 		}
 
+
 		for (var i = 1; i < loopCount; i++) {
 
 			dtime = dtime + i; //Append current iteration to match dtime ID
@@ -376,6 +404,12 @@ $span.attr('id', function (index) {
 			price = i + price;
 			document.getElementById(price).innerHTML = "₱ " + final[i - 1].price1;
 			price = "price";
+
+		}
+		for (var i = 1; i < loopCount; i++) {
+			btn = btn + i;
+			document.getElementById(btn).href =  final[i - 1].link;
+			btn = "btn";
 
 		}
 
@@ -426,14 +460,14 @@ var hotels = (function() {
 
 	var hotelName = "hotelName";
 	var info = "info";
-	for (var i = 0; i < 5; i++) {
+	for (var i = 0; i < 21; i++) {
 
 			hotelName = hotelName + i; //Append current iteration to match dtime ID
 			document.getElementById(hotelName).innerHTML = hotelNames[i];
 			hotelName = "hotelName";
 
 		}
-	for (var i = 0; i < 5; i++) {
+	for (var i = 0; i < 21; i++) {
 
 		info = info + i; //Append current iteration to match dtime ID
 		document.getElementById(info).innerHTML = hotelInfo[i];
@@ -458,4 +492,12 @@ function sortByPrice(){
 		final.sort(function(a, b) {
 		    return parseFloat(a.timeDepart) - parseFloat(b.timeDepart);
 		});
+}
+
+function flightClicked(){
+
+	$("icry").click(function() {
+	    alert(this.id); // or alert($(this).attr('id'));
+	});
+
 }
