@@ -43,7 +43,8 @@ describe('Crawl', function() {
 		flights = flights.replace(/operated by PAL Express/g, "");
 		flights = flights.replace(/Live/g, "");
 		flights = flights.replace(/one way/g, "");
-
+		flights = flights.replace(/P/g, "");
+		flights = flights.replace(/A/g, "");
 		var indexCut,cut;
 		var z = [];
 		var counter = 1;

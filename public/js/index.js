@@ -48,9 +48,9 @@ function populate() { //Round-Trip
 		var atime = "aTime";
 		var price = "price";
 
-		var loopCount = 20;
+		var loopCount = 30;
 		console.log(final.length);
-		if (final.length > 20)
+		if (final.length > 30)
 			loopCount = final.length;
 
 		for (var i = 0; i < loopCount; i++) {
@@ -91,14 +91,14 @@ $span.attr('id', function (index) {
 
 		var img = [];
 		var counter = 0;
-		for (var i = 0; i < 20; i++) {
+		for (var i = 0; i < 30; i++) {
 			img[i] = data[counter] + data[counter + 1];
 			counter = counter + 2;
 		}
 		// for(var i=0;i<img.length;i++)
 		// console.log(img[i] + " ");
 		var logo = "logo";
-		for (var i = 0; i < 20; i++) {
+		for (var i = 0; i < 30; i++) {
 			logo = logo + i;
 			if (img[i] == 'Z2') {
 				document.getElementById(logo).src = "img/airline%20logo/air-asia.png";
@@ -357,13 +357,19 @@ $span.attr('id', function (index) {
 		});
 
 
-		var loopCount = 20;
-		
-		if (final.length < 20)
+		var loopCount = 30;
+		var rc = "rc";
+		var indexToRemove = 30 - final.length;
+		if (final.length < 30)
+		{
 			loopCount = final.length;
-		
-
-	
+			for(var i = 30 - indexToRemove;i <= 30;i++){
+				rc = rc + i;
+				document.getElementById(rc).style.display = 'none';
+				rc = "rc";
+			}
+			
+		}
 
 
 		var logo = "logo";
@@ -385,22 +391,21 @@ $span.attr('id', function (index) {
 			}
 
 		}
-
-
-		for (var i = 1; i < loopCount; i++) {
+		
+		for (var i = 1; i < loopCount + 1; i++) {
 
 			dtime = dtime + i; //Append current iteration to match dtime ID
 			document.getElementById(dtime).innerHTML = final[i - 1].timeDepart;
 			dtime = "dTime";
 
 		}
-		for (var i = 1; i < loopCount; i++) {
+		for (var i = 1; i < loopCount + 1; i++) {
 			atime = atime + i;
 			document.getElementById(atime).innerHTML = final[i - 1].timeArrive;
 			atime = "aTime";
 
 		}
-		for (var i = 1; i < loopCount; i++) {
+		for (var i = 1; i < loopCount + 1; i++) {
 			price = i + price;
 			document.getElementById(price).innerHTML = "₱ " + final[i - 1].price1;
 			price = "price";
@@ -481,10 +486,20 @@ function dothemagic() {
 
 	var fromTXB = $("#fromTXB").val();
 	var toTXB = $("#toTXB").val();
-	fromTXB = fromTXB.substr(fromTXB.length - 3);
-	toTXB = toTXB.substr(toTXB.length - 3);
-	sessionStorage.setItem('Current Location', fromTXB);
-	sessionStorage.setItem('Destination', toTXB);
+	var counter = 0;
+	if(fromTXB == toTXB)
+	{
+		window.alert('Destination and origin cannot be similar.');
+		
+	}
+
+
+	else {
+		fromTXB = fromTXB.substr(fromTXB.length - 3);
+		toTXB = toTXB.substr(toTXB.length - 3);
+		sessionStorage.setItem('Current Location', fromTXB);
+		sessionStorage.setItem('Destination', toTXB);
+	}
 }
 
 function sortByPrice(){

@@ -37,9 +37,16 @@ app.get('/loading', function(req, res) {
 });
 
 app.post('/save', function(req, res) {
+
 	var counter = 0;
 	var currentLocation = req.body.xx;
 	var destination = req.body.yy;
+	if(currentLocation == destination)
+	{
+		res.render('index');
+
+	}
+	else {
 	var from3 = req.body.xxx;
 	var to3 = req.body.yyy;
 	var tripType=req.body.triptype;
@@ -63,6 +70,7 @@ app.post('/save', function(req, res) {
 	{
 		res.render('round-trip-results');
 	}
+}
 });
 
 app.listen(process.env.PORT || 8008);

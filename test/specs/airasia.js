@@ -62,7 +62,7 @@ it('Air Asia', function() {
 			}
 		}
 		var vJoin = v.join('');
-		console.log("ALL THE TIME" + vJoin);
+	
 
 		for (x = 1; x < vJoin.length; x++) {
 			if (vJoin[x] == 'R' && vJoin[x + 1] == 'e') {

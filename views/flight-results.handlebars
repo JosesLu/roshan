@@ -1,19 +1,4 @@
 <body onload="javascript:populateOne()">
-	<!-- HEADER -->
-<input type="text" id="from1"></input>
-<input type="text" id="to1"></input>
-<div id="from2"></div>
-<div id="to2"></div>
-	<!--MAIN-->
-<div id="parent2" class="parent">
-    <span>11</span>
-    <span>12</span>
-    <span>13</span>
-    <span>14</span>
-    <span>15</span>
-    <span>16</span>
-</div>
-
 	<header>
 		<div class="container">
 			<div class="result-container top-round">
@@ -22,22 +7,21 @@
 					<h5 class="description">The trip prices shown below includes additional fees imposed by the travel agency to be used. Prices may differ on official airline website. </h5>
 					<div class="row">
 						<div class="col-md-8">
-							<h5 class="description">Sort By: <a href = "javascript:sortByTimeDepart()">Price </a><a href = "http://google.com">Departure Time </a><a href = "http://google.com">Arrival Time </a><a href = "http://google.com">Duration</a> </h5> 
+							<h5 class="description">Sort By: <a href = "javascript:sortByTimeDepart()">Price </a><a href = "http://google.com">Departure Time </a><a href = "http://google.com">Arrival Time </a><a href = "http://google.com">Duration</a> </h5>
 
 						</div>
 						<div class="col-md-4">
 							<button type="button" class="btn btn-info btn-arrow-right" onclick="location.href='/hotel-results'">Proceed To Hotels</button>
-							</div>
+						</div>
 					</div>
-				</div>		
+				</div>
 			</div>
 
-			<div class="result-container">
+			<div class="result-container" id='rc1'>
 				<div class="flight-cards">
 					<div class="row">
 						<div class="col-md-4">
 							<img class="airline-logos" src="img/gray.png" id="logo0">
-							<p class="airline-name">Air Asia</p>
 						</div>
 						<div class="col-md-4">
 							<div class="row">
@@ -53,22 +37,18 @@
 						</div>
 						<div class="col-md-4">
 							<p class="header-login" id="1price"></p>
-							<a id="btn1" class="btn" onclick="window.open(this.href,'targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=400, height=400'); return false;"type="button">Book This Flight</a>
+							<a id="btn1" class="btn" onclick="window.open(this.href,'targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=400, height=400'); return false;" type="button">Book This Flight</a>
 						</div>
 					</div>
 				</div>
 			</div>
 
-			<div class="result-container">
+			<div class="result-container" id='rc2'>
 				<div class="flight-cards">
 					<div class="row">
 						<div class="col-md-4">
 							<img class="airline-logos" src="img/gray.png" id="logo1">
-
-							<p class="airline-name">Cebu Pacific</p>
 						</div>
-
-
 						<div class="col-md-4">
 							<div class="row">
 								<div class="col-md-6">
@@ -91,14 +71,14 @@
 
 						<div class="col-md-4">
 							<p class="header-login" id="2price"></p>
-							<a id="btn2" class="btn " onclick="window.open(this.href,'targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=400, height=400'); return false;"onclick="window.open(this.href,'targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=400, height=400'); return false;"  type="button">Book This Flight</a>
+							<a id="btn2" class="btn " onclick="window.open(this.href,'targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=400, height=400'); return false;" onclick="window.open(this.href,'targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=400, height=400'); return false;" type="button">Book This Flight</a>
 						</div>
-					</div>	
+					</div>
 				</div>
 			</div>
 
 
-			<div class="result-container">
+			<div class="result-container" id='rc3'>
 				<div class="flight-cards">
 					<div class="row">
 						<div class="col-md-4">
@@ -111,7 +91,7 @@
 						<div class="col-md-4">
 							<div class="row">
 								<div class="col-md-6">
-									<p class="header-login" >FROM</p>
+									<p class="header-login">FROM</p>
 
 
 									<p class="header-login" id="dTime3"></p>
@@ -130,14 +110,14 @@
 
 						<div class="col-md-4">
 							<p class="header-login" id="3price"></p>
-							<a id="btn3" class="btn " onclick="window.open(this.href,'targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=400, height=400'); return false;"onclick="location.href = 'hotel-results';"type="button">Book This Flight</a>
+							<a id="btn3" class="btn " onclick="window.open(this.href,'targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=400, height=400'); return false;" onclick="location.href = 'hotel-results';" type="button">Book This Flight</a>
 						</div>
 					</div>
 				</div>
 			</div>
 
 
-			<div class="result-container">
+			<div class="result-container" id='rc4'>
 				<div class="flight-cards">
 					<div class="row">
 						<div class="col-md-4">
@@ -169,13 +149,13 @@
 
 						<div class="col-md-4">
 							<p class="header-login" id="4price"></p>
-							<a id="btn4" class="btn " onclick="window.open(this.href,'targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=400, height=400'); return false;"onclick="location.href = 'hotel-results';"type="button">Book This Flight</a>
+							<a id="btn4" class="btn " onclick="window.open(this.href,'targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=400, height=400'); return false;" onclick="location.href = 'hotel-results';" type="button">Book This Flight</a>
 						</div>
 					</div>
 				</div>
 			</div>
 
-				<div class="result-container">
+			<div class="result-container" id='rc5'>
 				<div class="flight-cards">
 					<div class="row">
 						<div class="col-md-4">
@@ -207,14 +187,14 @@
 
 						<div class="col-md-4">
 							<p class="header-login" id="5price"></p>
-							<a id="btn5" class="btn " onclick="window.open(this.href,'targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=400, height=400'); return false;"onclick="location.href = 'hotel-results';"type="button">Book This Flight</a>
+							<a id="btn5" class="btn " onclick="window.open(this.href,'targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=400, height=400'); return false;" onclick="location.href = 'hotel-results';" type="button">Book This Flight</a>
 						</div>
 					</div>
 				</div>
 			</div>
 
 
-	<div class="result-container">
+			<div class="result-container" id='rc6'>
 				<div class="flight-cards">
 					<div class="row">
 						<div class="col-md-4">
@@ -246,14 +226,14 @@
 
 						<div class="col-md-4">
 							<p class="header-login" id="6price"></p>
-							<a id="btn6" class="btn " onclick="window.open(this.href,'targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=400, height=400'); return false;"onclick="location.href = 'hotel-results';"type="button">Book This Flight</a>
+							<a id="btn6" class="btn " onclick="window.open(this.href,'targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=400, height=400'); return false;" onclick="location.href = 'hotel-results';" type="button">Book This Flight</a>
 						</div>
 					</div>
 				</div>
 			</div>
 
 
-	<div class="result-container">
+			<div class="result-container" id='rc7'>
 				<div class="flight-cards">
 					<div class="row">
 						<div class="col-md-4">
@@ -285,14 +265,14 @@
 
 						<div class="col-md-4">
 							<p class="header-login" id="7price"></p>
-							<a id="btn7" class="btn " onclick="window.open(this.href,'targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=400, height=400'); return false;"onclick="location.href = 'hotel-results';"type="button">Book This Flight</a>
+							<a id="btn7" class="btn " onclick="window.open(this.href,'targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=400, height=400'); return false;" onclick="location.href = 'hotel-results';" type="button">Book This Flight</a>
 						</div>
 					</div>
 				</div>
 			</div>
 
 
-	<div class="result-container">
+			<div class="result-container" id='rc8'>
 				<div class="flight-cards">
 					<div class="row">
 						<div class="col-md-4">
@@ -324,14 +304,14 @@
 
 						<div class="col-md-4">
 							<p class="header-login" id="8price"></p>
-							<a id="btn8" class="btn " onclick="window.open(this.href,'targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=400, height=400'); return false;"onclick="location.href = 'hotel-results';"type="button">Book This Flight</a>
+							<a id="btn8" class="btn " onclick="window.open(this.href,'targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=400, height=400'); return false;" onclick="location.href = 'hotel-results';" type="button">Book This Flight</a>
 						</div>
 					</div>
 				</div>
 			</div>
 
 
-	<div class="result-container">
+			<div class="result-container" id='rc9'>
 				<div class="flight-cards">
 					<div class="row">
 						<div class="col-md-4">
@@ -363,14 +343,14 @@
 
 						<div class="col-md-4">
 							<p class="header-login" id="9price"></p>
-							<a id="btn9" class="btn " onclick="window.open(this.href,'targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=400, height=400'); return false;"onclick="location.href = 'hotel-results';"type="button">Book This Flight</a>
+							<a id="btn9" class="btn " onclick="window.open(this.href,'targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=400, height=400'); return false;" onclick="location.href = 'hotel-results';" type="button">Book This Flight</a>
 						</div>
 					</div>
 				</div>
 			</div>
 
 
-	<div class="result-container">
+			<div class="result-container" id='rc10'>
 				<div class="flight-cards">
 					<div class="row">
 						<div class="col-md-4">
@@ -402,14 +382,14 @@
 
 						<div class="col-md-4">
 							<p class="header-login" id="10price"></p>
-							<a id="btn10" class="btn " onclick="window.open(this.href,'targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=400, height=400'); return false;"onclick="location.href = 'hotel-results';"type="button">Book This Flight</a>
+							<a id="btn10" class="btn " onclick="window.open(this.href,'targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=400, height=400'); return false;" onclick="location.href = 'hotel-results';" type="button">Book This Flight</a>
 						</div>
 					</div>
 				</div>
 			</div>
 
 
-	<div class="result-container">
+			<div class="result-container" id='rc11'>
 				<div class="flight-cards">
 					<div class="row">
 						<div class="col-md-4">
@@ -441,14 +421,14 @@
 
 						<div class="col-md-4">
 							<p class="header-login" id="11price"></p>
-							<a id="btn11" class="btn " onclick="window.open(this.href,'targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=400, height=400'); return false;"onclick="location.href = 'hotel-results';"type="button">Book This Flight</a>
+							<a id="btn11" class="btn " onclick="window.open(this.href,'targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=400, height=400'); return false;" onclick="location.href = 'hotel-results';" type="button">Book This Flight</a>
 						</div>
 					</div>
 				</div>
 			</div>
 
 
-	<div class="result-container">
+			<div class="result-container" id='rc12'>
 				<div class="flight-cards">
 					<div class="row">
 						<div class="col-md-4">
@@ -480,14 +460,14 @@
 
 						<div class="col-md-4">
 							<p class="header-login" id="12price"></p>
-							<a id="btn12" class="btn " onclick="window.open(this.href,'targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=400, height=400'); return false;"onclick="location.href = 'hotel-results';"type="button">Book This Flight</a>
+							<a id="btn12" class="btn " onclick="window.open(this.href,'targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=400, height=400'); return false;" onclick="location.href = 'hotel-results';" type="button">Book This Flight</a>
 						</div>
 					</div>
 				</div>
 			</div>
 
 
-	<div class="result-container">
+			<div class="result-container" id='rc13'>
 				<div class="flight-cards">
 					<div class="row">
 						<div class="col-md-4">
@@ -519,14 +499,14 @@
 
 						<div class="col-md-4">
 							<p class="header-login" id="13price"></p>
-							<a id="btn13" class="btn " onclick="window.open(this.href,'targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=400, height=400'); return false;"onclick="location.href = 'hotel-results';"type="button">Book This Flight</a>
+							<a id="btn13" class="btn " onclick="window.open(this.href,'targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=400, height=400'); return false;" onclick="location.href = 'hotel-results';" type="button">Book This Flight</a>
 						</div>
 					</div>
 				</div>
 			</div>
 
 
-	<div class="result-container">
+			<div class="result-container" id='rc14'>
 				<div class="flight-cards">
 					<div class="row">
 						<div class="col-md-4">
@@ -558,14 +538,14 @@
 
 						<div class="col-md-4">
 							<p class="header-login" id="14price"></p>
-							<a id="btn14" class="btn " onclick="window.open(this.href,'targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=400, height=400'); return false;"onclick="location.href = 'hotel-results';"type="button">Book This Flight</a>
+							<a id="btn14" class="btn " onclick="window.open(this.href,'targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=400, height=400'); return false;" onclick="location.href = 'hotel-results';" type="button">Book This Flight</a>
 						</div>
 					</div>
 				</div>
 			</div>
 
 
-	<div class="result-container">
+			<div class="result-container" id='rc15'>
 				<div class="flight-cards">
 					<div class="row">
 						<div class="col-md-4">
@@ -597,14 +577,14 @@
 
 						<div class="col-md-4">
 							<p class="header-login" id="15price"></p>
-							<a id="btn15" class="btn " onclick="window.open(this.href,'targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=400, height=400'); return false;"onclick="location.href = 'hotel-results';"type="button">Book This Flight</a>
+							<a id="btn15" class="btn " onclick="window.open(this.href,'targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=400, height=400'); return false;" onclick="location.href = 'hotel-results';" type="button">Book This Flight</a>
 						</div>
 					</div>
 				</div>
 			</div>
 
 
-	<div class="result-container">
+			<div class="result-container" id='rc16'>
 				<div class="flight-cards">
 					<div class="row">
 						<div class="col-md-4">
@@ -636,14 +616,14 @@
 
 						<div class="col-md-4">
 							<p class="header-login" id="16price"></p>
-							<a id="btn16" class="btn " onclick="window.open(this.href,'targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=400, height=400'); return false;"onclick="location.href = 'hotel-results';"type="button">Book This Flight</a>
+							<a id="btn16" class="btn " onclick="window.open(this.href,'targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=400, height=400'); return false;" onclick="location.href = 'hotel-results';" type="button">Book This Flight</a>
 						</div>
 					</div>
 				</div>
 			</div>
 
 
-	<div class="result-container">
+			<div class="result-container" id='rc17'>
 				<div class="flight-cards">
 					<div class="row">
 						<div class="col-md-4">
@@ -675,14 +655,14 @@
 
 						<div class="col-md-4">
 							<p class="header-login" id="17price"></p>
-							<a id="btn17" class="btn " onclick="window.open(this.href,'targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=400, height=400'); return false;"onclick="location.href = 'hotel-results';"type="button">Book This Flight</a>
+							<a id="btn17" class="btn " onclick="window.open(this.href,'targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=400, height=400'); return false;" onclick="location.href = 'hotel-results';" type="button">Book This Flight</a>
 						</div>
 					</div>
 				</div>
 			</div>
 
 
-	<div class="result-container">
+			<div class="result-container" id='rc18'>
 				<div class="flight-cards">
 					<div class="row">
 						<div class="col-md-4">
@@ -714,14 +694,14 @@
 
 						<div class="col-md-4">
 							<p class="header-login" id="18price"></p>
-							<a id="btn18" class="btn " onclick="window.open(this.href,'targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=400, height=400'); return false;"onclick="location.href = 'hotel-results';"type="button">Book This Flight</a>
+							<a id="btn18" class="btn " onclick="window.open(this.href,'targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=400, height=400'); return false;" onclick="location.href = 'hotel-results';" type="button">Book This Flight</a>
 						</div>
 					</div>
 				</div>
 			</div>
 
 
-	<div class="result-container">
+			<div class="result-container" id='rc19'>
 				<div class="flight-cards">
 					<div class="row">
 						<div class="col-md-4">
@@ -753,21 +733,19 @@
 
 						<div class="col-md-4">
 							<p class="header-login" id="19price"></p>
-							<a id="btn19" class="btn " onclick="window.open(this.href,'targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=400, height=400'); return false;"onclick="location.href = 'hotel-results';"type="button">Book This Flight</a>
+							<a id="btn19" class="btn " onclick="window.open(this.href,'targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=400, height=400'); return false;" onclick="location.href = 'hotel-results';" type="button">Book This Flight</a>
 						</div>
 					</div>
 				</div>
 			</div>
 
-
-
-			<div class="result-container bottom-round">
+			<div class="result-container" id='rc20'>
 				<div class="flight-cards">
 					<div class="row">
 						<div class="col-md-4">
 							<img class="airline-logos" src="img/gray.png" id="logo19">
 
-							<p class="airline-name">Air Asia</p>
+							<p class="airline-name">Tiger Air</p>
 						</div>
 
 
@@ -793,10 +771,386 @@
 
 						<div class="col-md-4">
 							<p class="header-login" id="20price"></p>
-							<a id="btn20" class="btn " onclick="window.open(this.href,'targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=400, height=400'); return false;"onclick="location.href = 'hotel-results';"type="button">Book This Flight</a>
+							<a id="btn20" class="btn " onclick="window.open(this.href,'targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=400, height=400'); return false;" onclick="location.href = 'hotel-results';" type="button">Book This Flight</a>
 						</div>
 					</div>
 				</div>
+			</div>
+
+			<div class="result-container" id='rc21'>
+				<div class="flight-cards">
+					<div class="row">
+						<div class="col-md-4">
+							<img class="airline-logos" src="img/gray.png" id="logo20">
+
+							<p class="airline-name">Tiger Air</p>
+						</div>
+
+
+						<div class="col-md-4">
+							<div class="row">
+								<div class="col-md-6">
+									<p class="header-login">FROM</p>
+
+
+									<p class="header-login" id="dTime21"></p>
+								</div>
+
+
+								<div class="col-md-6">
+									<p class="header-login">TO</p>
+
+
+									<p class="header-login" id="aTime21"></p>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="col-md-4">
+							<p class="header-login" id="21price"></p>
+							<a id="btn21" class="btn " onclick="window.open(this.href,'targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=400, height=400'); return false;" onclick="location.href = 'hotel-results';" type="button">Book This Flight</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="result-container" id='rc22'>
+				<div class="flight-cards">
+					<div class="row">
+						<div class="col-md-4">
+							<img class="airline-logos" src="img/gray.png" id="logo21">
+
+							<p class="airline-name">Tiger Air</p>
+						</div>
+
+
+						<div class="col-md-4">
+							<div class="row">
+								<div class="col-md-6">
+									<p class="header-login">FROM</p>
+
+
+									<p class="header-login" id="dTime22"></p>
+								</div>
+
+
+								<div class="col-md-6">
+									<p class="header-login">TO</p>
+
+
+									<p class="header-login" id="aTime22"></p>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="col-md-4">
+							<p class="header-login" id="22price"></p>
+							<a id="btn22" class="btn " onclick="window.open(this.href,'targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=400, height=400'); return false;" onclick="location.href = 'hotel-results';" type="button">Book This Flight</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="result-container" id='rc23'>
+				<div class="flight-cards">
+					<div class="row">
+						<div class="col-md-4">
+							<img class="airline-logos" src="img/gray.png" id="logo22">
+
+							<p class="airline-name">Tiger Air</p>
+						</div>
+
+
+						<div class="col-md-4">
+							<div class="row">
+								<div class="col-md-6">
+									<p class="header-login">FROM</p>
+
+
+									<p class="header-login" id="dTime23"></p>
+								</div>
+
+
+								<div class="col-md-6">
+									<p class="header-login">TO</p>
+
+
+									<p class="header-login" id="aTime23"></p>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="col-md-4">
+							<p class="header-login" id="23price"></p>
+							<a id="btn23" class="btn " onclick="window.open(this.href,'targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=400, height=400'); return false;" onclick="location.href = 'hotel-results';" type="button">Book This Flight</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="result-container" id='rc24'>
+				<div class="flight-cards">
+					<div class="row">
+						<div class="col-md-4">
+							<img class="airline-logos" src="img/gray.png" id="logo23">
+
+							<p class="airline-name">Tiger Air</p>
+						</div>
+
+
+						<div class="col-md-4">
+							<div class="row">
+								<div class="col-md-6">
+									<p class="header-login">FROM</p>
+
+
+									<p class="header-login" id="dTime24"></p>
+								</div>
+
+
+								<div class="col-md-6">
+									<p class="header-login">TO</p>
+
+
+									<p class="header-login" id="aTime24"></p>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="col-md-4">
+							<p class="header-login" id="24price"></p>
+							<a id="btn24" class="btn " onclick="window.open(this.href,'targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=400, height=400'); return false;" onclick="location.href = 'hotel-results';" type="button">Book This Flight</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="result-container" id='rc25'>
+				<div class="flight-cards">
+					<div class="row">
+						<div class="col-md-4">
+							<img class="airline-logos" src="img/gray.png" id="logo24">
+
+							<p class="airline-name">Tiger Air</p>
+						</div>
+
+
+						<div class="col-md-4">
+							<div class="row">
+								<div class="col-md-6">
+									<p class="header-login">FROM</p>
+
+
+									<p class="header-login" id="dTime25"></p>
+								</div>
+
+
+								<div class="col-md-6">
+									<p class="header-login">TO</p>
+
+
+									<p class="header-login" id="aTime25"></p>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="col-md-4">
+							<p class="header-login" id="25price"></p>
+							<a id="btn25" class="btn " onclick="window.open(this.href,'targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=400, height=400'); return false;" onclick="location.href = 'hotel-results';" type="button">Book This Flight</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="result-container" id='rc26'>
+				<div class="flight-cards">
+					<div class="row">
+						<div class="col-md-4">
+							<img class="airline-logos" src="img/gray.png" id="logo25">
+
+							<p class="airline-name">Tiger Air</p>
+						</div>
+
+
+						<div class="col-md-4">
+							<div class="row">
+								<div class="col-md-6">
+									<p class="header-login">FROM</p>
+
+
+									<p class="header-login" id="dTime26"></p>
+								</div>
+
+
+								<div class="col-md-6">
+									<p class="header-login">TO</p>
+
+
+									<p class="header-login" id="aTime26"></p>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="col-md-4">
+							<p class="header-login" id="26price"></p>
+							<a id="btn26" class="btn " onclick="window.open(this.href,'targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=400, height=400'); return false;" onclick="location.href = 'hotel-results';" type="button">Book This Flight</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="result-container" id='rc27'>
+				<div class="flight-cards">
+					<div class="row">
+						<div class="col-md-4">
+							<img class="airline-logos" src="img/gray.png" id="logo26">
+
+							<p class="airline-name">Tiger Air</p>
+						</div>
+
+
+						<div class="col-md-4">
+							<div class="row">
+								<div class="col-md-6">
+									<p class="header-login">FROM</p>
+
+
+									<p class="header-login" id="dTime27"></p>
+								</div>
+
+
+								<div class="col-md-6">
+									<p class="header-login">TO</p>
+
+
+									<p class="header-login" id="aTime27"></p>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="col-md-4">
+							<p class="header-login" id="27price"></p>
+							<a id="btn27" class="btn " onclick="window.open(this.href,'targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=400, height=400'); return false;" onclick="location.href = 'hotel-results';" type="button">Book This Flight</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="result-container" id='rc28'>
+				<div class="flight-cards">
+					<div class="row">
+						<div class="col-md-4">
+							<img class="airline-logos" src="img/gray.png" id="logo27">
+
+							<p class="airline-name">Tiger Air</p>
+						</div>
+
+
+						<div class="col-md-4">
+							<div class="row">
+								<div class="col-md-6">
+									<p class="header-login">FROM</p>
+
+
+									<p class="header-login" id="dTime28"></p>
+								</div>
+
+
+								<div class="col-md-6">
+									<p class="header-login">TO</p>
+
+
+									<p class="header-login" id="aTime28"></p>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="col-md-4">
+							<p class="header-login" id="28price"></p>
+							<a id="btn28" class="btn " onclick="window.open(this.href,'targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=400, height=400'); return false;" onclick="location.href = 'hotel-results';" type="button">Book This Flight</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="result-container" id='rc29'>
+				<div class="flight-cards">
+					<div class="row">
+						<div class="col-md-4">
+							<img class="airline-logos" src="img/gray.png" id="logo28">
+
+							<p class="airline-name">Tiger Air</p>
+						</div>
+
+
+						<div class="col-md-4">
+							<div class="row">
+								<div class="col-md-6">
+									<p class="header-login">FROM</p>
+
+
+									<p class="header-login" id="dTime29"></p>
+								</div>
+
+
+								<div class="col-md-6">
+									<p class="header-login">TO</p>
+
+
+									<p class="header-login" id="aTime29"></p>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="col-md-4">
+							<p class="header-login" id="29price"></p>
+							<a id="btn29" class="btn " onclick="window.open(this.href,'targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=400, height=400'); return false;" onclick="location.href = 'hotel-results';" type="button">Book This Flight</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="result-container" id='rc30'>
+				<div class="flight-cards">
+					<div class="row">
+						<div class="col-md-4">
+							<img class="airline-logos" src="img/gray.png" id="logo29">
+
+							<p class="airline-name">Tiger Air</p>
+						</div>
+
+
+						<div class="col-md-4">
+							<div class="row">
+								<div class="col-md-6">
+									<p class="header-login">FROM</p>
+
+
+									<p class="header-login" id="dTime30"></p>
+								</div>
+
+
+								<div class="col-md-6">
+									<p class="header-login">TO</p>
+
+
+									<p class="header-login" id="aTime30"></p>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="col-md-4">
+							<p class="header-login" id="30price"></p>
+							<a id="btn30" class="btn " onclick="window.open(this.href,'targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=400, height=400'); return false;" onclick="location.href = 'hotel-results';" type="button">Book This Flight</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="result-container bottom-round">
+
 			</div>
 		</div>
 	</header>

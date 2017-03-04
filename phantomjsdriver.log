@@ -1643,26 +1643,25 @@ origin=impressionData.log
 [INFO  - 2017-03-04T04:41:10.059Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
 [INFO  - 2017-03-04T04:46:10.231Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
 [INFO  - 2017-03-04T04:51:10.231Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
- ReferenceError: Can't find variable: UET
-[ERROR - 2017-03-04T04:36:01.069Z] Session [6451e290-0093-11e7-a604-b7bea14b1347] - page.onError - stack:
-  loader_cb (https://tags.tiqcdn.com/utag/expedia/main/prod/utag.js:1426)
-  (anonymous function) (https://tags.tiqcdn.com/utag/expedia/main/prod/utag.js:135)
-[ERROR - 2017-03-04T04:36:01.071Z] Session [6451e290-0093-11e7-a604-b7bea14b1347] - page.onError - msg: ReferenceError: Can't find variable: UET
-[ERROR - 2017-03-04T04:36:01.071Z] Session [6451e290-0093-11e7-a604-b7bea14b1347] - page.onError - stack:
+[INFO  - 2017-03-04T04:56:10.237Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-03-04T05:01:10.236Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-03-04T05:06:10.237Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-03-04T05:08:13.917Z] ShutdownReqHand - _handle - About to shutdown
+6451e290-0093-11e7-a604-b7bea14b1347] - page.onError - stack:
   loader_cb (https://tags.tiqcdn.com/utag/expedia/main/prod/utag.js:1412)
   (anonymous function) (https://tags.tiqcdn.com/utag/expedia/main/prod/utag.js:135)
 [INFO  - 2017-03-04T04:36:09.703Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
 [INFO  - 2017-03-04T04:41:09.696Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
 [INFO  - 2017-03-04T04:46:09.709Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
 [INFO  - 2017-03-04T04:51:09.714Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-30b99aa93] - page.customHeaders:  - {}
-[INFO  - 2017-03-04T04:36:19.790Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2017-03-04T04:41:19.790Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2017-03-04T04:46:19.791Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-03-04T04:56:09.716Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-03-04T05:01:09.715Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-03-04T05:06:09.725Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+s Sessions clean-up phase starting NOW
 [INFO  - 2017-03-04T04:51:19.803Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-ecurityEnabled":true}
-[INFO  - 2017-03-04T04:32:51.994Z] Session [a1068100-0093-11e7-8755-4b599bfffd04] - page.customHeaders:  - {}
-[INFO  - 2017-03-04T04:32:51.994Z] Session [a1068100-0093-11e7-8755-4b599bfffd04] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-03-04T04:56:19.805Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-03-04T05:01:19.808Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+"version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
 [INFO  - 2017-03-04T04:32:51.994Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: a1068100-0093-11e7-8755-4b599bfffd04
 [INFO  - 2017-03-04T04:32:52.189Z] Session [a1068100-0093-11e7-8755-4b599bfffd04] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
 [INFO  - 2017-03-04T04:32:52.189[INFO  - 2017-03-04T04:32:58.962Z] ShutdownReqHand - _handle - About to shutdo[INFO  - 2017-03-04T04:37:51.570Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
@@ -1687,9 +1686,13 @@ origin=impressionData.log
 [INFO  - 2017-03-04T04:42:51.576Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
 [INFO  - 2017-03-04T04:47:51.586Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
 [INFO  - 2017-03-04T04:52:51.585Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-serAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
-[INFO  - 2017-03-04T04:33:05.781Z] Session [a9300ae0-0093-11e7-a90c-2784ed30b7a3] - page.customHeaders:  - {}
-[INFO  - 2017-03-04T04:38:05.617Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2017-03-04T04:43:05.619Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-03-04T04:57:51.585Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-03-04T05:02:51.590Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-03-04T05:07:51.587Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+3:05.619Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
 [INFO  - 2017-03-04T04:48:05.620Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
 [INFO  - 2017-03-04T04:53:05.619Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-03-04T04:58:05.620Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-03-04T05:03:05.620Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-03-04T05:08:05.620Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-03-04T05:08:16.078Z] ShutdownReqHand - _handle - About to shutdown

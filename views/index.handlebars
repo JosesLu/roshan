@@ -1,34 +1,35 @@
- <script>
- $( function() {
-   $("#direct") // select the radio by its id
-    .change(function(){ // bind a function to the change event
-        if( $(this).is(":checked") ){ // check if the radio is checked
-            $("#triptype").val("0");
-        }
-    });
-$("#round-trip") // select the radio by its id
-    .change(function(){ // bind a function to the change event
-        if( $(this).is(":checked") ){ // check if the radio is checked
-            $("#triptype").val("1");
-        }
-    });
-  } );
+<script>
+	/*Determines which values were selected and sets corresponding values to hidden div elements to be submitted*/
+	$( function() {
+	  $("#direct") 
+	   .change(function(){ 
+	       if( $(this).is(":checked") ){ 
+	           $("#triptype").val("0");
+	       }
+	   });
+	$("#round-trip") 
+	   .change(function(){ 
+	       if( $(this).is(":checked") ){ 
+	           $("#triptype").val("1");
+	       }
+	   });
+	 });
 
-$( function() {
+	$(function(){
+		 $("#depDate").datepicker().on("change", function() {
+		    $('#dateDepart').val(($('#depDate').val()));
+		 });
+		  $("#arDate").datepicker().on("change", function() {
+		    $('#dateArrive').val(($('#arDate').val()));
+		 });
+		  $("#numOfPass").on("input", function() {
+		    $('#numberOfPassengers').val(($('#numOfPass').val()));
+		 });
+	});
 
-  $("#depDate").datepicker().on("change", function() {
-     $('#dateDepart').val(($('#depDate').val()));
-  });
-   $("#arDate").datepicker().on("change", function() {
-     $('#dateArrive').val(($('#arDate').val()));
-  });
-   $("#numOfPass").on("input", function() {
-     $('#numberOfPassengers').val(($('#numOfPass').val()));
-  });
-
-});
-  $( function() {
-    var availableTags = [
+	/*FROM and TO textbox autofill functionality*/
+	$(function() {
+	   var availableTags = [
 		"Bacolod - BCD","Basco - BSO","Butuan - BXU","Cagayan De Oro - CGY","Calbayog - CYP",
 		"Camiguin - CGM","Cauayan - CYZ","Cebu - CEB","Coron - USU","Cotabato - CBO",
 		"Davao - DVO","Del Carmen - IAO","Dipolog - DPL","Dumaguete - DGT","General Santos - GES","Iloilo - ILO",
@@ -36,9 +37,9 @@ $( function() {
 		"Masbate - MBT","Naga - WNP","Ozamis City - OZC","Pagadian - PAG","Puerto Princesa - PPS","Roxas - RXS",
 		"San Jose - SJI","Surigao - SUG","Tablas - TBH","Tacloban - TAC","Tagbilaran - TAG","Tandag - TDG",
 		"Tawi Tawi - TWT","Tuguegarao - TUG","Virac - VRC","Zamboanga - ZAM",
-    ];
-    $( "#fromTXB").autocomplete({
-      source: availableTags,
+	   ];
+	   $("#fromTXB").autocomplete({
+		source: availableTags,
 		change: function(event,ui)
 		{
 		if (ui.item==null)
@@ -47,11 +48,10 @@ $( function() {
 		    $("#fromTXB").focus();
 		    }
 		}
-});
-  } );
-
-  $( function() {
-    var availableTags = [
+	});
+	});	
+	$(function() {
+	   var availableTags = [
 		"Bacolod - BCD","Basco - BSO","Butuan - BXU","Cagayan De Oro - CGY","Calbayog - CYP",
 		"Camiguin - CGM","Cauayan - CYZ","Cebu - CEB","Coron - USU","Cotabato - CBO",
 		"Davao - DVO","Del Carmen - IAO","Dipolog - DPL","Dumaguete - DGT","General Santos - GES","Iloilo - ILO",
@@ -59,130 +59,122 @@ $( function() {
 		"Masbate - MBT","Naga - WNP","Ozamis City - OZC","Pagadian - PAG","Puerto Princesa - PPS","Roxas - RXS",
 		"San Jose - SJI","Surigao - SUG","Tablas - TBH","Tacloban - TAC","Tagbilaran - TAG","Tandag - TDG",
 		"Tawi Tawi - TWT","Tuguegarao - TUG","Virac - VRC","Zamboanga - ZAM",
-    ];
-    $( "#toTXB").autocomplete({
-      source: availableTags,
-      change: function(event,ui)
-		{
+	   ];
+	   $("#toTXB").autocomplete({
+		source: availableTags,
+		change: function(event,ui) {
 			var fromTXB = $("#fromTXB").val();
 			var toTXB = $("#toTXB").val();
+			/*Parses location chosen to either full name or IATA code equivalent */
 			$("#xx").val(fromTXB.substr(0,fromTXB.length - 6));
 			$("#yy").val(toTXB.substr(0,toTXB.length - 6));
 			$("#xxx").val(fromTXB.substr(fromTXB.length - 3));
 			$("#yyy").val(toTXB.substr(toTXB.length - 3));
-		if (ui.item==null)
-		    {
+		if (ui.item==null) {
 		    $("#toTXB").val('');
 		    $("#toTXB").focus();
 		    }
 		}
-    });
-  } );
+	   });
+	 }); 
 
 
-  </script>
-	<<!-- MAIN -->
-	<header>
+</script>
 
+<header>
+	<div class="container">
+		<form action="save" id="main-container" method="post" name="main-container">
+			<!-- User selected values to be submitted are hidden here for script to retrieve -->
+			<input id="xx" name="xx" type="hidden" ><input id="yy" name="yy" type="hidden">
+			<input id="xxx" name="xxx" type="hidden"><input id="yyy" name="yyy" type="hidden">
+			<input id="triptype" name="triptype" value="0" type="hidden">
+			<input id="dateDepart" name="dateDepart" type="hidden">
+			<input id="dateArrive" name="dateArrive" type="hidden">
+			<input id="numberOfPassengers" name="numberOfPassengers" type="hidden">
+
+			<div class="form-group">
+				<div class="row">
+					<div class="col-md-2" style="float: left;">
+						<label class="radio-inline header-login">
+							<input name="triptypename" checked="checked" id="direct"  type="radio">
+								One Way
+						</label>
+					</div>
+					<div class="col-md-3" style="float: left;">
+						<label class="radio-inline header-login">
+							<input name="triptypename" id="round-trip"  type="radio">
+								Round Trip
+						</label>
+					</div>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="row">
+					<div class="col-md-6">
+						<input class="form-control" id="fromTXB" name="fromTXB" placeholder="From" type="text">
+					</div>
+					<div class="col-md-6">
+						<input class="form-control" id="toTXB" name="toTXB" placeholder="To" type="text">
+					</div>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="row">
+					<div class="col-md-3">
+						<input id="depDate" class="form-control datepicker" placeholder="Depart date" type="text">
+					</div>
+					<div class="col-md-3">
+						<input id="arDate" class="form-control datepicker" placeholder="Arrival date" type="text">
+					</div>
+					<div class="col-md-6">
+						<input id="numOfPass" class="form-control" placeholder="No. of Travellers" type="text" >
+					</div>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="row">
+					<div class="col-md-4" style="float: right;">
+						<input class="btn" name="searchme" id="search-button" onclick="dothemagic()" type="submit" value="Search Flights and Hotels">		
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+</header>
+
+<footer class="text-center">
+	<div class="footer-above">
 		<div class="container">
-			<form action="save" id="main-container" method="post" name="main-container">
-				<input id="xx" name="xx" type="hidden" ><input id="yy" name="yy" type="hidden">
-				<input id="xxx" name="xxx" type="hidden"><input id="yyy" name="yyy" type="hidden">
-				<input id="triptype" name="triptype" type="hidden" value="0">
-				<input id="dateDepart" name="dateDepart" type="hidden">
-				<input id="dateArrive" name="dateArrive" type="hidden">
-				<input id="numberOfPassengers" name="numberOfPassengers" type="hidden">
-				<div class="form-group">
-					<div class="row">
-						<div class="col-md-2" style="float: left;">
-							<label class="radio-inline header-login"><input name="triptypename" checked="checked" id="direct"  type="radio">One Way</label>
-						</div>
-						<div class="col-md-3" style="float: left;">
-							<label class="radio-inline header-login"><input name="triptypename" id="round-trip"  type="radio">Round Trip</label>
-						</div><!--
-                        <div class="col-md-2" style="float: left;">
-                            <label class="radio-inline header-login"><input name="trip-type" type=
-                            "radio" value="">Alternative Routes</label>
-                        </div> 
-                         -->
-					</div>
+			<div class="row">
+				<div class="footer-col col-md-4">
+					<h3>Designed by</h3>
+					<h6>@heyimjoses</h6>
 				</div>
-				<div class="form-group">
-					<div class="row">
-						<div class="col-md-6">
-							<input class="form-control" id="fromTXB" name="fromTXB" placeholder="From" type="text">
-						</div>
-						<div class="col-md-6">
-							<input class="form-control" id="toTXB" name="toTXB" placeholder="To" type="text">
-						</div>
-					</div>
+				<div class="footer-col col-md-4">
+					<h3>Around the Web</h3>
+					<ul class="list-inline">
+						<li>
+							<a class="btn-social btn-outline" href="https://www.facebook.com/heyimjoses"><i class="fa fa-fw fa-facebook"></i></a>
+						</li>
+						<li>
+							<a class="btn-social btn-outline" href="https://twitter.com/heyimjoses"><i class="fa fa-fw fa-twitter"></i></a>
+						</li>
+					</ul>
 				</div>
-				<div class="form-group">
-					<div class="row">
-						<div class="col-md-3">
-							<input id="depDate" class="form-control datepicker" placeholder="Depart date" type="text">
-						</div>
-						<div class="col-md-3">
-							<input id="arDate" class="form-control datepicker" placeholder="Arrival date" type="text">
-						</div>
-						<div class="col-md-6">
-							<input class="form-control" placeholder="No. of Travellers" type="text" id="numOfPass">
-						</div>
-					</div>
-				</div>
-				<div class="form-group">
-					<div class="row">
-					
-						<div class="col-md-4" style="float: right;">
-								<input class="btn" name="searchme" id="search-button" onclick="dothemagic()" type="submit" value="Search Flights and Hotels">		
-						</div>
-					</div>
-				</div>
-			</form>
-		</div>
-	</header><!--FOOTER -->
-	<footer class="text-center">
-		<div class="footer-above">
-			<div class="container">
-				<div class="row">
-					<div class="footer-col col-md-4">
-						<h3>Designed by</h3>
-						<h6>@heyimjoses</h6>
-					</div>
-					<div class="footer-col col-md-4">
-						<h3>Around the Web</h3>
-						<ul class="list-inline">
-							<li>
-								<a class="btn-social btn-outline" href="#"><i class="fa fa-fw fa-facebook"></i></a>
-							</li>
-							<li>
-								<a class="btn-social btn-outline" href="#"><i class="fa fa-fw fa-google-plus"></i></a>
-							</li>
-							<li>
-								<a class="btn-social btn-outline" href="#"><i class="fa fa-fw fa-twitter"></i></a>
-							</li>
-							<li>
-								<a class="btn-social btn-outline" href="#"><i class="fa fa-fw fa-linkedin"></i></a>
-							</li>
-							<li>
-								<a class="btn-social btn-outline" href="#"><i class="fa fa-fw fa-dribbble"></i></a>
-							</li>
-						</ul>
-					</div>
-					<div class="footer-col col-md-4">
-						<h3>About Roshan</h3>
-						<h6>Roshan is a flight and Hotel search-engine designed to help Travelers acquire the best possible deals on their vacation.</h6>
-					</div>
+				<div class="footer-col col-md-4">
+					<h3>About Roshan</h3>
+					<h6>Roshan is a flight and Hotel search-engine designed to help Travelers acquire the best possible deals on their vacation.</h6>
 				</div>
 			</div>
 		</div>
-		<div class="footer-below">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12">
-						Copyright &copy; Roshan 2016
-					</div>
+	</div>
+	<div class="footer-below">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					Copyright &copy; Roshan 2017
 				</div>
 			</div>
 		</div>
-	</footer>
+	</div>
+</footer>
