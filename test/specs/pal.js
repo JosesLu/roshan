@@ -91,6 +91,7 @@ describe('Crawl', function() {
 	
 		if(htmlTripType == 1)
 		{
+			console.log("OMG BOIIII ITZ HERE");
 			var userDate1 = htmlArDate[3] + htmlArDate[4] + htmlArDate[2] + htmlArDate[0] + htmlArDate[1] + htmlArDate[2] + htmlArDate[6] + htmlArDate[7] + htmlArDate[8] + htmlArDate[9]; 
 			template1 = template1.replace('MNL',htmlTo);
 			template = template1.replace('DVO',htmlFrom);
