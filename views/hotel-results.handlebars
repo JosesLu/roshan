@@ -1,7 +1,6 @@
 <body onload="javascript:populateHotels()">
 	<!-- HEADER -->
 
-
 	<div class="navbar-header page-scroll navbar-fixed-top navbar-custom">
 		<div class="container">
 			<div class="navbar-header page-scroll">
@@ -12,491 +11,26 @@
 	</div>
 	<!--MAIN-->
 
-
 	<header>
-		<div class="container">
+		<div class="container" id='cont1'>
 			<div class="result-container top-round">
 				<div class="description-cards">
 					<h3 class="description" style="text-decoration: underline;">Choose your hotel</h3>
 					<h5 class="description">The trip prices shown below only includes Hotel, taxes and fees.</h5>
 				</div>
 			</div>
+			<div id='results'>
+			
 
-			<div class="result-container">
-				<div class="flight-cards">
-					<div class="row">
-						<div class="col-md-4">
-							<img class="airline-logos" src="img/hotels/manila-pavillion.jpg">
-						</div>
+			
 
-
-						<div class="col-md-4">	
-									<p class="hotel-name" id="hotelName0"></p>
-									<p class="hotel-info" id="info0"></p>
-						</div>
-						<div class="col-md-4">
-							<p class="header-login"></p>
-							<button class="btn btn-primary" onclick="location.href = 'final-results.html';"type="button">Select</button>
-						</div>
-					</div>
-				</div>
 			</div>
-
-			<div class="result-container">
-				<div class="flight-cards">
-					<div class="row">
-						<div class="col-md-4">
-							<img class="airline-logos" src="img/hotels/manila-pavillion.jpg">
-
-							
-						</div>
-
-
-						<div class="col-md-4">	
-									<p class="hotel-name" id="hotelName1"></p>
-									<p class="hotel-info" id="info1"></p>
-						</div>
-
-						<div class="col-md-4">
-							<p class="header-login"></p>
-							<button class="btn btn-primary" onclick="location.href = 'final-results.html';"type="button">Select</button>
-						</div>
-					</div>
-				</div>
-			</div>
-
-
-			<div class="result-container">
-				<div class="flight-cards">
-					<div class="row">
-						<div class="col-md-4">
-							<img class="airline-logos" src="img/hotels/manila-pavillion.jpg">
-
-
-							
-						</div>
-
-
-						<div class="col-md-4">	
-									<p class="hotel-name" id="hotelName2"></p>
-									<p class="hotel-info" id="info2"></p>
-						</div>
-
-						<div class="col-md-4">
-							<p class="header-login"></p>
-							<button class="btn btn-primary" onclick="location.href = 'final-results.html';"type="button">Select</button>
-						</div>
-					</div>
-				</div>
-			</div>
-
-
-			<div class="result-container">
-				<div class="flight-cards">
-					<div class="row">
-						<div class="col-md-4">
-							<img class="airline-logos" src="img/hotels/manila-pavillion.jpg">
-
-						
-						</div>
-
-
-						<div class="col-md-4">	
-									<p class="hotel-name" id="hotelName3"></p>
-									<p class="hotel-info" id="info3"></p>
-						</div>
-
-						<div class="col-md-4">
-							<p class="header-login"></p>
-							<button class="btn btn-primary" onclick="location.href = 'final-results.html';"type="button">Select</button>
-						</div>
-					</div>
-				</div>
-			</div>
-
-		<div class="result-container">
-				<div class="flight-cards">
-					<div class="row">
-						<div class="col-md-4">
-							<img class="airline-logos" src="img/hotels/manila-pavillion.jpg">
-
-						
-						</div>
-
-
-						<div class="col-md-4">	
-									<p class="hotel-name" id="hotelName4"></p>
-									<p class="hotel-info" id="info4"></p>
-						</div>
-
-						<div class="col-md-4">
-							<p class="header-login"></p>
-							<button class="btn btn-primary" onclick="location.href = 'final-results.html';"type="button">Select</button>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="result-container">
-				<div class="flight-cards">
-					<div class="row">
-						<div class="col-md-4">
-							<img class="airline-logos" src="img/hotels/manila-pavillion.jpg">
-
-						
-						</div>
-
-
-						<div class="col-md-4">	
-									<p class="hotel-name" id="hotelName5"></p>
-									<p class="hotel-info" id="info5"></p>
-						</div>
-
-						<div class="col-md-4">
-							<p class="header-login"></p>
-							<button class="btn btn-primary" onclick="location.href = 'final-results.html';"type="button">Select</button>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="result-container">
-				<div class="flight-cards">
-					<div class="row">
-						<div class="col-md-4">
-							<img class="airline-logos" src="img/hotels/manila-pavillion.jpg">
-
-						
-						</div>
-
-
-						<div class="col-md-4">	
-									<p class="hotel-name" id="hotelName6"></p>
-									<p class="hotel-info" id="info6"></p>
-						</div>
-
-						<div class="col-md-4">
-							<p class="header-login"></p>
-							<button class="btn btn-primary" onclick="location.href = 'final-results.html';"type="button">Select</button>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="result-container">
-				<div class="flight-cards">
-					<div class="row">
-						<div class="col-md-4">
-							<img class="airline-logos" src="img/hotels/manila-pavillion.jpg">
-
-						
-						</div>
-
-
-						<div class="col-md-4">	
-									<p class="hotel-name" id="hotelName7"></p>
-									<p class="hotel-info" id="info7"></p>
-						</div>
-
-						<div class="col-md-4">
-							<p class="header-login"></p>
-							<button class="btn btn-primary" onclick="location.href = 'final-results.html';"type="button">Select</button>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="result-container">
-				<div class="flight-cards">
-					<div class="row">
-						<div class="col-md-4">
-							<img class="airline-logos" src="img/hotels/manila-pavillion.jpg">
-
-						
-						</div>
-
-
-						<div class="col-md-4">	
-									<p class="hotel-name" id="hotelName8"></p>
-									<p class="hotel-info" id="info8"></p>
-						</div>
-
-						<div class="col-md-4">
-							<p class="header-login"></p>
-							<button class="btn btn-primary" onclick="location.href = 'final-results.html';"type="button">Select</button>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="result-container">
-				<div class="flight-cards">
-					<div class="row">
-						<div class="col-md-4">
-							<img class="airline-logos" src="img/hotels/manila-pavillion.jpg">
-
-						
-						</div>
-
-
-						<div class="col-md-4">	
-									<p class="hotel-name" id="hotelName9"></p>
-									<p class="hotel-info" id="info9"></p>
-						</div>
-
-						<div class="col-md-4">
-							<p class="header-login"></p>
-							<button class="btn btn-primary" onclick="location.href = 'final-results.html';"type="button">Select</button>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="result-container">
-				<div class="flight-cards">
-					<div class="row">
-						<div class="col-md-4">
-							<img class="airline-logos" src="img/hotels/manila-pavillion.jpg">
-
-						
-						</div>
-
-
-						<div class="col-md-4">	
-									<p class="hotel-name" id="hotelName10"></p>
-									<p class="hotel-info" id="info10"></p>
-						</div>
-
-						<div class="col-md-4">
-							<p class="header-login"></p>
-							<button class="btn btn-primary" onclick="location.href = 'final-results.html';"type="button">Select</button>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="result-container">
-				<div class="flight-cards">
-					<div class="row">
-						<div class="col-md-4">
-							<img class="airline-logos" src="img/hotels/manila-pavillion.jpg">
-
-						
-						</div>
-
-
-						<div class="col-md-4">	
-									<p class="hotel-name" id="hotelName11"></p>
-									<p class="hotel-info" id="info11"></p>
-						</div>
-
-						<div class="col-md-4">
-							<p class="header-login"></p>
-							<button class="btn btn-primary" onclick="location.href = 'final-results.html';"type="button">Select</button>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="result-container">
-				<div class="flight-cards">
-					<div class="row">
-						<div class="col-md-4">
-							<img class="airline-logos" src="img/hotels/manila-pavillion.jpg">
-
-						
-						</div>
-
-
-						<div class="col-md-4">	
-									<p class="hotel-name" id="hotelName12"></p>
-									<p class="hotel-info" id="info12"></p>
-						</div>
-
-						<div class="col-md-4">
-							<p class="header-login"></p>
-							<button class="btn btn-primary" onclick="location.href = 'final-results.html';"type="button">Select</button>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="result-container">
-				<div class="flight-cards">
-					<div class="row">
-						<div class="col-md-4">
-							<img class="airline-logos" src="img/hotels/manila-pavillion.jpg">
-
-						
-						</div>
-
-
-						<div class="col-md-4">	
-									<p class="hotel-name" id="hotelName13"></p>
-									<p class="hotel-info" id="info13"></p>
-						</div>
-
-						<div class="col-md-4">
-							<p class="header-login"></p>
-							<button class="btn btn-primary" onclick="location.href = 'final-results.html';"type="button">Select</button>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="result-container">
-				<div class="flight-cards">
-					<div class="row">
-						<div class="col-md-4">
-							<img class="airline-logos" src="img/hotels/manila-pavillion.jpg">
-
-						
-						</div>
-
-
-						<div class="col-md-4">	
-									<p class="hotel-name" id="hotelName14"></p>
-									<p class="hotel-info" id="info14"></p>
-						</div>
-
-						<div class="col-md-4">
-							<p class="header-login"></p>
-							<button class="btn btn-primary" onclick="location.href = 'final-results.html';"type="button">Select</button>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="result-container">
-				<div class="flight-cards">
-					<div class="row">
-						<div class="col-md-4">
-							<img class="airline-logos" src="img/hotels/manila-pavillion.jpg">
-
-						
-						</div>
-
-
-						<div class="col-md-4">	
-									<p class="hotel-name" id="hotelName15"></p>
-									<p class="hotel-info" id="info15"></p>
-						</div>
-
-						<div class="col-md-4">
-							<p class="header-login"></p>
-							<button class="btn btn-primary" onclick="location.href = 'final-results.html';"type="button">Select</button>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="result-container">
-				<div class="flight-cards">
-					<div class="row">
-						<div class="col-md-4">
-							<img class="airline-logos" src="img/hotels/manila-pavillion.jpg">
-
-						
-						</div>
-
-
-						<div class="col-md-4">	
-									<p class="hotel-name" id="hotelName16"></p>
-									<p class="hotel-info" id="info16"></p>
-						</div>
-
-						<div class="col-md-4">
-							<p class="header-login"></p>
-							<button class="btn btn-primary" onclick="location.href = 'final-results.html';"type="button">Select</button>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="result-container">
-				<div class="flight-cards">
-					<div class="row">
-						<div class="col-md-4">
-							<img class="airline-logos" src="img/hotels/manila-pavillion.jpg">
-
-						
-						</div>
-
-
-						<div class="col-md-4">	
-									<p class="hotel-name" id="hotelName17"></p>
-									<p class="hotel-info" id="info17"></p>
-						</div>
-
-						<div class="col-md-4">
-							<p class="header-login"></p>
-							<button class="btn btn-primary" onclick="location.href = 'final-results.html';"type="button">Select</button>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="result-container">
-				<div class="flight-cards">
-					<div class="row">
-						<div class="col-md-4">
-							<img class="airline-logos" src="img/hotels/manila-pavillion.jpg">
-
-						
-						</div>
-
-
-						<div class="col-md-4">	
-									<p class="hotel-name" id="hotelName18"></p>
-									<p class="hotel-info" id="info18"></p>
-						</div>
-
-						<div class="col-md-4">
-							<p class="header-login"></p>
-							<button class="btn btn-primary" onclick="location.href = 'final-results.html';"type="button">Select</button>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="result-container">
-				<div class="flight-cards">
-					<div class="row">
-						<div class="col-md-4">
-							<img class="airline-logos" src="img/hotels/manila-pavillion.jpg">
-
-						
-						</div>
-
-
-						<div class="col-md-4">	
-									<p class="hotel-name" id="hotelName19"></p>
-									<p class="hotel-info" id="info19"></p>
-						</div>
-
-						<div class="col-md-4">
-							<p class="header-login"></p>
-							<button class="btn btn-primary" onclick="location.href = 'final-results.html';"type="button">Select</button>
-						</div>
-					</div>
-				</div>
-			</div>
-					
-
-
 			<div class="result-container bottom-round">
-				<div class="flight-cards">
-					<div class="row">
-						<div class="col-md-4">
-							<img class="airline-logos" src="img/hotels/manila-pavillion.jpg">
-
-				
-						</div>
-
-
-						<div class="col-md-4">	
-									<p class="hotel-name" id="hotelName20"></p>
-									<p class="hotel-info" id="info20"></p>
-						</div>
-
-						<div class="col-md-4">
-							<p class="header-login"></p>
-							<button class="btn btn-primary" onclick="location.href = 'final-results.html';"type="button">Select</button>
-						</div>
-					</div>
-				</div>
 			</div>
+			
 		</div>
 	</header>
 	<!--FOOTER -->
-
 
 	<footer class="text-center">
 		<div class="footer-above">
@@ -505,51 +39,24 @@
 					<div class="footer-col col-md-4">
 						<h3>Designed by</h3>
 
-
 						<h6>@heyimjoses</h6>
 					</div>
-
 
 					<div class="footer-col col-md-4">
 						<h3>Around the Web</h3>
 
-
 						<ul class="list-inline">
 							<li>
-								<a class="btn-social btn-outline" href="#"><i class=
-								"fa fa-fw fa-facebook"></i></a>
+							<a class="btn-social btn-outline" href="https://www.facebook.com/heyimjoses"><i class="fa fa-fw fa-facebook"></i></a>
 							</li>
-
-
 							<li>
-								<a class="btn-social btn-outline" href="#"><i class=
-								"fa fa-fw fa-google-plus"></i></a>
-							</li>
-
-
-							<li>
-								<a class="btn-social btn-outline" href="#"><i class=
-								"fa fa-fw fa-twitter"></i></a>
-							</li>
-
-
-							<li>
-								<a class="btn-social btn-outline" href="#"><i class=
-								"fa fa-fw fa-linkedin"></i></a>
-							</li>
-
-
-							<li>
-								<a class="btn-social btn-outline" href="#"><i class=
-								"fa fa-fw fa-dribbble"></i></a>
+								<a class="btn-social btn-outline" href="https://twitter.com/heyimjoses"><i class="fa fa-fw fa-twitter"></i></a>
 							</li>
 						</ul>
 					</div>
 
-
 					<div class="footer-col col-md-4">
 						<h3>About Roshan</h3>
-
 
 						<h6>Roshan is a flight and Hotel search-engine designed to help Travelers
 						acquire the best possible deals on their vacation.</h6>
@@ -557,7 +64,6 @@
 				</div>
 			</div>
 		</div>
-
 
 		<div class="footer-below">
 			<div class="container">

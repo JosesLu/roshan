@@ -1,0 +1,4 @@
+link id price1 timeDepart timeArrive fDuration1 fDuration2 origin destination 
+https://www.expedia.com.ph/Flights-Search?trip=oneway&leg1=from:DVO,to:MNL,departure:03/19/2017TANYT&passengers=adults:1,children:0,seniors:0,infantinlap:N&options=cabinclass%3Aeconomy&mode=search&origref=www.expedia.com.ph   1 2164 845  1030 AirAsia Zest 1h 45m DVO  MNL  2164 as of 23 hours ago 2164  as of 23 hours ago  Select Select r  1 
+00   2 2164 2320  105   AirAsia Zest 1h 45m DVO  MNL  2164 as of 23 hours ago 2164  as of 23 hours ago  Select Select r  2 
+00   3 2164 1825  2020 AirAsia Zest 1h 55m DVO  MNL  2164 as of 23 hours ago 2164  as of 23 hours ago  Select Select r  3

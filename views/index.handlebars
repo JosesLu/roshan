@@ -1,16 +1,20 @@
 <script>
+	
 	/*Determines which values were selected and sets corresponding values to hidden div elements to be submitted*/
 	$( function() {
 	  $("#direct") 
 	   .change(function(){ 
 	       if( $(this).is(":checked") ){ 
 	           $("#triptype").val("0");
+	           $('#arDate').hide('fast');
+	          
 	       }
 	   });
 	$("#round-trip") 
 	   .change(function(){ 
 	       if( $(this).is(":checked") ){ 
 	           $("#triptype").val("1");
+	           $('#arDate').show('fast');
 	       }
 	   });
 	 });
@@ -124,7 +128,7 @@
 						<input id="depDate" class="form-control datepicker" placeholder="Depart date" type="text">
 					</div>
 					<div class="col-md-3">
-						<input id="arDate" class="form-control datepicker" placeholder="Arrival date" type="text">
+						<input id="arDate" class="form-control datepicker" placeholder="Arrival date" type="text" style="display: none;">
 					</div>
 					<div class="col-md-6">
 						<input id="numOfPass" class="form-control" placeholder="No. of Travellers" type="text" >

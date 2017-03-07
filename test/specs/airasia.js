@@ -62,8 +62,7 @@ it('Air Asia', function() {
 			}
 		}
 		var vJoin = v.join('');
-		console.log("ALL THE TIME" + vJoin);
-
+		vJoin = vJoin.substr(0,indexCut);
 		for (x = 1; x < vJoin.length; x++) {
 			if (vJoin[x] == 'R' && vJoin[x + 1] == 'e') {
 				z[x] = "\n" + "00 ";
@@ -74,7 +73,7 @@ it('Air Asia', function() {
 		}
 
 		var str = z.join('');
-		str = str.substr(0,indexCut);
+		//str = str.substr(0,indexCut);
 		str = str.replace(/esult/g, " ");
 		str = str.replace(/sult/g, " ");
 		str = str.replace(/.00/g, "");str = str.replace(/.01/g, "");str = str.replace(/:/g, "");
@@ -128,6 +127,7 @@ it('Air Asia', function() {
 				break;
 			} 
 		}
+
 		var v = [];
 		for (x = 1; x < flights.length; x++) {
 			if (flights[x] == '2' && flights[x + 1] == '8') {
@@ -138,12 +138,10 @@ it('Air Asia', function() {
 			}
 		}
 		var vJoin = v.join('');
-
-
-
+		vJoin = vJoin.substr(0,indexCut);
 		for (x = 1; x < vJoin.length; x++) {
 			if (vJoin[x] == 'R' && vJoin[x + 1] == 'e') {
-				z[x] = "\n" + " ";
+				z[x] = "\n" + "00 ";
 				counter++;
 			} else {
 				z[x] = vJoin[x];
@@ -151,20 +149,20 @@ it('Air Asia', function() {
 		}
 
 		var str = z.join('');
-		str = str.substr(0,indexCut);
-		str = str.replace(/esult/g, "");
-		str = str.replace(/sult/g, "");
+		//str = str.substr(0,indexCut);
+		str = str.replace(/esult/g, " ");
+		str = str.replace(/sult/g, " ");
 		str = str.replace(/.00/g, "");str = str.replace(/.01/g, "");str = str.replace(/:/g, "");
-
-		str = "link id price1 timeDepart timeArrive fDuration1 fDuration2 origin destination \n" + str;
-		str = str + template;
+		str = "link id price1 timeDepart timeArrive fDuration1 fDuration2 origin destination \n" + template +" "+ str;
 		fs = require('fs');
 		fs.writeFile('D:/Roshan/public/flights/airasiaR.txt', str, function(err) {
 				if (err) return console.log(err);
 				console.log('Write successful!');
-			});
 
-	}
+			});
+	
+	
+		}
 
 
 });

@@ -1,0 +1,10 @@
+link id price1 timeDepart timeArrive fDuration1 fDuration2 origin destination 
+https://www.expedia.com/Flights-Search?langid=1033&trip=oneway&leg1=from:Manila,%20Philippines%20(MNL-Ninoy%20Aquino%20Intl.),to:Davao%20(DVO-Francisco%20Bangoy%20Intl.),departure:03/19/2017TANYT&passengers=children:0,adults:1,seniors:0,infantinlap:N&options=cabinclass:economy,sortby:price,carrier:PR&mode=search&paandi=true   1 82.98 4  550  1h 50m MNL  DVO  1 left t 82.98  82 .98    Select Select r  1 
+00   2 93.98 910  1055  1h 45m MNL  DVO  93.98  93 .98    Select Select r  2 
+00   3 105.98 815  945  1h 30m MNL  DVO  105.98  105 .98    Select Select r  3 
+00   4 105.98 755  935  1h 40m MNL  DVO  105.98  105 .98    Select Select r  4 
+00   5 105.98 640  830  1h 50m MNL  DVO  105.98  105 .98    Select Select r  5 
+00   6 105.98 640  840  2h 0m MNL  DVO  105.98  105 .98    Select Select r  6 
+00   7 111.98 315  505  1h 50m MNL  DVO  111.98  111 .98    Select Select r  7 
+00   8 118.98 1150  150  2h 0m MNL  DVO  118.98  118 .98    Select Select r  8 
+00   9 311.94 6  950  3h 50m MNL  DVO 1

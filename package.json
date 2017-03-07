@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "wdio",
-    "start": "concurrently \"node app\" \"node_modules/.bin/nodemon --watch public/options.html node_modules/webdriverio/bin/wdio --suite flights\" \"node_modules/.bin/nodemon --watch public/flights/ceb.txt converter.js --i=public/flights/ceb.txt --o=public/flights/ceb.json --h\" \"node_modules/.bin/nodemon --watch public/flights/airasia.txt converter.js --i=public/flights/airasia.txt --o=public/flights/airasia.json --h\" \"node_modules/.bin/nodemon --watch public/flights/pal.txt converter.js --i=public/flights/pal.txt --o=public/flights/pal.json --h\""
+    "start": "concurrently \"node app\" \"node_modules/.bin/nodemon --watch public/options.html node_modules/webdriverio/bin/wdio --suite flights\" \"node_modules/.bin/nodemon --watch public/flights/ceb.txt converter.js --i=public/flights/ceb.txt --o=public/flights/ceb.json --h\" \"node_modules/.bin/nodemon --watch public/flights/airasia.txt converter.js --i=public/flights/airasia.txt --o=public/flights/airasia.json --h\" \"node_modules/.bin/nodemon --watch public/flights/airasiaR.txt converter.js --i=public/flights/airasiaR.txt --o=public/flights/airasiaR.json --h\" \"node_modules/.bin/nodemon --watch public/flights/cebR.txt converter.js --i=public/flights/cebR.txt --o=public/flights/cebR.json --h\" \"node_modules/.bin/nodemon --watch public/flights/palR.txt converter.js --i=public/flights/palR.txt --o=public/flights/palR.json --h\" \"node_modules/.bin/nodemon --watch public/flights/pal.txt converter.js --i=public/flights/pal.txt --o=public/flights/pal.json --h\""
   },
   "repository": {
     "type": "git",

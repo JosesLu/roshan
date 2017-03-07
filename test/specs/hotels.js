@@ -17,46 +17,63 @@ it('Expedia Hotels', function() {
 	var parser = require('rss-parser');
 	var link = 'http://www.philippinecompanies.com/searchapi.php?what=hotels&where=davao'
 	link = link.replace('davao',fullTo);
-	parser.parseURL(link, function(err, parsed) {
- // console.log(parsed.feed.title);
- 	var hotels = [];
-	for(var i = 0;i<21;i++){
-	hotels[i] = parsed.feed.entries[i].title + " "  + parsed.feed.entries[i].contentSnippet;	
-	//console.log(parsed.feed.entries[i].contentSnippet);
-	//var data = parsed.feed;
-
-	}
-	hotels = hotels.toString();
-	
-	hotels = hotels.replace(/\n/g, '');
-	hotels = hotels.replace(/\t/g, '');
-
-	var hotelCharArray = hotels.split("");
-
-	for(var i = 0;i < hotelCharArray.length;i++)
+	parser.parseURL(link, function(err, parsed) 
 	{
-		if(hotelCharArray[i] == " " && hotelCharArray[i+1] == "B" && hotelCharArray[i+2] == "u" && hotelCharArray[i+3] == "s" && hotelCharArray[i+14] == ":")
+	 	var hotels = [];
+	 	var hotelLink = [];
+		for(var i = 0;i<parsed.feed.entries.length;i++)
 		{
-			hotelCharArray[i] = "\n";
+			hotels[i] = parsed.feed.entries[i].title + " "  + parsed.feed.entries[i].contentSnippet;
+			hotelLink[i] = parsed.feed.entries[i].link;
 		}
-		if (hotelCharArray[i] == ":" && hotelCharArray[i+1] == ",")
+
+		hotels = hotels.toString();
+		hotels = hotels.replace(/\n/g, '');
+		hotels = hotels.replace(/\t/g, '');
+
+		var hotelCharArray = hotels.split("");
+
+		for(var i = 0;i < hotelCharArray.length;i++)
 		{
-			hotelCharArray[i + 1] = "\n";
+			if(hotelCharArray[i] == " " && hotelCharArray[i+1] == "B" && hotelCharArray[i+2] == "u" && hotelCharArray[i+3] == "s" && hotelCharArray[i+14] == ":")
+			{
+				hotelCharArray[i] = "\n";
+			}
+			if (hotelCharArray[i] == ":" && hotelCharArray[i+1] == ",")
+			{
+				hotelCharArray[i + 1] = "\n";
+			}
+			if (hotelCharArray[i] == "." && hotelCharArray[i+1] == "c" && hotelCharArray[i+4] == ",")
+			{
+				hotelCharArray[i+4] = "\n";
+			}
 		}
-		if (hotelCharArray[i] == "." && hotelCharArray[i+1] == "c" && hotelCharArray[i+4] == ",")
-		{
-			hotelCharArray[i+4] = "\n";
+
+		//Lines up Hotel links. 1 link = 1 line
+		hotels = hotelCharArray.join('');
+		var hLinks = '';
+		for(var i = 0;i < hotelLink.length;i++)
+		{		
+			if(i == hotelLink.length - 1)
+			{
+				hLinks = hLinks + hotelLink[i]
+			}
+			else
+			{
+				hLinks = hLinks + hotelLink[i] +  "\n";
+			}
 		}
-	}
 
+	    fs = require('fs');
+		fs.writeFile('D:/Roshan/public/hotels.txt',hotels, function(err) {
+			if (err) return console.log(err);
+			console.log('Write successful!');
+		});
+		fs.writeFile('D:/Roshan/public/hotelLinks.txt',hLinks, function(err) {
+			if (err) return console.log(err);
+			console.log('Write successful!');
+		});
 
-	hotels = hotelCharArray.join('');
-    fs = require('fs');
-	fs.writeFile('D:/Roshan/public/hotels.txt',hotels, function(err) {
-		if (err) return console.log(err);
-		console.log('Write successful!');
-	});
-
-})
+	})
 });
 });
