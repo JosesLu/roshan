@@ -28,10 +28,17 @@ describe('Crawl', function() {
 		link = link.replace('FROM',htmlFrom);
 		link = link.replace('TO',htmlTo);
 		link = link.replace('DATEDEP',ymd);
-
-
+		if(link.indexOf('LAO') !== -1)
+		{
+		 	var emp = 'link \n 00';
+			fs = require('fs');
+			fs.writeFile('D:/Roshan/public/flights/ceb.txt', emp, function(err) {
+					if (err) return console.log(err);
+					console.log('Write successful!');
+				});
+		}
+		else{
 		browser.url(link);
-		
 		var flights = $('#depart-table > tbody');
 			flights = flights.getText();
 			
@@ -41,23 +48,23 @@ describe('Crawl', function() {
 
 			var indexCut;
 			for (x = 1; x < flights.length; x++) {
-				if (flights[x] == 'J' && flights[x+7] == 'J') 
+				if ((flights[x] == 'D') || (flights[x] == 'J') && (flights[x+6] == 'D') || (flights[x+7] == 'J'))
 				{
 					indexCut=x;
 					break;
 				} 
 			}
 
-
+	
 			var z = [];
 			var counter = 1;
 			flights = flights.substr(0,indexCut);
 			for (x = 1; x < flights.length; x++) {
-				if (flights[x] == '5' && flights[x + 1] == 'J' && x == 1) {
+				if ((flights[x] == '5' && flights[x + 1] == 'J' && x == 1) || (flights[x] == 'D' && flights[x + 1] == 'G' && x == 1)) {
 					z[x] = "\n" + counter + " ";
 					counter++;
 				} 
-				if (flights[x] == '5' && flights[x + 1] == 'J') {
+				if ((flights[x] == '5' && flights[x + 1] == 'J') || (flights[x] == 'D' && flights[x + 1] == 'G')) {
 					z[x] = "\n" + "00 " + counter + " ";
 					counter++;
 				} 
@@ -94,8 +101,14 @@ describe('Crawl', function() {
 			}
 
 			var finalList = y.join('');
-
+			var lineCount = finalList.split(/\r\n|\r|\n/).length;
+			
 			finalList = link + " 0 " + finalList;
+			if(lineCount == 1)
+			{
+				finalList = finalList + '\n' + finalList;
+				console.log(finalList);
+			}
 			finalList = "link id flightID timeDepart timeArrive price1 price2 price3 \n" + finalList;
 			fs = require('fs');
 			fs.writeFile('D:/Roshan/public/flights/ceb.txt', finalList, function(err) {
@@ -203,7 +216,7 @@ describe('Crawl', function() {
 					if (err) return console.log(err);
 					console.log('Write successful!');
 				});
-		}
+		}}
 	});
 
 

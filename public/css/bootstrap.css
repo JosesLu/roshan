@@ -1174,10 +1174,10 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: inherit;
+  font-family: Courier;
   font-weight: 500;
   line-height: 1.1;
-  color: inherit;
+  color: black;
 }
 h1 small,
 h2 small,
@@ -3224,8 +3224,8 @@ fieldset[disabled] .btn-success.focus {
 }
 .btn-info {
   color: #fff;
-  background-color: #18bc9c;
-  border-color: #18bc9c;
+  background-color: #00b2d6;
+  border-color: #00b2d6;
 }
 .btn-info:focus,
 .btn-info.focus {
@@ -3235,8 +3235,8 @@ fieldset[disabled] .btn-success.focus {
 }
 .btn-info:hover {
   color: #fff;
-  background-color: #18bc9c;
-  border-color: #18bc9c;
+  background-color: #00b2d6;
+  border-color: #00b2d6;
 }
 .btn-info:active,
 .btn-info.active,

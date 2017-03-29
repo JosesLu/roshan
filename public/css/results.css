@@ -6,7 +6,7 @@ height:auto
 }
 .description {
 	text-align: left;
-
+color:black;
 }
 #controller {
 	width:1%;
@@ -119,3 +119,15 @@ display:none
 opacity:100
 }
 }
+#results-container{
+	position: relative;
+top: 150px;
+}
+
+body#results{
+  background-color: #f2f2f2;
+  /*background:url(../img/background2.jpg);*/
+}
+
+
+

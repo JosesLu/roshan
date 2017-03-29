@@ -62,14 +62,7 @@ app.post('/save', function(req, res) {
 		if (err) return console.log(err);
 		console.log('Write successful!');
 	});
-	// if(tripType == "0")
-	// {
 		res.render('flight-results');
-	// }
-	// else
-	// {
-	// 	res.render('round-trip-results');
-	// }
 }
 });
 

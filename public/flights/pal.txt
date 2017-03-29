@@ -1,11 +1,2 @@
 link id price1 timeDepart timeArrive fDuration1 fDuration2 origin destination 
-https://www.expedia.com/Flights-Search?langid=1033&trip=oneway&leg1=from:Manila,%20Philippines%20(MNL-Ninoy%20Aquino%20Intl.),to:Davao%20(CEB-Francisco%20Bangoy%20Intl.),departure:03/12/2017TANYT&passengers=children:0,adults:1,seniors:0,infantinlap:N&options=cabinclass:economy,sortby:price,carrier:PR&mode=search&paandi=true   1 70.98 5  6  1h 0m MNL  CEB  70.98  70 .98    Select Select r  1 
-00   2 70.98 4  510  1h 10m MNL  CEB  70.98  70 .98    Select Select r  2 
-00   3 70.98 655  805  1h 10m MNL  CEB  70.98  70 .98    Select Select r  3 
-00   4 70.98 6  715  1h 15m MNL  CEB  70.98  70 .98    Select Select r  4 
-00   5 70.98 1030  1145  1h 15m MNL  CEB  70.98  70 .98    Select Select r  5 
-00   6 87.98 9  1015  1h 15m MNL  CEB  87.98  87 .98    Select Select r  6 
-00   7 94.98 1025  1140  1h 15m MNL  CEB  94.98  94 .98    Select Select r  7 
-00   8 120.98 4  515  1h 15m MNL  CEB  120.98  120 .98    Select Select r  8 
-00   9 120.98 8  915  1h 15m MNL  CEB  120.98  120 .98    Select Select r  9 
-00   10 127.98 410  8  3h 50m MNL  CEB 1
+https://www.expedia.com/Flights-Search?langid=1033&trip=oneway&leg1=from:Manila,%20Philippines%20(BCD-Ninoy%20Aquino%20Intl.),to:Davao%20(LAO-Francisco%20Bangoy%20Intl.),departure:04/15/2017TANYT&passengers=children:0,adults:1,seniors:0,infantinlap:N&options=cabinclass:economy,sortby:price,carrier:PR&mode=search&paandi=true 

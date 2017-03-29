@@ -2,10 +2,12 @@ var URL, htmlFrom, htmlTo, htmlDepDate, htmlArDate, htmlPassengers;
 describe('Crawl', function() {
 	it('Philippine Airlines', function() {
 		browser.newWindow('http://localhost:8008/options.html', '', 'width=50,height=50,resizable,scrollbars=yes,status=1'); //Creates a new window which opens an HTML file that I wrote. HTML contains user from and to choice.
-		fullFrom = $('div#from2').getText(); //Gets values from "From" ID in html file I wrote
-		fullTo = $('div#to2').getText(); //Gets values from "To" ID in html file I wrote
-		htmlFrom = $('div#from3').getText(); //Gets values from "From" ID in html file I wrote
-		htmlTo = $('div#to3').getText(); //Gets values from "To" ID in html file I wrote
+		
+		/* Gets user values from html file (options.html) */
+		fullFrom = $('div#from2').getText(); 
+		fullTo = $('div#to2').getText(); 
+		htmlFrom = $('div#from3').getText(); 
+		htmlTo = $('div#to3').getText(); 
 		htmlTripType = $('div#typeofTrip').getText();
 		htmlDepDate = $('div#dateD').getText();
 		var userDate = htmlDepDate[3] + htmlDepDate[4] + htmlDepDate[2] + htmlDepDate[0] + htmlDepDate[1] + htmlDepDate[2] + htmlDepDate[6] + htmlDepDate[7] + htmlDepDate[8] + htmlDepDate[9]; 
@@ -14,14 +16,18 @@ describe('Crawl', function() {
 		htmlPassengers = $('div#numPass').getText();
 		browser.close();
 
+		/* Link template variable for PAL flights to be edited with user data*/
 		var template = 'https://www.expedia.com/Flights-Search?langid=1033&trip=oneway&leg1=from:Manila,%20Philippines%20(MNL-Ninoy%20Aquino%20Intl.),to:Davao%20(DVO-Francisco%20Bangoy%20Intl.),departure:DEPDATETANYT&passengers=children:0,adults:1,seniors:0,infantinlap:N&options=cabinclass:economy,sortby:price,carrier:PR&mode=search&paandi=true';
 		template = template.replace('MNL',htmlFrom);
 		template = template.replace('DVO',htmlTo);
 		template = template.replace('DEPDATE',userDate);
 		browser.url(template);
+
+		/* Get xPath of element containing results */
 		var flights = $('//*[@id="flightModuleList"]/div');
 		flights = flights.getText();
 
+		/* Results parsing */
 		for (x = 0; x < flights.length; x++) {
 			flights = flights.replace("\n", " ");
 		}
@@ -34,6 +40,7 @@ describe('Crawl', function() {
 		for (x = 0; x < flights.length; x++) {
 			flights = flights.replace("$", "");
 		}
+
 		flights = flights.replace(/Flight details and baggage fees/g, "");
 		flights = flights.replace(/Flight spans 1 day/g, "");
 		flights = flights.replace(/,/g, "");
@@ -45,6 +52,8 @@ describe('Crawl', function() {
 		flights = flights.replace(/one way/g, "");
 		flights = flights.replace(/p/g, "");
 		flights = flights.replace(/a/g, "");
+
+
 		var indexCut,cut;
 		var z = [];
 		var counter = 1;
@@ -66,8 +75,8 @@ describe('Crawl', function() {
 			}
 		}
 		var vJoin = v.join('');
+		indexCut-=100; /* Delete remains */
 		vJoin = vJoin.substr(0,indexCut);
-
 
 		for (x = 1; x < vJoin.length; x++) {
 			if (vJoin[x] == 'R' && vJoin[x + 1] == 'e') {
@@ -79,7 +88,7 @@ describe('Crawl', function() {
 		}
 
 		var str = z.join('');
-		console.log(str);
+		
 		//indexCut = indexCut + 5;
 		
 		str = str.replace(/esult/g, " ");

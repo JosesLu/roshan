@@ -6,7 +6,7 @@ function login() {
 		dataType: 'JSON',
 
 		success: function(data) {
-			//console.log(data);
+			
 			var length = data.length;
 			renderHTML(data, length);
 		}
@@ -37,8 +37,7 @@ function populate() { //Round-Trip
 			img[i] = data[counter] + data[counter + 1];
 			counter = counter + 2;
 		}
-		// for(var i=0;i<img.length;i++)
-		// console.log(img[i] + " ");
+		
 		var logo = "logo";
 		for (var i = 0; i < 30; i++) {
 			logo = logo + i;
@@ -73,6 +72,7 @@ function populate() { //Round-Trip
 
 		return json;
 	})();
+
 	var cebJson = (function() {
 		var json = null;
 		$.ajax({
@@ -156,7 +156,7 @@ function populate() { //Round-Trip
 					pm = pm.toString();
 					pm = pm + data[1] + data[2];
 					palJson[i].timeDepart = pm;
-					//console.log(palJson[i].timeDepart);
+				
 				}
 			}
 			if(xxx.includes('a'))
@@ -196,7 +196,7 @@ function populate() { //Round-Trip
 					pm = pm.toString();
 					pm = pm + data[1] + data[2];
 					palJson[i].timeArrive = pm;
-					//console.log(palJson[i].timeDepart);
+					
 				}
 				if(palJson[i].timeArrive.length == 5)
 				{
@@ -230,6 +230,7 @@ function populate() { //Round-Trip
 		{
 			palJson[i].price1 = (palJson[i].price1*50);
 		}
+
 		var counterx;
 		var cebJson1;
 		for(var i = 0;i < cebJson.length;i++)
@@ -264,7 +265,7 @@ function populate() { //Round-Trip
 			}
 		}
 		var xy = cebJson.concat(palJson);
-		var final = xy.concat(airasiaJson);
+		final = xy.concat(airasiaJson);
 		for (var i = 0; i < final.length; i++) {
 			delete final[i].origin;
 			delete final[i].flightID;
@@ -294,7 +295,16 @@ function populate() { //Round-Trip
 
 		var loopCount = 30;
 		var rc = "rc";
+
 		var indexToRemove = 30 - final.length;
+		for(var i = 0;i < final.length; i++)
+		{
+			if(final[i].timeDepart == null)
+			{
+				indexToRemove--;
+			}
+		}
+		
 		if (final.length < 30)
 		{
 			loopCount = final.length;
@@ -355,9 +365,11 @@ function populate() { //Round-Trip
 
 	}
 }
-
-function populateOne() { //One-way flights
+var final;
+function populateOne() { /* One-way flights */
 	var tripType = sessionStorage.getItem('Trip-Type');
+	var currentLocation = sessionStorage.getItem('Current Location');
+	var desti = sessionStorage.getItem('Destination');
 	if(tripType == 1){
 		document.getElementById('proceedBtn').innerHTML = 'Proceed to Return Flight';
 		document.getElementById('proceedBtn').setAttribute( "onClick", "location.href='/round-trip-results'" );
@@ -376,8 +388,6 @@ function populateOne() { //One-way flights
 			img[i] = data[counter] + data[counter + 1];
 			counter = counter + 2;
 		}
-		// for(var i=0;i<img.length;i++)
-		// console.log(img[i] + " ");
 		var logo = "logo";
 		for (var i = 0; i < 30; i++) {
 			logo = logo + i;
@@ -397,6 +407,7 @@ function populateOne() { //One-way flights
 		}
 	}
 
+	/* Retrieve data from json using AJAX */
 	var ceb, airasia, pal;
 	var palJson = (function() {
 		var json = null;
@@ -409,7 +420,6 @@ function populateOne() { //One-way flights
 				json = data;
 			}
 		});
-
 		return json;
 	})();
 	var cebJson = (function() {
@@ -423,7 +433,6 @@ function populateOne() { //One-way flights
 				json = data;
 			}
 		});
-
 		return json;
 	})();
 	var airasiaJson = (function() {
@@ -437,26 +446,26 @@ function populateOne() { //One-way flights
 				json = data;
 			}
 		});
-
 		return json;
 	})();
 	renderHTML();
 
 	function renderHTML(data, length) {
 		var aaCounter = 0, palCounter = 0, cebCounter = 0;
-			if(airasiaJson == null)
-			{
-					aaCounter = 1;
-			}
-			if(palJson == null)
-			{
-					palCounter = 1;
-			}
-			if(cebJson == null)
-			{
-					cebCounter = 1;
-			}
+		if(airasiaJson == null)
+		{
+				aaCounter = 1;
+		}
+		if(palJson == null)
+		{
+				palCounter = 1;
+		}
+		if(cebJson == null)
+		{
+				cebCounter = 1;
+		}
 
+		/* Assigns corresponding airline names to each result */
 		for(var i = 0;i < cebJson.length;i++)
 			cebJson[i].airlineName = "ceb";
 		for(var i = 0;i < airasiaJson.length;i++)
@@ -472,106 +481,103 @@ function populateOne() { //One-way flights
 
 		for(var i = 0;i < cebJson.length;i++)
 			cebJson[i].link = cebJson[0].link; 
-
 		for(var i = 0;i < airasiaJson.length;i++)
 			airasiaJson[i].link = airasiaJson[0].link; 
-
 		for(var i = 0;i < palJson.length;i++)
 			palJson[i].link = palJson[0].link; 
 
 		var data = [];
-		for(var i = 0;i < palJson.length;i++)
+		for(var i = 0;i < airasiaJson.length;i++)
 		{
-			var xxx = palJson[i].timeDepart;
-			if(xxx.includes('p'))
-			{	
-				data = palJson[i].timeDepart.split('');
-				//data = parseInt(data);
-				if(palJson[i].timeDepart.length == 4)
-				{
-					var pm = data[0];
-					pm = parseInt(pm);
-					pm = pm + 12;
-					pm = pm.toString();
-					pm = pm + data[1] + data[2];
-					palJson[i].timeDepart = pm;
-					//console.log(palJson[i].timeDepart);
+			var xxx = airasiaJson[i].timeDepart;
+			if(xxx != undefined)
+			{
+				if(xxx.includes('p')) /* Removes PM character in timeDepart */
+				{	
+					data = airasiaJson[i].timeDepart.split('');
+					if(airasiaJson[i].timeDepart.length == 4)
+					{
+						var pm = data[0];
+						pm = parseInt(pm);
+						pm = pm + 12;
+						pm = pm.toString();
+						pm = pm + data[1] + data[2];
+						airasiaJson[i].timeDepart = pm;
+					}
+				}
+				if(xxx.includes('a')) /* Removes AM character in timeDepart */
+				{	
+					data = airasiaJson[i].timeDepart.split('');
+					if(palJson[i].timeDepart.length == 4)
+					{
+						var pm = '0' + data[0] + data[1] + data[2];
+						airasiaJson[i].timeDepart = pm;
+					}
+					if(airasiaJson[i].timeDepart.length == 2)
+					{
+						var pm = '0' + data[0] + '0' + '0';
+						airasiaJson[i].timeDepart = pm;
+					}
+					if(airasiaJson[i].timeDepart.length == 5)
+					{
+						var pm = data[0] + data[1] + data[2] + data[3];
+						airasiaJson[i].timeDepart = pm;
+					}
 				}
 			}
-			if(xxx.includes('a'))
-			{	
-				data = palJson[i].timeDepart.split('');
-				//data = parseInt(data);
-				if(palJson[i].timeDepart.length == 4)
-				{
-					var pm = '0' + data[0] + data[1] + data[2];
-					palJson[i].timeDepart = pm;
-				}
-				if(palJson[i].timeDepart.length == 2)
-				{
-					var pm = '0' + data[0] + '0' + '0';
-					palJson[i].timeDepart = pm;
-				}
-				if(palJson[i].timeDepart.length == 5)
-				{
-					var pm = data[0] + data[1] + data[2] + data[3];
-					palJson[i].timeDepart = pm;
-				}
-			}
+			else {break};
 		}
 
 		for(var i = 0;i < palJson.length;i++)
 		{
 			var xxx = palJson[i].timeArrive;
-		
-			if(xxx.includes('p'))
-			{	
-				data = palJson[i].timeArrive.split('');
-				//data = parseInt(data);
-				if(palJson[i].timeArrive.length == 4)
-				{
-					var pm = data[0];
-					pm = parseInt(pm);
-					pm = pm + 12;
-					pm = pm.toString();
-					pm = pm + data[1] + data[2];
-					palJson[i].timeArrive = pm;
-					//console.log(palJson[i].timeDepart);
+			if(xxx != undefined)
+			{
+				if(xxx.includes('p'))
+				{	
+					data = palJson[i].timeArrive.split('');
+					if(palJson[i].timeArrive.length == 4)
+					{
+						var pm = data[0];
+						pm = parseInt(pm);
+						pm = pm + 12;
+						pm = pm.toString();
+						pm = pm + data[1] + data[2];
+						palJson[i].timeArrive = pm;
+					}
+					if(palJson[i].timeArrive.length == 5)
+					{
+						var pm = data[0] + data[1] + data[2] + data[3];
+						palJson[i].timeArrive = pm;
+					}
 				}
-				if(palJson[i].timeArrive.length == 5)
-				{
-					var pm = data[0] + data[1] + data[2] + data[3];
-					palJson[i].timeArrive = pm;
+				if(xxx.includes('a'))
+				{	
+					data = palJson[i].timeArrive.split('');
+					if(palJson[i].timeArrive.length == 4)
+					{
+						var pm = '0' + data[0] + data[1] + data[2];
+						palJson[i].timeArrive = pm;
+					}
+					if(palJson[i].timeArrive.length == 2)
+					{
+						var pm = '0' + data[0] + '0' + '0';
+						palJson[i].timeArrive = pm;
+					}
+					if(palJson[i].timeArrive.length == 5)
+					{
+						var pm = data[0] + data[1] + data[2] + data[3];
+						palJson[i].timeArrive = pm;
+					}
 				}
 			}
-			if(xxx.includes('a'))
-			{	
-				data = palJson[i].timeArrive.split('');
-				//data = parseInt(data);
-				if(palJson[i].timeArrive.length == 4)
-				{
-					var pm = '0' + data[0] + data[1] + data[2];
-					palJson[i].timeArrive = pm;
-				}
-				if(palJson[i].timeArrive.length == 2)
-				{
-					var pm = '0' + data[0] + '0' + '0';
-					palJson[i].timeArrive = pm;
-				}
-				if(palJson[i].timeArrive.length == 5)
-				{
-					var pm = data[0] + data[1] + data[2] + data[3];
-					palJson[i].timeArrive = pm;
-				}
-			}
+			else {break};
 		}
-
-		for(var i = 0;i < palJson.length;i++)
-		{
+		for(var i = 0;i < palJson.length;i++) /* Convert Dollar to PHP (? sry) */
 			palJson[i].price1 = (palJson[i].price1*50);
-		}
-		var counterx;
-		var cebJson1;
+
+		/* Delete unnecessary data from results */
+		var counterx, cebJson1;
 		for(var i = 0;i < cebJson.length;i++)
 		{
 			if(cebJson[i].price1 == null)
@@ -586,9 +592,7 @@ function populateOne() { //One-way flights
 		for(var i = 0;i < cebJson-counterx;i++)
 		{
 			if(cebJson[i].price1 == null)
-			{
 				i++;
-			}
 			else
 				cebJson1[i] = cebJson[i];
 		}
@@ -622,19 +626,45 @@ function populateOne() { //One-way flights
 		var htFrom = $("#fromTXB").val();
 		var htTo = $("#toTXB").val();
 
+		/* Set string equivalents from html ID's */
 		var dtime = "dTime";
 		var atime = "aTime";
 		var price = "price";
 		var btn = "btn";
 
+
 		final.sort(function(a, b) {
-		    return parseFloat(a.price1) - parseFloat(b.price1);
+		    return parseFloat(a.airlineName) - parseFloat(b.airlineName);
 		});
 
 
 		var loopCount = 30;
 		var rc = "rc";
 		var indexToRemove = 30 - final.length;
+		for(var i = 1;i<final.length;i++)
+		{
+			if(final[i].timeDepart == null)
+			{
+				indexToRemove++;
+			}
+		}
+
+		if(indexToRemove > 28) /* If no results are found */
+		{
+			document.getElementById('desc1').innerHTML = 'No Flights Found'
+			document.getElementById('desc2').innerHTML = "The trip prices shown below includes additional fees imposed by the travel agency to be used. Prices may differ on official airline website.";
+			document.getElementById('sortingLinks').innerHTML = 'Here are some recommended Alternative Routes: Suicide';
+			document.getElementById('proceedBtn').style.visibility = 'hidden';
+			document.getElementById('footr').className = 'text-center index';
+			document.body.style.background = "#f3f3f3 url('../img/background2.jpg') no-repeat ";
+			
+		}
+		if(indexToRemove == 28) /* If no results are found */
+		{
+			document.getElementById('footr').className = 'text-center index';
+			document.body.style.background = "#f3f3f3 url('../img/background2.jpg') no-repeat ";		
+		}
+		
 		if (final.length < 30)
 		{
 			loopCount = final.length;
@@ -645,28 +675,50 @@ function populateOne() { //One-way flights
 			}
 			
 		}
-
+		
 
 		var logo = "logo";
 		for (var i = 0; i < loopCount; i++) {
 			logo = logo + i;
-			
-	
 			if (final[i].airlineName == 'pal') {
-				document.getElementById(logo).src = "img/airline%20logo/philippine-airlines.png";
-				logo = "logo";
-			}
-			if (final[i].airlineName == 'ceb') {
-				document.getElementById(logo).src = "img/airline%20logo/cebu-pacific.png";
-				logo = "logo";
-			}
-			if (final[i].airlineName == 'airasia') {
-				document.getElementById(logo).src = "img/airline%20logo/air-asia.png";
-				logo = "logo";
+				if(document.getElementById(logo) == null)
+				{
+					//console.log('');
+				}
+				else
+				{
+					document.getElementById(logo).src = "img/airline%20logo/philippine-airlines.png";
+					logo = "logo";
+				}
 			}
 
+			if (final[i].airlineName == 'ceb') {
+				if(document.getElementById(logo) == null)
+				{
+					//console.log('');
+				}
+				else
+				{
+					document.getElementById(logo).src = "img/airline%20logo/cebu-pacific.png";
+					logo = "logo";
+				}
+			}
+	
+			if (final[i].airlineName == 'airasia') {
+				if(document.getElementById(logo) == null)
+				{
+					//console.log('');
+				}
+				else
+				{
+					document.getElementById(logo).src = "img/airline%20logo/air-asia.png";
+					logo = "logo";
+				}
+			}
+	
+
 		}
-		
+
 		for (var i = 1; i < loopCount + 1; i++) {
 
 			dtime = dtime + i; //Append current iteration to match dtime ID
@@ -732,26 +784,12 @@ function populateHotels() { //One-way flights
 	var hLinks = hotelLinks.split("\n");  
 
 	var div = document.getElementById('results');
-console.log(hLinks.length);
+
 	for(var i = 0;i < hLinks.length;i++)
 	{
 	div.innerHTML += '<div class="result-container"> <div class="flight-cards"> <div class="row"> <div class="col-md-4"> <img class="airline-logos" src="img/hotels/manila-pavillion.jpg"> </div> <div class="col-md-4"> <p class="hotel-name" id="hotelName'+ i +'"></p> <p class="hotel-info" id="info'+ i +'"></p> </div> <div class="col-md-4"> <p class="header-login"></p> <a class="btn" id="btn'+ i +'" onclick="window.open(this.href,\'targetWindow\', \'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=400, height=400\'); return false;" type="button">Book This Hotel</a> </div> </div> </div> </div>';
 
 	}
-	// var loopCount = 30;
-	// var rc = "rc";
-	// var indexToRemove = 30 - final.length;
-	// if (final.length < 30)
-	// {
-	// 	loopCount = final.length;
-	// 	for(var i = 30 - indexToRemove;i <= 30;i++){
-	// 		rc = rc + i;
-	// 		document.getElementById(rc).style.display = 'none';
-	// 		rc = "rc";
-	// 	}
-		
-	// }
-
 
 	var hotelNames = [];
 	var hotelInfo = [];
@@ -775,9 +813,9 @@ console.log(hLinks.length);
 		hText = hText.replace("Web:"," ");
 		hText = hText.substr(hText.indexOf(":") + 1);
 		hotelInfo[i] = hText;
-		//console.log(hText);
+
 	}
-	//console.log(hotelInfo);	
+		
 
 	var hotelName = "hotelName";
 	var info = "info";
@@ -831,11 +869,1153 @@ function dothemagic() {
 }
 
 function sortByPrice(){
+			
+		var tripType = sessionStorage.getItem('Trip-Type');
+	var currentLocation = sessionStorage.getItem('Current Location');
+	var desti = sessionStorage.getItem('Destination');
+	if(tripType == 1){
+		document.getElementById('proceedBtn').innerHTML = 'Proceed to Return Flight';
+		document.getElementById('proceedBtn').setAttribute( "onClick", "location.href='/round-trip-results'" );
+	}
+
+
+	var $span = $("#parent2 span");
+	$span.attr('id', function (index) {
+    return 'span' + index;
+	});
+
+	function renderIMG(data, length) {
+		var img = [];
+		var counter = 0;
+		for (var i = 0; i < 30; i++) {
+			img[i] = data[counter] + data[counter + 1];
+			counter = counter + 2;
+		}
+		var logo = "logo";
+		for (var i = 0; i < 30; i++) {
+			logo = logo + i;
+			if (img[i] == 'Z2') {
+				document.getElementById(logo).src = "img/airline%20logo/air-asia.png";
+				logo = "logo";
+			}
+			if (img[i] == 'PR') {
+				document.getElementById(logo).src = "img/airline%20logo/philippine-airlines.png";
+				logo = "logo";
+			}
+			if (img[i] == '5J') {
+				document.getElementById(logo).src = "img/airline%20logo/cebu-pacific.png";
+				logo = "logo";
+			}
+
+		}
+	}
+
+	/* Retrieve data from json using AJAX */
+	var ceb, airasia, pal;
+	var palJson = (function() {
+		var json = null;
+		$.ajax({
+			'async': false,
+			'global': false,
+			'url': "flights/pal.json",
+			'dataType': "json",
+			'success': function(data) {
+				json = data;
+			}
+		});
+		return json;
+	})();
+	var cebJson = (function() {
+		var json = null;
+		$.ajax({
+			'async': false,
+			'global': false,
+			'url': "flights/ceb.json",
+			'dataType': "json",
+			'success': function(data) {
+				json = data;
+			}
+		});
+		return json;
+	})();
+	var airasiaJson = (function() {
+		var json = null;
+		$.ajax({
+			'async': false,
+			'global': false,
+			'url': "flights/airasia.json",
+			'dataType': "json",
+			'success': function(data) {
+				json = data;
+			}
+		});
+		return json;
+	})();
+	renderHTML();
+
+	function renderHTML(data, length) {
+		var aaCounter = 0, palCounter = 0, cebCounter = 0;
+		if(airasiaJson == null)
+		{
+				aaCounter = 1;
+		}
+		if(palJson == null)
+		{
+				palCounter = 1;
+		}
+		if(cebJson == null)
+		{
+				cebCounter = 1;
+		}
+
+		/* Assigns corresponding airline names to each result */
+		for(var i = 0;i < cebJson.length;i++)
+			cebJson[i].airlineName = "ceb";
+		for(var i = 0;i < airasiaJson.length;i++)
+			airasiaJson[i].airlineName = "airasia";
+		for(var i = 0;i < palJson.length;i++)
+			palJson[i].airlineName = "pal";
+
+
+		var cebLink = cebJson[0].link;
+		var aaLink = airasiaJson[0].link;
+		var palLink = palJson[0].link;
+
+
+		for(var i = 0;i < cebJson.length;i++)
+			cebJson[i].link = cebJson[0].link; 
+		for(var i = 0;i < airasiaJson.length;i++)
+			airasiaJson[i].link = airasiaJson[0].link; 
+		for(var i = 0;i < palJson.length;i++)
+			palJson[i].link = palJson[0].link; 
+
+		var data = [];
+		for(var i = 0;i < airasiaJson.length;i++)
+		{
+			var xxx = airasiaJson[i].timeDepart;
+			if(xxx != undefined)
+			{
+				if(xxx.includes('p')) /* Removes PM character in timeDepart */
+				{	
+					data = airasiaJson[i].timeDepart.split('');
+					if(airasiaJson[i].timeDepart.length == 4)
+					{
+						var pm = data[0];
+						pm = parseInt(pm);
+						pm = pm + 12;
+						pm = pm.toString();
+						pm = pm + data[1] + data[2];
+						airasiaJson[i].timeDepart = pm;
+					}
+				}
+				if(xxx.includes('a')) /* Removes AM character in timeDepart */
+				{	
+					data = airasiaJson[i].timeDepart.split('');
+					if(palJson[i].timeDepart.length == 4)
+					{
+						var pm = '0' + data[0] + data[1] + data[2];
+						airasiaJson[i].timeDepart = pm;
+					}
+					if(airasiaJson[i].timeDepart.length == 2)
+					{
+						var pm = '0' + data[0] + '0' + '0';
+						airasiaJson[i].timeDepart = pm;
+					}
+					if(airasiaJson[i].timeDepart.length == 5)
+					{
+						var pm = data[0] + data[1] + data[2] + data[3];
+						airasiaJson[i].timeDepart = pm;
+					}
+				}
+			}
+			else {break};
+		}
+
+		for(var i = 0;i < palJson.length;i++)
+		{
+			var xxx = palJson[i].timeArrive;
+			if(xxx != undefined)
+			{
+				if(xxx.includes('p'))
+				{	
+					data = palJson[i].timeArrive.split('');
+					if(palJson[i].timeArrive.length == 4)
+					{
+						var pm = data[0];
+						pm = parseInt(pm);
+						pm = pm + 12;
+						pm = pm.toString();
+						pm = pm + data[1] + data[2];
+						palJson[i].timeArrive = pm;
+					}
+					if(palJson[i].timeArrive.length == 5)
+					{
+						var pm = data[0] + data[1] + data[2] + data[3];
+						palJson[i].timeArrive = pm;
+					}
+				}
+				if(xxx.includes('a'))
+				{	
+					data = palJson[i].timeArrive.split('');
+					if(palJson[i].timeArrive.length == 4)
+					{
+						var pm = '0' + data[0] + data[1] + data[2];
+						palJson[i].timeArrive = pm;
+					}
+					if(palJson[i].timeArrive.length == 2)
+					{
+						var pm = '0' + data[0] + '0' + '0';
+						palJson[i].timeArrive = pm;
+					}
+					if(palJson[i].timeArrive.length == 5)
+					{
+						var pm = data[0] + data[1] + data[2] + data[3];
+						palJson[i].timeArrive = pm;
+					}
+				}
+			}
+			else {break};
+		}
+		for(var i = 0;i < palJson.length;i++) /* Convert Dollar to PHP (? sry) */
+			palJson[i].price1 = (palJson[i].price1*50);
+
+		/* Delete unnecessary data from results */
+		var counterx, cebJson1;
+		for(var i = 0;i < cebJson.length;i++)
+		{
+			if(cebJson[i].price1 == null)
+			{
+				delete cebJson[i].airlineName;
+				delete cebJson[i].id;
+				delete cebJson[i].timeArrive;
+				delete cebJson[i].timeDepart;
+				counterx = i;
+			}
+		}
+		for(var i = 0;i < cebJson-counterx;i++)
+		{
+			if(cebJson[i].price1 == null)
+				i++;
+			else
+				cebJson1[i] = cebJson[i];
+		}
+		for(var i = 0;i < cebJson.length;i++)
+		{
+			if(cebJson[i].price1 == null)
+			{
+				delete cebJson[i].airlineName;
+				delete cebJson[i].id;
+				delete cebJson[i].timeArrive;
+				delete cebJson[i].timeDepart;
+				counterx = i;
+			}
+		}
+		var xy = cebJson.concat(palJson);
+		var final = xy.concat(airasiaJson);
+		for (var i = 0; i < final.length; i++) {
+			delete final[i].origin;
+			delete final[i].flightID;
+			delete final[i].price2;
+			delete final[i].price3;
+			delete final[i].duration1;
+			delete final[i].duration2;
+			delete final[i].fDuration1;
+			delete final[i].fDuration2;
+			delete final[i].origin;
+			delete final[i].destination;
+		}
+		var counter = 0;
+		var counter1 = 0;
+		var htFrom = $("#fromTXB").val();
+		var htTo = $("#toTXB").val();
+
+		/* Set string equivalents from html ID's */
+		var dtime = "dTime";
+		var atime = "aTime";
+		var price = "price";
+		var btn = "btn";
+
+
+		final.sort(function(a, b) {
+		    return parseFloat(a.price1) - parseFloat(b.price1);
+		});
+
+
+		var loopCount = 30;
+		var rc = "rc";
+		var indexToRemove = 30 - final.length;
+		for(var i = 1;i<final.length;i++)
+		{
+			if(final[i].timeDepart == null)
+			{
+				indexToRemove++;
+			}
+		}
+
+		if(indexToRemove > 28) /* If no results are found */
+		{
+			document.getElementById('desc1').innerHTML = 'No Flights Found'
+			document.getElementById('desc2').innerHTML = "The trip prices shown below includes additional fees imposed by the travel agency to be used. Prices may differ on official airline website.";
+			document.getElementById('sortingLinks').innerHTML = 'Here are some recommended Alternative Routes: Suicide';
+			document.getElementById('proceedBtn').style.visibility = 'hidden';
+			document.getElementById('footr').className = 'text-center index';
+			document.body.style.background = "#f3f3f3 url('../img/background2.jpg') no-repeat ";
+			
+		}
+		if(indexToRemove == 28) /* If no results are found */
+		{
+			document.getElementById('footr').className = 'text-center index';
+			document.body.style.background = "#f3f3f3 url('../img/background2.jpg') no-repeat ";		
+		}
+		
+		if (final.length < 30)
+		{
+			loopCount = final.length;
+			for(var i = 30 - indexToRemove;i <= 30;i++){
+				rc = rc + i;
+				document.getElementById(rc).style.display = 'none';
+				rc = "rc";
+			}
+			
+		}
 	
+
+		var logo = "logo";
+		for (var i = 0; i < loopCount; i++) {
+			logo = logo + i;
+			if (final[i].airlineName == 'pal') {
+				if(document.getElementById(logo) == null)
+				{
+					//console.log('');
+				}
+				else
+				{
+					document.getElementById(logo).src = "img/airline%20logo/philippine-airlines.png";
+					logo = "logo";
+				}
+			}
+
+			if (final[i].airlineName == 'ceb') {
+				if(document.getElementById(logo) == null)
+				{
+					//console.log('');
+				}
+				else
+				{
+					document.getElementById(logo).src = "img/airline%20logo/cebu-pacific.png";
+					logo = "logo";
+				}
+			}
+	
+			if (final[i].airlineName == 'airasia') {
+				if(document.getElementById(logo) == null)
+				{
+					//console.log('');
+				}
+				else
+				{
+					document.getElementById(logo).src = "img/airline%20logo/air-asia.png";
+					logo = "logo";
+				}
+			}
+	
+
+		}
+
+		for (var i = 1; i < loopCount + 1; i++) {
+
+			dtime = dtime + i; //Append current iteration to match dtime ID
+			document.getElementById(dtime).innerHTML = final[i - 1].timeDepart;
+			dtime = "dTime";
+
+		}
+		for (var i = 1; i < loopCount + 1; i++) {
+			atime = atime + i;
+			document.getElementById(atime).innerHTML = final[i - 1].timeArrive;
+			atime = "aTime";
+
+		}
+		for (var i = 1; i < loopCount + 1; i++) {
+			price = i + price;
+			document.getElementById(price).innerHTML = "₱ " + final[i - 1].price1;
+			price = "price";
+
+		}
+		for (var i = 1; i < loopCount; i++) {
+			btn = btn + i;
+			document.getElementById(btn).href =  final[i - 1].link;
+			btn = "btn";
+
+		}
+
+	}
+
+}
+function sortByTimeDepart(){
+	var tripType = sessionStorage.getItem('Trip-Type');
+	var currentLocation = sessionStorage.getItem('Current Location');
+	var desti = sessionStorage.getItem('Destination');
+	if(tripType == 1){
+		document.getElementById('proceedBtn').innerHTML = 'Proceed to Return Flight';
+		document.getElementById('proceedBtn').setAttribute( "onClick", "location.href='/round-trip-results'" );
+	}
+
+
+	var $span = $("#parent2 span");
+	$span.attr('id', function (index) {
+    return 'span' + index;
+	});
+
+	function renderIMG(data, length) {
+		var img = [];
+		var counter = 0;
+		for (var i = 0; i < 30; i++) {
+			img[i] = data[counter] + data[counter + 1];
+			counter = counter + 2;
+		}
+		var logo = "logo";
+		for (var i = 0; i < 30; i++) {
+			logo = logo + i;
+			if (img[i] == 'Z2') {
+				document.getElementById(logo).src = "img/airline%20logo/air-asia.png";
+				logo = "logo";
+			}
+			if (img[i] == 'PR') {
+				document.getElementById(logo).src = "img/airline%20logo/philippine-airlines.png";
+				logo = "logo";
+			}
+			if (img[i] == '5J') {
+				document.getElementById(logo).src = "img/airline%20logo/cebu-pacific.png";
+				logo = "logo";
+			}
+
+		}
+	}
+
+	/* Retrieve data from json using AJAX */
+	var ceb, airasia, pal;
+	var palJson = (function() {
+		var json = null;
+		$.ajax({
+			'async': false,
+			'global': false,
+			'url': "flights/pal.json",
+			'dataType': "json",
+			'success': function(data) {
+				json = data;
+			}
+		});
+		return json;
+	})();
+	var cebJson = (function() {
+		var json = null;
+		$.ajax({
+			'async': false,
+			'global': false,
+			'url': "flights/ceb.json",
+			'dataType': "json",
+			'success': function(data) {
+				json = data;
+			}
+		});
+		return json;
+	})();
+	var airasiaJson = (function() {
+		var json = null;
+		$.ajax({
+			'async': false,
+			'global': false,
+			'url': "flights/airasia.json",
+			'dataType': "json",
+			'success': function(data) {
+				json = data;
+			}
+		});
+		return json;
+	})();
+	renderHTML();
+
+	function renderHTML(data, length) {
+		var aaCounter = 0, palCounter = 0, cebCounter = 0;
+		if(airasiaJson == null)
+		{
+				aaCounter = 1;
+		}
+		if(palJson == null)
+		{
+				palCounter = 1;
+		}
+		if(cebJson == null)
+		{
+				cebCounter = 1;
+		}
+
+		/* Assigns corresponding airline names to each result */
+		for(var i = 0;i < cebJson.length;i++)
+			cebJson[i].airlineName = "ceb";
+		for(var i = 0;i < airasiaJson.length;i++)
+			airasiaJson[i].airlineName = "airasia";
+		for(var i = 0;i < palJson.length;i++)
+			palJson[i].airlineName = "pal";
+
+
+		var cebLink = cebJson[0].link;
+		var aaLink = airasiaJson[0].link;
+		var palLink = palJson[0].link;
+
+
+		for(var i = 0;i < cebJson.length;i++)
+			cebJson[i].link = cebJson[0].link; 
+		for(var i = 0;i < airasiaJson.length;i++)
+			airasiaJson[i].link = airasiaJson[0].link; 
+		for(var i = 0;i < palJson.length;i++)
+			palJson[i].link = palJson[0].link; 
+
+		var data = [];
+		for(var i = 0;i < airasiaJson.length;i++)
+		{
+			var xxx = airasiaJson[i].timeDepart;
+			if(xxx != undefined)
+			{
+				if(xxx.includes('p')) /* Removes PM character in timeDepart */
+				{	
+					data = airasiaJson[i].timeDepart.split('');
+					if(airasiaJson[i].timeDepart.length == 4)
+					{
+						var pm = data[0];
+						pm = parseInt(pm);
+						pm = pm + 12;
+						pm = pm.toString();
+						pm = pm + data[1] + data[2];
+						airasiaJson[i].timeDepart = pm;
+					}
+				}
+				if(xxx.includes('a')) /* Removes AM character in timeDepart */
+				{	
+					data = airasiaJson[i].timeDepart.split('');
+					if(palJson[i].timeDepart.length == 4)
+					{
+						var pm = '0' + data[0] + data[1] + data[2];
+						airasiaJson[i].timeDepart = pm;
+					}
+					if(airasiaJson[i].timeDepart.length == 2)
+					{
+						var pm = '0' + data[0] + '0' + '0';
+						airasiaJson[i].timeDepart = pm;
+					}
+					if(airasiaJson[i].timeDepart.length == 5)
+					{
+						var pm = data[0] + data[1] + data[2] + data[3];
+						airasiaJson[i].timeDepart = pm;
+					}
+				}
+			}
+			else {break};
+		}
+
+		for(var i = 0;i < palJson.length;i++)
+		{
+			var xxx = palJson[i].timeArrive;
+			if(xxx != undefined)
+			{
+				if(xxx.includes('p'))
+				{	
+					data = palJson[i].timeArrive.split('');
+					if(palJson[i].timeArrive.length == 4)
+					{
+						var pm = data[0];
+						pm = parseInt(pm);
+						pm = pm + 12;
+						pm = pm.toString();
+						pm = pm + data[1] + data[2];
+						palJson[i].timeArrive = pm;
+					}
+					if(palJson[i].timeArrive.length == 5)
+					{
+						var pm = data[0] + data[1] + data[2] + data[3];
+						palJson[i].timeArrive = pm;
+					}
+				}
+				if(xxx.includes('a'))
+				{	
+					data = palJson[i].timeArrive.split('');
+					if(palJson[i].timeArrive.length == 4)
+					{
+						var pm = '0' + data[0] + data[1] + data[2];
+						palJson[i].timeArrive = pm;
+					}
+					if(palJson[i].timeArrive.length == 2)
+					{
+						var pm = '0' + data[0] + '0' + '0';
+						palJson[i].timeArrive = pm;
+					}
+					if(palJson[i].timeArrive.length == 5)
+					{
+						var pm = data[0] + data[1] + data[2] + data[3];
+						palJson[i].timeArrive = pm;
+					}
+				}
+			}
+			else {break};
+		}
+		for(var i = 0;i < palJson.length;i++) /* Convert Dollar to PHP (? sry) */
+			palJson[i].price1 = (palJson[i].price1*50);
+
+		/* Delete unnecessary data from results */
+		var counterx, cebJson1;
+		for(var i = 0;i < cebJson.length;i++)
+		{
+			if(cebJson[i].price1 == null)
+			{
+				delete cebJson[i].airlineName;
+				delete cebJson[i].id;
+				delete cebJson[i].timeArrive;
+				delete cebJson[i].timeDepart;
+				counterx = i;
+			}
+		}
+		for(var i = 0;i < cebJson-counterx;i++)
+		{
+			if(cebJson[i].price1 == null)
+				i++;
+			else
+				cebJson1[i] = cebJson[i];
+		}
+		for(var i = 0;i < cebJson.length;i++)
+		{
+			if(cebJson[i].price1 == null)
+			{
+				delete cebJson[i].airlineName;
+				delete cebJson[i].id;
+				delete cebJson[i].timeArrive;
+				delete cebJson[i].timeDepart;
+				counterx = i;
+			}
+		}
+		var xy = cebJson.concat(palJson);
+		var final = xy.concat(airasiaJson);
+		for (var i = 0; i < final.length; i++) {
+			delete final[i].origin;
+			delete final[i].flightID;
+			delete final[i].price2;
+			delete final[i].price3;
+			delete final[i].duration1;
+			delete final[i].duration2;
+			delete final[i].fDuration1;
+			delete final[i].fDuration2;
+			delete final[i].origin;
+			delete final[i].destination;
+		}
+		var counter = 0;
+		var counter1 = 0;
+		var htFrom = $("#fromTXB").val();
+		var htTo = $("#toTXB").val();
+
+		/* Set string equivalents from html ID's */
+		var dtime = "dTime";
+		var atime = "aTime";
+		var price = "price";
+		var btn = "btn";
+
+
 		final.sort(function(a, b) {
 		    return parseFloat(a.timeDepart) - parseFloat(b.timeDepart);
 		});
+
+
+		var loopCount = 30;
+		var rc = "rc";
+		var indexToRemove = 30 - final.length;
+		for(var i = 1;i<final.length;i++)
+		{
+			if(final[i].timeDepart == null)
+			{
+				indexToRemove++;
+			}
+		}
+
+		if(indexToRemove > 28) /* If no results are found */
+		{
+			document.getElementById('desc1').innerHTML = 'No Flights Found'
+			document.getElementById('desc2').innerHTML = "The trip prices shown below includes additional fees imposed by the travel agency to be used. Prices may differ on official airline website.";
+			document.getElementById('sortingLinks').innerHTML = 'Here are some recommended Alternative Routes: Suicide';
+			document.getElementById('proceedBtn').style.visibility = 'hidden';
+			document.getElementById('footr').className = 'text-center index';
+			document.body.style.background = "#f3f3f3 url('../img/background2.jpg') no-repeat ";
+			
+		}
+		if(indexToRemove == 28) /* If no results are found */
+		{
+			document.getElementById('footr').className = 'text-center index';
+			document.body.style.background = "#f3f3f3 url('../img/background2.jpg') no-repeat ";		
+		}
+		
+		if (final.length < 30)
+		{
+			loopCount = final.length;
+			for(var i = 30 - indexToRemove;i <= 30;i++){
+				rc = rc + i;
+				document.getElementById(rc).style.display = 'none';
+				rc = "rc";
+			}
+			
+		}
+	
+
+		var logo = "logo";
+		for (var i = 0; i < loopCount; i++) {
+			logo = logo + i;
+			if (final[i].airlineName == 'pal') {
+				if(document.getElementById(logo) == null)
+				{
+					//console.log('');
+				}
+				else
+				{
+					document.getElementById(logo).src = "img/airline%20logo/philippine-airlines.png";
+					logo = "logo";
+				}
+			}
+
+			if (final[i].airlineName == 'ceb') {
+				if(document.getElementById(logo) == null)
+				{
+					//console.log('');
+				}
+				else
+				{
+					document.getElementById(logo).src = "img/airline%20logo/cebu-pacific.png";
+					logo = "logo";
+				}
+			}
+	
+			if (final[i].airlineName == 'airasia') {
+				if(document.getElementById(logo) == null)
+				{
+					//console.log('');
+				}
+				else
+				{
+					document.getElementById(logo).src = "img/airline%20logo/air-asia.png";
+					logo = "logo";
+				}
+			}
+	
+
+		}
+
+		for (var i = 1; i < loopCount + 1; i++) {
+
+			dtime = dtime + i; //Append current iteration to match dtime ID
+			document.getElementById(dtime).innerHTML = final[i - 1].timeDepart;
+			dtime = "dTime";
+
+		}
+		for (var i = 1; i < loopCount + 1; i++) {
+			atime = atime + i;
+			document.getElementById(atime).innerHTML = final[i - 1].timeArrive;
+			atime = "aTime";
+
+		}
+		for (var i = 1; i < loopCount + 1; i++) {
+			price = i + price;
+			document.getElementById(price).innerHTML = "₱ " + final[i - 1].price1;
+			price = "price";
+
+		}
+		for (var i = 1; i < loopCount; i++) {
+			btn = btn + i;
+			document.getElementById(btn).href =  final[i - 1].link;
+			btn = "btn";
+
+		}
+
+	}
+
 }
+function sortByTimeArrive(){
+	var tripType = sessionStorage.getItem('Trip-Type');
+	var currentLocation = sessionStorage.getItem('Current Location');
+	var desti = sessionStorage.getItem('Destination');
+	if(tripType == 1){
+		document.getElementById('proceedBtn').innerHTML = 'Proceed to Return Flight';
+		document.getElementById('proceedBtn').setAttribute( "onClick", "location.href='/round-trip-results'" );
+	}
+
+
+	var $span = $("#parent2 span");
+	$span.attr('id', function (index) {
+    return 'span' + index;
+	});
+
+	function renderIMG(data, length) {
+		var img = [];
+		var counter = 0;
+		for (var i = 0; i < 30; i++) {
+			img[i] = data[counter] + data[counter + 1];
+			counter = counter + 2;
+		}
+		var logo = "logo";
+		for (var i = 0; i < 30; i++) {
+			logo = logo + i;
+			if (img[i] == 'Z2') {
+				document.getElementById(logo).src = "img/airline%20logo/air-asia.png";
+				logo = "logo";
+			}
+			if (img[i] == 'PR') {
+				document.getElementById(logo).src = "img/airline%20logo/philippine-airlines.png";
+				logo = "logo";
+			}
+			if (img[i] == '5J') {
+				document.getElementById(logo).src = "img/airline%20logo/cebu-pacific.png";
+				logo = "logo";
+			}
+
+		}
+	}
+
+	/* Retrieve data from json using AJAX */
+	var ceb, airasia, pal;
+	var palJson = (function() {
+		var json = null;
+		$.ajax({
+			'async': false,
+			'global': false,
+			'url': "flights/pal.json",
+			'dataType': "json",
+			'success': function(data) {
+				json = data;
+			}
+		});
+		return json;
+	})();
+	var cebJson = (function() {
+		var json = null;
+		$.ajax({
+			'async': false,
+			'global': false,
+			'url': "flights/ceb.json",
+			'dataType': "json",
+			'success': function(data) {
+				json = data;
+			}
+		});
+		return json;
+	})();
+	var airasiaJson = (function() {
+		var json = null;
+		$.ajax({
+			'async': false,
+			'global': false,
+			'url': "flights/airasia.json",
+			'dataType': "json",
+			'success': function(data) {
+				json = data;
+			}
+		});
+		return json;
+	})();
+	renderHTML();
+
+	function renderHTML(data, length) {
+		var aaCounter = 0, palCounter = 0, cebCounter = 0;
+		if(airasiaJson == null)
+		{
+				aaCounter = 1;
+		}
+		if(palJson == null)
+		{
+				palCounter = 1;
+		}
+		if(cebJson == null)
+		{
+				cebCounter = 1;
+		}
+
+		/* Assigns corresponding airline names to each result */
+		for(var i = 0;i < cebJson.length;i++)
+			cebJson[i].airlineName = "ceb";
+		for(var i = 0;i < airasiaJson.length;i++)
+			airasiaJson[i].airlineName = "airasia";
+		for(var i = 0;i < palJson.length;i++)
+			palJson[i].airlineName = "pal";
+
+
+		var cebLink = cebJson[0].link;
+		var aaLink = airasiaJson[0].link;
+		var palLink = palJson[0].link;
+
+
+		for(var i = 0;i < cebJson.length;i++)
+			cebJson[i].link = cebJson[0].link; 
+		for(var i = 0;i < airasiaJson.length;i++)
+			airasiaJson[i].link = airasiaJson[0].link; 
+		for(var i = 0;i < palJson.length;i++)
+			palJson[i].link = palJson[0].link; 
+
+		var data = [];
+		for(var i = 0;i < airasiaJson.length;i++)
+		{
+			var xxx = airasiaJson[i].timeDepart;
+			if(xxx != undefined)
+			{
+				if(xxx.includes('p')) /* Removes PM character in timeDepart */
+				{	
+					data = airasiaJson[i].timeDepart.split('');
+					if(airasiaJson[i].timeDepart.length == 4)
+					{
+						var pm = data[0];
+						pm = parseInt(pm);
+						pm = pm + 12;
+						pm = pm.toString();
+						pm = pm + data[1] + data[2];
+						airasiaJson[i].timeDepart = pm;
+					}
+				}
+				if(xxx.includes('a')) /* Removes AM character in timeDepart */
+				{	
+					data = airasiaJson[i].timeDepart.split('');
+					if(palJson[i].timeDepart.length == 4)
+					{
+						var pm = '0' + data[0] + data[1] + data[2];
+						airasiaJson[i].timeDepart = pm;
+					}
+					if(airasiaJson[i].timeDepart.length == 2)
+					{
+						var pm = '0' + data[0] + '0' + '0';
+						airasiaJson[i].timeDepart = pm;
+					}
+					if(airasiaJson[i].timeDepart.length == 5)
+					{
+						var pm = data[0] + data[1] + data[2] + data[3];
+						airasiaJson[i].timeDepart = pm;
+					}
+				}
+			}
+			else {break};
+		}
+
+		for(var i = 0;i < palJson.length;i++)
+		{
+			var xxx = palJson[i].timeArrive;
+			if(xxx != undefined)
+			{
+				if(xxx.includes('p'))
+				{	
+					data = palJson[i].timeArrive.split('');
+					if(palJson[i].timeArrive.length == 4)
+					{
+						var pm = data[0];
+						pm = parseInt(pm);
+						pm = pm + 12;
+						pm = pm.toString();
+						pm = pm + data[1] + data[2];
+						palJson[i].timeArrive = pm;
+					}
+					if(palJson[i].timeArrive.length == 5)
+					{
+						var pm = data[0] + data[1] + data[2] + data[3];
+						palJson[i].timeArrive = pm;
+					}
+				}
+				if(xxx.includes('a'))
+				{	
+					data = palJson[i].timeArrive.split('');
+					if(palJson[i].timeArrive.length == 4)
+					{
+						var pm = '0' + data[0] + data[1] + data[2];
+						palJson[i].timeArrive = pm;
+					}
+					if(palJson[i].timeArrive.length == 2)
+					{
+						var pm = '0' + data[0] + '0' + '0';
+						palJson[i].timeArrive = pm;
+					}
+					if(palJson[i].timeArrive.length == 5)
+					{
+						var pm = data[0] + data[1] + data[2] + data[3];
+						palJson[i].timeArrive = pm;
+					}
+				}
+			}
+			else {break};
+		}
+		for(var i = 0;i < palJson.length;i++) /* Convert Dollar to PHP (? sry) */
+			palJson[i].price1 = (palJson[i].price1*50);
+
+		/* Delete unnecessary data from results */
+		var counterx, cebJson1;
+		for(var i = 0;i < cebJson.length;i++)
+		{
+			if(cebJson[i].price1 == null)
+			{
+				delete cebJson[i].airlineName;
+				delete cebJson[i].id;
+				delete cebJson[i].timeArrive;
+				delete cebJson[i].timeDepart;
+				counterx = i;
+			}
+		}
+		for(var i = 0;i < cebJson-counterx;i++)
+		{
+			if(cebJson[i].price1 == null)
+				i++;
+			else
+				cebJson1[i] = cebJson[i];
+		}
+		for(var i = 0;i < cebJson.length;i++)
+		{
+			if(cebJson[i].price1 == null)
+			{
+				delete cebJson[i].airlineName;
+				delete cebJson[i].id;
+				delete cebJson[i].timeArrive;
+				delete cebJson[i].timeDepart;
+				counterx = i;
+			}
+		}
+		var xy = cebJson.concat(palJson);
+		var final = xy.concat(airasiaJson);
+		for (var i = 0; i < final.length; i++) {
+			delete final[i].origin;
+			delete final[i].flightID;
+			delete final[i].price2;
+			delete final[i].price3;
+			delete final[i].duration1;
+			delete final[i].duration2;
+			delete final[i].fDuration1;
+			delete final[i].fDuration2;
+			delete final[i].origin;
+			delete final[i].destination;
+		}
+		var counter = 0;
+		var counter1 = 0;
+		var htFrom = $("#fromTXB").val();
+		var htTo = $("#toTXB").val();
+
+		/* Set string equivalents from html ID's */
+		var dtime = "dTime";
+		var atime = "aTime";
+		var price = "price";
+		var btn = "btn";
+
+
+		final.sort(function(a, b) {
+		    return parseFloat(a.timeArrive) - parseFloat(b.timeArrive);
+		});
+
+
+		var loopCount = 30;
+		var rc = "rc";
+		var indexToRemove = 30 - final.length;
+		for(var i = 1;i<final.length;i++)
+		{
+			if(final[i].timeDepart == null)
+			{
+				indexToRemove++;
+			}
+		}
+
+		if(indexToRemove > 28) /* If no results are found */
+		{
+			document.getElementById('desc1').innerHTML = 'No Flights Found'
+			document.getElementById('desc2').innerHTML = "The trip prices shown below includes additional fees imposed by the travel agency to be used. Prices may differ on official airline website.";
+			document.getElementById('sortingLinks').innerHTML = 'Here are some recommended Alternative Routes: Suicide';
+			document.getElementById('proceedBtn').style.visibility = 'hidden';
+			document.getElementById('footr').className = 'text-center index';
+			document.body.style.background = "#f3f3f3 url('../img/background2.jpg') no-repeat ";
+			
+		}
+		if(indexToRemove == 28) /* If no results are found */
+		{
+			document.getElementById('footr').className = 'text-center index';
+			document.body.style.background = "#f3f3f3 url('../img/background2.jpg') no-repeat ";		
+		}
+		
+		if (final.length < 30)
+		{
+			loopCount = final.length;
+			for(var i = 30 - indexToRemove;i <= 30;i++){
+				rc = rc + i;
+				document.getElementById(rc).style.display = 'none';
+				rc = "rc";
+			}
+			
+		}
+
+
+		var logo = "logo";
+		for (var i = 0; i < loopCount; i++) {
+			logo = logo + i;
+			if (final[i].airlineName == 'pal') {
+				if(document.getElementById(logo) == null)
+				{
+					//console.log('');
+				}
+				else
+				{
+					document.getElementById(logo).src = "img/airline%20logo/philippine-airlines.png";
+					logo = "logo";
+				}
+			}
+
+			if (final[i].airlineName == 'ceb') {
+				if(document.getElementById(logo) == null)
+				{
+					//console.log('');
+				}
+				else
+				{
+					document.getElementById(logo).src = "img/airline%20logo/cebu-pacific.png";
+					logo = "logo";
+				}
+			}
+	
+			if (final[i].airlineName == 'airasia') {
+				if(document.getElementById(logo) == null)
+				{
+					//console.log('');
+				}
+				else
+				{
+					document.getElementById(logo).src = "img/airline%20logo/air-asia.png";
+					logo = "logo";
+				}
+			}
+	
+
+		}
+
+		for (var i = 1; i < loopCount + 1; i++) {
+
+			dtime = dtime + i; //Append current iteration to match dtime ID
+			document.getElementById(dtime).innerHTML = final[i - 1].timeDepart;
+			dtime = "dTime";
+
+		}
+		for (var i = 1; i < loopCount + 1; i++) {
+			atime = atime + i;
+			document.getElementById(atime).innerHTML = final[i - 1].timeArrive;
+			atime = "aTime";
+
+		}
+		for (var i = 1; i < loopCount + 1; i++) {
+			price = i + price;
+			document.getElementById(price).innerHTML = "₱ " + final[i - 1].price1;
+			price = "price";
+
+		}
+		for (var i = 1; i < loopCount; i++) {
+			btn = btn + i;
+			document.getElementById(btn).href =  final[i - 1].link;
+			btn = "btn";
+
+		}
+
+	}
+
+}
+
 
 function flightClicked(){
 
