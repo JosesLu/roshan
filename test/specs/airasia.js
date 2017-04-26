@@ -74,9 +74,25 @@ it('Air Asia', function() {
 
 		var str = z.join('');
 		//str = str.substr(0,indexCut);
+
 		str = str.replace(/esult/g, " ");
 		str = str.replace(/sult/g, " ");
 		str = str.replace(/.00/g, "");str = str.replace(/.01/g, "");str = str.replace(/:/g, "");
+		var y = str.split('');
+		for (x = 0; x < y.length; x++) {
+			if (y[x] == "A" || y[x] == "B" || y[x] == "C" || y[x] == "D" || y[x] == "E" || y[x] == "F" || y[x] == "G" ||
+				y[x] == "H" || y[x] == "I" || y[x] == "J" || y[x] == "K" || y[x] == "L" || y[x] == "M" || y[x] == "N" ||
+				y[x] == "O" || y[x] == "P" || y[x] == "Q" || y[x] == "R" || y[x] == "S" || y[x] == "T" || y[x] == "U" ||
+				y[x] == "V" || y[x] == "W" || y[x] == "X" || y[x] == "Y" || y[x] == "Z" || y[x] == "a" || y[x] == "b" ||
+				y[x] == "c" || y[x] == "d" || y[x] == "e" || y[x] == "f" || y[x] == "g" || y[x] == "h" || y[x] == "i" ||
+				y[x] == "j" || y[x] == "k" || y[x] == "l" || y[x] == "m" || y[x] == "n" || y[x] == "o" || y[x] == "p" ||
+				y[x] == "q" || y[x] == "r" || y[x] == "s" || y[x] == "t" || y[x] == "u" || y[x] == "v" || y[x] == "w" ||
+				y[x] == "x" || y[x] == "y" || y[x] == "z" || y[x] == "!" || y[x] == "*")
+				y[x] = "";
+		}
+
+		var finalList = y.join('');
+		str = finalList;
 		str = "link id price1 timeDepart timeArrive fDuration1 fDuration2 origin destination \n" + template +" "+ str;
 		fs = require('fs');
 		fs.writeFile('D:/Roshan/public/flights/airasia.txt', str, function(err) {
@@ -153,6 +169,21 @@ it('Air Asia', function() {
 		str = str.replace(/esult/g, " ");
 		str = str.replace(/sult/g, " ");
 		str = str.replace(/.00/g, "");str = str.replace(/.01/g, "");str = str.replace(/:/g, "");
+		var y = str.split('');
+		for (x = 0; x < y.length; x++) {
+			if (y[x] == "A" || y[x] == "B" || y[x] == "C" || y[x] == "D" || y[x] == "E" || y[x] == "F" || y[x] == "G" ||
+				y[x] == "H" || y[x] == "I" || y[x] == "J" || y[x] == "K" || y[x] == "L" || y[x] == "M" || y[x] == "N" ||
+				y[x] == "O" || y[x] == "P" || y[x] == "Q" || y[x] == "R" || y[x] == "S" || y[x] == "T" || y[x] == "U" ||
+				y[x] == "V" || y[x] == "W" || y[x] == "X" || y[x] == "Y" || y[x] == "Z" || y[x] == "a" || y[x] == "b" ||
+				y[x] == "c" || y[x] == "d" || y[x] == "e" || y[x] == "f" || y[x] == "g" || y[x] == "h" || y[x] == "i" ||
+				y[x] == "j" || y[x] == "k" || y[x] == "l" || y[x] == "m" || y[x] == "n" || y[x] == "o" || y[x] == "p" ||
+				y[x] == "q" || y[x] == "r" || y[x] == "s" || y[x] == "t" || y[x] == "u" || y[x] == "v" || y[x] == "w" ||
+				y[x] == "x" || y[x] == "y" || y[x] == "z" || y[x] == "!" || y[x] == "*")
+				y[x] = "";
+		}
+
+		var finalList = y.join('');
+		str = finalList;
 		str = "link id price1 timeDepart timeArrive fDuration1 fDuration2 origin destination \n" + template +" "+ str;
 		fs = require('fs');
 		fs.writeFile('D:/Roshan/public/flights/airasiaR.txt', str, function(err) {
@@ -162,7 +193,7 @@ it('Air Asia', function() {
 			});
 	
 	
-		}
+	}
 
 
 });

@@ -29,9 +29,14 @@
 		  $("#numOfPass").on("input", function() {
 		    $('#numberOfPassengers').val(($('#numOfPass').val()));
 		 });
+		  var budget = $('#budget-range').val();
+		  var bRange = budget.substring((budget.length/2)-1,budget.length);
+		  $("#budget-range").on("input", function() {
+		    $('#budgetRange').val(bRange);
+		 });
 	});
 
-	/*FROM and TO textbox autofill functionality*/
+	/* FROM and TO textbox autofill functionality */
 	$(function() {
 	   var availableTags = [
 		"Bacolod - BCD","Butuan - BXU","Cagayan De Oro - CGY","Calbayog - CYP",
@@ -97,6 +102,7 @@
 			<input id="dateDepart" name="dateDepart" type="hidden">
 			<input id="dateArrive" name="dateArrive" type="hidden">
 			<input id="numberOfPassengers" name="numberOfPassengers" type="hidden">
+			<input id="budgetRange" name="budgetRange" type="hidden">
 			<div class="form-group">
 				<div class="row">
 					<div class="col-md-2" style="float: left;">
@@ -131,8 +137,8 @@
 					<div class="col-md-3">
 						<input id="arDate" class="form-control datepicker" placeholder="Arrival date" type="text" style="display: none;">
 					</div>
-					<div class="col-md-6">
-						<input id="numOfPass" class="form-control" placeholder="No. of Travellers" type="text" >
+					<div class="col-md-4">
+						<input class="form-control" id="budget-range" name="budgetRange" placeholder="Budget Range" type="number" pattern="[0-9]" min="0" max="10000">
 					</div>
 				</div>
 			</div>
@@ -140,19 +146,7 @@
 			<div class="form-group">
 
 				<div class="row">
-					<div class="col-md-4">
-						<div class="dropdown" style="float: left;">
-						    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
-						    		Budget Range
-						    	<span class="caret"></span>
-						    </button>
-						    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-						      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">< PHP 5000</a></li>
-						      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">< PHP 10000</a></li>
-						      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">< PHP 15000</a></li>	
-						    </ul>
-						</div>
-					</div>
+					
 					<div class="col-md-4" style="float: right;">
 						<input class="btn searchbtn" name="searchme" id="search-button" onclick="dothemagic()" type="submit" value="Search Flights and Hotels">		
 					</div>
@@ -160,6 +154,25 @@
 			</div>
 			
 		</form>
+	</div>
+	<div id="myModal" class="modal fade" role="dialog">
+	  <div class="modal-dialog">
+
+	    <!-- Modal content-->
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal">&times;</button>
+	        <label class="modal-title" id='modal-title'></label>
+	      </div>
+	      <div class="modal-body">
+	        <p id='modal-body'></p>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+
+	  </div>
 	</div>
 </body>
 

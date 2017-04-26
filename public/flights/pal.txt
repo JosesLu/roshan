@@ -1,2 +1,9 @@
 link id price1 timeDepart timeArrive fDuration1 fDuration2 origin destination 
-https://www.expedia.com/Flights-Search?langid=1033&trip=oneway&leg1=from:Manila,%20Philippines%20(BCD-Ninoy%20Aquino%20Intl.),to:Davao%20(LAO-Francisco%20Bangoy%20Intl.),departure:04/15/2017TANYT&passengers=children:0,adults:1,seniors:0,infantinlap:N&options=cabinclass:economy,sortby:price,carrier:PR&mode=search&paandi=true 
+https://www.expedia.com/Flights-Search?langid=1033&trip=oneway&leg1=from:Manila,%20Philippines%20(MNL-Ninoy%20Aquino%20Intl.),to:Davao%20(DVO-Francisco%20Bangoy%20Intl.),departure:04/22/2017TANYT&passengers=children:0,adults:1,seniors:0,infantinlap:N&options=cabinclass:economy,sortby:price,carrier:PR&mode=search&paandi=true   1 112.05 740  930  1h 50m MNL  DVO  entertinment informtion 112.05  112 .05    Select Select r  1 
+00   2 112.05 4  550  1h 50m MNL  DVO  entertinment informtion 112.05  112 .05    Select Select r  2 
+00   3 112.05 9  1050  1h 50m MNL  DVO  entertinment informtion 112.05  112 .05    Select Select r  3 
+00   4 119.05 520  7  1h 40m MNL  DVO  entertinment informtion 119.05  119 .05    Select Select r  4 
+00   5 119.05 1155  145  1h 50m MNL  DVO  entertinment informtion 119.05  119 .05    Select Select r  5 
+00   6 119.05 645  835  1h 50m MNL  DVO  wifi entertinment informtion 119.05  119 .05    Select Select r  6 
+00   7 137.05 315  505  1h 50m MNL  DVO  entertinment informtion 137.05  137 .05    Select Select r  7 
+00   8 137.05 910  11  1h 50m MNL  DVO  entertinmen

@@ -20,9 +20,12 @@ exports.config = {
             './test/specs/pal.js',
              './test/specs/hotels.js'
         ],
-        hotels: [
-            './test/specs/hotels.js'
+        alternateflights: [
+         './test/alterna/alterairasia.js',
+            './test/alterna/altercebpac.js',
+            './test/alterna/alterpal.js'
         ]
+       
     },
     // Patterns to exclude.
     exclude: [

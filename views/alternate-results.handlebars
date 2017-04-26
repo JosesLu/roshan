@@ -1,4 +1,4 @@
-<body onload="javascript:populate();javascript:setItems()">
+<body onload="javascript:populateAlternateRoutesRight();javascript:populateAlternateRoutes();javascript:setItems();">
 	<script type="text/javascript">
 		function setItems(){
 		
@@ -25,7 +25,7 @@
 		
 	</script>
 	<header>
-		<form action="save1" id="main-container" method="post" name="main-container" style="width:60%;display: none;">
+		<form action="save-alternate" id="main-container" method="post" name="main-container" style="width:60%;display: none;">
 			<input id="xx" name="xx" type="hidden" value='hoy'><input id="yy" name="yy" type="hidden">
 			<input id="xxx" name="xxx" type="hidden" value=''><input id="yyy" name="yyy" type="hidden"> 
 			<input id="triptype" name="triptype" value="0" type="hidden">
@@ -42,28 +42,45 @@
 				</div>
 			</div>
 		</form>
-
 		<input id="numberOfPassengers" name="numberOfPassengers" type="hidden">
-		<div class="container"  id='desccard'>
-			<div class="result-container top-round">
-				<div class="description-cards">
-					<h3 class="description" style="text-decoration: underline;" id="desc1">Choose your flight</h3>
-					<h5 class="description" id='desc2'>The trip prices shown below includes additional fees imposed by the travel agency to be used. Prices may differ on official airline website. </h5>
-					<div class="row">
-						<div class="col-md-8">
-							<h5 class="description" id='sortingLinks'>Sort By: <a href = "javascript:sortByPrice()">Price </a><a href = "javascript:sortByTimeDepart()">Departure Time </a><a href = "javascript:sortByTimeArrive()">Arrival Time </a> </h5>
-						</div>
-						<div class="col-md-4">
-							<button type="button" class="btn btn-info btn-arrow-right" onclick="location.href='/hotel-results'" id='proceedBtn'>Proceed To Hotels</button>
+		<div class="row">
+			<div class="container"  id='desccard'>
+				<div class="col-md-6">
+					<div class="result-container-alternate top-round">
+						<div class="description-cards">
+							<h3 class="description" style="text-decoration: underline;" id="desc1">Choose your flight</h3>
+							<h5 class="description" id='desc2'>The trip prices shown below includes additional fees imposed by the travel agency to be used. Prices may differ on official airline website. </h5>
+							<div class="row">
+								<div class="col-md-8">
+									<h5 class="description" id='sortingLinks'>Sort By: <a href = "javascript:sortByPrice()">Price </a><a href = "javascript:sortByTimeDepart()">Departure Time </a><a href = "javascript:sortByTimeArrive()">Arrival Time </a> </h5>
+								</div>
+							
+							</div>
 						</div>
 					</div>
+					<div id='resultss'></div>
+					<div class="result-container-alternate bottom-round">
+					</div>
 				</div>
-			</div>
-			<div id='resultss'>
-			
-			
-			</div>
-			<div class="result-container bottom-round">
+				<div class="col-md-6">
+					<div class="result-container-alternate top-round">
+						<div class="description-cards">
+							<h3 class="description" style="text-decoration: underline;" id="desc1">Choose your flight</h3>
+							<h5 class="description" id='desc2'>The trip prices shown below includes additional fees imposed by the travel agency to be used. Prices may differ on official airline website. </h5>
+							<div class="row">
+								<div class="col-md-8">
+									<h5 class="description" id='sortingLinks'>Sort By: <a href = "javascript:sortByPrice()">Price </a><a href = "javascript:sortByTimeDepart()">Departure Time </a><a href = "javascript:sortByTimeArrive()">Arrival Time </a> </h5>
+								</div>
+								<div class="col-md-4">
+									<button type="button" class="btn btn-info btn-arrow-right" onclick="location.href='/hotel-results'" id='proceedBtn'>Proceed To Hotels</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id='resultss-right'></div>
+					<div class="result-container-alternate bottom-round">
+					</div>
+				</div>
 			</div>
 		</div>
 	</header>

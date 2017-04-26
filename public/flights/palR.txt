@@ -1,11 +1,10 @@
 link id price1 timeDepart timeArrive fDuration1 fDuration2 origin destination 
-https://www.expedia.com/Flights-Search?langid=1033&trip=oneway&leg1=from:Manila,%20Philippines%20(MNL-Ninoy%20Aquino%20Intl.),to:Davao%20(DVO-Francisco%20Bangoy%20Intl.),departure:04/08/2017TANYT&passengers=children:0,adults:1,seniors:0,infantinlap:N&options=cabinclass:economy,sortby:price,carrier:PR&mode=search&paandi=true   1 93.98 850  1040  1h 50m MNL  DVO  93.98  93 .98    Select Select r  1 
-00   2 105.98 755  935  1h 40m MNL  DVO  105.98  105 .98    Select Select r  2 
-00   3 105.98 1110  1250  1h 40m MNL  DVO  105.98  105 .98    Select Select r  3 
-00   4 105.98 4  550  1h 50m MNL  DVO  105.98  105 .98    Select Select r  4 
-00   5 105.98 640  830  1h 50m MNL  DVO  105.98  105 .98    Select Select r  5 
-00   6 105.98 645  835  1h 50m MNL  DVO  105.98  105 .98    Select Select r  6 
-00   7 105.98 515  705  1h 50m MNL  DVO  105.98  105 .98    Select Select r  7 
-00   8 105.98 740  930  1h 50m MNL  DVO  105.98  105 .98    Select Select r  8 
-00   9 111.98 315  505  1h 50m MNL  DVO  111.98  111 .98    Select Select r  9 
-00   10 311.94 11  550  6h 50m MNL  DVO 1
+https://www.expedia.com/Flights-Search?langid=1033&trip=oneway&leg1=from:Manila,%20Philippines%20(MNL-Ninoy%20Aquino%20Intl.),to:Davao%20(CEB-Francisco%20Bangoy%20Intl.),departure:04/18/2017TANYT&passengers=children:0,adults:1,seniors:0,infantinlap:N&options=cabinclass:economy,sortby:price,carrier:PR&mode=search&paandi=true   1 81.99 4  515  1h 15m MNL  CEB  entertinment informtion 81.99  81 .99    Select Select r  1 
+00   2 87.99 455  605  1h 10m MNL  CEB  entertinment informtion 87.99  87 .99    Select Select r  2 
+00   3 87.99 615  730  1h 15m MNL  CEB  entertinment informtion 87.99  87 .99    Select Select r  3 
+00   4 94.99 5  610  1h 10m MNL  CEB  entertinment informtion 94.99  94 .99    Select Select r  4 
+00   5 94.99 755  910  1h 15m MNL  CEB  entertinment informtion 94.99  94 .99    Select Select r  5 
+00   6 120.99 225  340  1h 15m MNL  CEB  entertinment informtion 120.99  120 .99    Select Select r  6 
+00   7 120.99 1030  1145  1h 15m MNL  CEB  entertinment informtion 120.99  120 .99    Select Select r  7 
+00   8 129.99 11  1215  1h 15m MNL  CEB  entertinment informtion 129.99  129 .99    Select Select r  8 
+00   9 129.99 715  10    14h 45m MNL  CEB 1
